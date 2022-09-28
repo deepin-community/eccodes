@@ -1,0 +1,10 @@
+grib_bits.diff
+static-libs.patch
+reproducible.patch
+disable-download-tests.patch
+static-fix.patch
+remove-rpms.patch
+memfs.patch
+ecbuild.patch
+# gfortran-10.patch
+missing-libs.patch

@@ -1,0 +1,13 @@
+usr/lib/libeccodes.so.0
+usr/lib/libeccodes_f90.so
+usr/lib/libeccodes_f90.so.0
+usr/lib/libeccodes.so
+usr/lib/libeccodes_f90_static.a 
+usr/lib/libeccodes_static.a 
+usr/lib/*/libeccodes.so.0
+usr/lib/*/libeccodes_f90.so.0
+usr/lib/*/libeccodes.so.0
+usr/lib/pkgconfig/eccodes_f90.pc
+usr/lib/pkgconfig/eccodes.pc
+usr/lib/python2.7/*
+usr/include/*.mod

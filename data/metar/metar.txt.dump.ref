@@ -1,0 +1,3941 @@
+***** FILE: metar.txt 
+#==============   MESSAGE 1 ( length=65 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LQMO 022350Z 09003KT 6000 FEW010 SCT035 BKN060 08/08 Q1003=;
+  CCCC = LQMO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 43.35;
+  #-READ ONLY- longitude = 17.8;
+  #-READ ONLY- elevation = 108;
+  #-READ ONLY- name = Mostar;
+  #-READ ONLY- country = Bosnia and Herzegovina;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- visibilityInMetres = 6000;
+  #-READ ONLY- clouds1 = FEW010;
+  #-READ ONLY- clouds2 = SCT035;
+  #-READ ONLY- clouds3 = BKN060;
+  #-READ ONLY- temperature = 8;
+  #-READ ONLY- dewPointTemperature = 8;
+  #-READ ONLY- qnhInHectoPascal = Q1003;
+  #-READ ONLY- qnh = 1003;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 2 ( length=60 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VIJP 022330Z 00000KT 2000 FU FEW100 12/05 Q1017 NOSIG=;
+  CCCC = VIJP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 26.82;
+  #-READ ONLY- longitude = 75.8;
+  #-READ ONLY- elevation = 385;
+  #-READ ONLY- name = Jaipur / Sanganer;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 2000;
+  #-READ ONLY- presentWeather1 = FU;
+  #-READ ONLY- clouds1 = FEW100;
+  #-READ ONLY- temperature = 12;
+  #-READ ONLY- dewPointTemperature = 5;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 3 ( length=87 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VIDP 022330Z 25004KT 0900 R28/P2000 R29/P2000 MIFG NSC 09/05...      Q1016 NOSIG=;
+  CCCC = VIDP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 28.57;
+  #-READ ONLY- longitude = 77.12;
+  #-READ ONLY- elevation = 220;
+  #-READ ONLY- name = New Delhi / Palam;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInMetres = 0900;
+  #-READ ONLY- RVR1 = R28/P2000;
+  #-READ ONLY- RVR2 = R29/P2000;
+  #-READ ONLY- presentWeather1 = MIFG;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 9;
+  #-READ ONLY- dewPointTemperature = 5;
+  #-READ ONLY- qnhInHectoPascal = Q1016;
+  #-READ ONLY- qnh = 1016;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 4 ( length=51 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VILK 022330Z VRB02KT 2000 BR NSC 10/08 Q1015=;
+  CCCC = VILK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 26.75;
+  #-READ ONLY- longitude = 80.88;
+  #-READ ONLY- elevation = 122;
+  #-READ ONLY- name = Lucknow / Amausi;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 2000;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 10;
+  #-READ ONLY- dewPointTemperature = 8;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 5 ( length=61 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VIAR 022330Z 00000KT 0050 R34/0200N BR NSC 08/08 Q1017=;
+  CCCC = VIAR;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 31.63;
+  #-READ ONLY- longitude = 74.87;
+  #-READ ONLY- elevation = 229;
+  #-READ ONLY- name = Amritsar;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 0050;
+  #-READ ONLY- RVR1 = R34/0200N;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 8;
+  #-READ ONLY- dewPointTemperature = 8;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 6 ( length=57 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VECC 022350Z 00000KT 1600 BR NSC 15/13 Q1013 NOSIG=;
+  CCCC = VECC;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 22.65;
+  #-READ ONLY- longitude = 88.45;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Calcutta / Dum Dum;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 1600;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 15;
+  #-READ ONLY- dewPointTemperature = 13;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 7 ( length=62 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR UTAK 020600Z 15002MPS CAVOK 02/01 Q1019 NOSIG RMK SC 07=;
+  CCCC = UTAK;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 06;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = m/s;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 150;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = 1;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+  #-READ ONLY- remark = SC 07;
+}
+#==============   MESSAGE 8 ( length=59 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR SBBE 030000Z 05005KT 9999 SCT030 BKN100 25/22 Q1010 =;
+  CCCC = SBBE;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = -1.38;
+  #-READ ONLY- longitude = -48.48;
+  #-READ ONLY- elevation = 16;
+  #-READ ONLY- name = Belem Aeroporto ;
+  #-READ ONLY- country = Brazil;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT030;
+  #-READ ONLY- clouds2 = BKN100;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 22;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 9 ( length=51 )                  ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MSLP 022350Z 22003KT CAVOK 26/22 Q1012 A2988=;
+  CCCC = MSLP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 13.43;
+  #-READ ONLY- longitude = -89.05;
+  #-READ ONLY- elevation = 25;
+  #-READ ONLY- name = El Salvador Intl. Airport / Comalapa;
+  #-READ ONLY- country = El Salvador;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 22;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2988;
+}
+#==============   MESSAGE 10 ( length=51 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MSSS 022350Z 35005KT CAVOK 26/21 Q1017 A3005=;
+  CCCC = MSSS;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 13.7;
+  #-READ ONLY- longitude = -89.12;
+  #-READ ONLY- elevation = 616;
+  #-READ ONLY- name = San Salvador / Ilopango;
+  #-READ ONLY- country = El Salvador;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 350;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 21;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3005;
+}
+#==============   MESSAGE 11 ( length=76 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EETU 022350Z AUTO 17007KT 9999NDV SCT062/// BKN078///...M02/M03 Q1011=;
+  CCCC = EETU;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 58.3;
+  #-READ ONLY- longitude = 26.73;
+  #-READ ONLY- elevation = 59;
+  #-READ ONLY- name = Tartu/Ulenurme;
+  #-READ ONLY- country = Estonia;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 170;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = SCT062///;
+  #-READ ONLY- clouds2 = BKN078///;
+  #-READ ONLY- temperature = -2;
+  #-READ ONLY- dewPointTemperature = -3;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 12 ( length=83 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EEKE 022350Z AUTO 04013KT 1000NDV R17///// R35///// SN VV008...M04/M05 Q1008=;
+  CCCC = EEKE;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 59.02;
+  #-READ ONLY- longitude = 23.07;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Kuressaare;
+  #-READ ONLY- country = Estonia;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 13;
+  #-READ ONLY- windDirection = 040;
+  #-READ ONLY- visibilityInMetres = 1000NDV;
+  #-READ ONLY- RVR1 = R17/////;
+  #-READ ONLY- RVR2 = R35/////;
+  #-READ ONLY- presentWeather1 = SN;
+  #-READ ONLY- verticalVisibilityElement = VV008;
+  #-READ ONLY- temperature = -4;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHectoPascal = Q1008;
+  #-READ ONLY- qnh = 1008;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 13 ( length=72 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EVRA 022350Z 17010KT 8000 FEW013 M02/M02 Q1011 R18/190060...NOSIG=;
+  CCCC = EVRA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.92;
+  #-READ ONLY- longitude = 23.97;
+  #-READ ONLY- elevation = 10;
+  #-READ ONLY- name = Riga International Airport;
+  #-READ ONLY- country = Latvia;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 170;
+  #-READ ONLY- visibilityInMetres = 8000;
+  #-READ ONLY- clouds1 = FEW013;
+  #-READ ONLY- temperature = -2;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R18/190060;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 14 ( length=123 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKVG 022350Z AUTO 12025KT 9999NDV -RA  BKN030/// 02/M01...Q1007 RMK FEW014/// BKN027/// BKN190/// WIND 850FT 12044KT=;
+  CCCC = EKVG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 62.07;
+  #-READ ONLY- longitude = -7.28;
+  #-READ ONLY- elevation = 85;
+  #-READ ONLY- name = Soervaag / Vagar;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 25;
+  #-READ ONLY- windDirection = 120;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- presentWeather1 = -RA;
+  #-READ ONLY- clouds1 = BKN030///;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -1;
+  #-READ ONLY- qnhInHectoPascal = Q1007;
+  #-READ ONLY- qnh = 1007;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- remark = FEW014/// BKN027/// BKN190/// WIND 850FT 12044KT;
+}
+#==============   MESSAGE 15 ( length=75 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VGHS 022350Z 33404KT 1600 BR SCT120 18/16 Q1012 TEMPO S/VISI...1200M=;
+  CCCC = VGHS;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 334;
+  #-READ ONLY- visibilityInMetres = 1600;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- clouds1 = SCT120;
+  #-READ ONLY- temperature = 18;
+  #-READ ONLY- dewPointTemperature = 16;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- skippedGroup = S/VISI;
+  #-READ ONLY- unknownGroup = 1200M;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 16 ( length=84 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EETN 022350Z 10005KT 4000 SN SCT011 BKN026 OVC034 M06/M07 Q1011...R08/810295 =;
+  CCCC = EETN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 59.4;
+  #-READ ONLY- longitude = 24.82;
+  #-READ ONLY- elevation = 40;
+  #-READ ONLY- name = Tallinn;
+  #-READ ONLY- country = Estonia;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 100;
+  #-READ ONLY- visibilityInMetres = 4000;
+  #-READ ONLY- presentWeather1 = SN;
+  #-READ ONLY- clouds1 = SCT011;
+  #-READ ONLY- clouds2 = BKN026;
+  #-READ ONLY- clouds3 = OVC034;
+  #-READ ONLY- temperature = -6;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R08/810295;
+}
+#==============   MESSAGE 17 ( length=63 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LLBG 022350Z 05001KT 9000 NSC 14/12 Q1017 TEMPO 7000 NSC=;
+  CCCC = LLBG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32;
+  #-READ ONLY- longitude = 34.9;
+  #-READ ONLY- elevation = 40;
+  #-READ ONLY- name = Ben-Gurion International Airport;
+  #-READ ONLY- country = Israel;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9000;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 14;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- visibilityInMetresTrend1 = 7000;
+  #-READ ONLY- noSignificantCloudsTrend1 = NSC;
+}
+#==============   MESSAGE 18 ( length=45 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LLOV 022350Z 25003KT CAVOK 11/03 Q1018=;
+  CCCC = LLOV;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 30;
+  #-READ ONLY- longitude = 34.83;
+  #-READ ONLY- elevation = 432;
+  #-READ ONLY- name = Ovda;
+  #-READ ONLY- country = Israel;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 11;
+  #-READ ONLY- dewPointTemperature = 3;
+  #-READ ONLY- qnhInHectoPascal = Q1018;
+  #-READ ONLY- qnh = 1018;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 19 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LLET 022350Z NIL=;
+  CCCC = LLET;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 29.55;
+  #-READ ONLY- longitude = 34.95;
+  #-READ ONLY- elevation = 12;
+  #-READ ONLY- name = Eilat;
+  #-READ ONLY- country = Israel;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 20 ( length=58 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OYAA 030000Z 07010KT 9999 SCT020 SCT080 26/21 Q1013=;
+  CCCC = OYAA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 12.67;
+  #-READ ONLY- longitude = 45.03;
+  #-READ ONLY- elevation = 3;
+  #-READ ONLY- name = Aden;
+  #-READ ONLY- country = Yemen;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 070;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT020;
+  #-READ ONLY- clouds2 = SCT080;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 21;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 21 ( length=51 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OYSQ 030000Z 05006KT 9999 FEW018 23/19 Q1013=;
+  CCCC = OYSQ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 12.63;
+  #-READ ONLY- longitude = 53.9;
+  #-READ ONLY- elevation = 45;
+  #-READ ONLY- name = Socotra;
+  #-READ ONLY- country = Yemen;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW018;
+  #-READ ONLY- temperature = 23;
+  #-READ ONLY- dewPointTemperature = 19;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 22 ( length=80 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EYVI 022350Z 13008KT 4000 BR OVC039 M01/M02 Q1011 R20/1///95...     NOSIG=;
+  CCCC = EYVI;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 54.63;
+  #-READ ONLY- longitude = 25.1;
+  #-READ ONLY- elevation = 162;
+  #-READ ONLY- name = Vilnius;
+  #-READ ONLY- country = Lithuania;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 08;
+  #-READ ONLY- windDirection = 130;
+  #-READ ONLY- visibilityInMetres = 4000;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- clouds1 = OVC039;
+  #-READ ONLY- temperature = -1;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R20/1///95;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 23 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EYPA 022350Z NIL=;
+  CCCC = EYPA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.12;
+  #-READ ONLY- longitude = 21.05;
+  #-READ ONLY- elevation = 10;
+  #-READ ONLY- name = Palanga Intl.;
+  #-READ ONLY- country = Lithuania;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 24 ( length=67 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LWSK 030000Z 00000KT 2200 BR FEW010 SCT040 04/04 Q1004 NOSIG=;
+  CCCC = LWSK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 41.97;
+  #-READ ONLY- longitude = 21.65;
+  #-READ ONLY- elevation = 238;
+  #-READ ONLY- name = Skopje-Petrovec;
+  #-READ ONLY- country = Macedonia, The Republic of;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 2200;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- clouds1 = FEW010;
+  #-READ ONLY- clouds2 = SCT040;
+  #-READ ONLY- temperature = 4;
+  #-READ ONLY- dewPointTemperature = 4;
+  #-READ ONLY- qnhInHectoPascal = Q1004;
+  #-READ ONLY- qnh = 1004;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 25 ( length=38 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...KMWS 022243Z 27505G10KT 07/07=;
+  CCCC = KMWS;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 34.23;
+  #-READ ONLY- longitude = -118.07;
+  #-READ ONLY- elevation = 1739;
+  #-READ ONLY- name = Mount Wilson;
+  #-READ ONLY- country = United States;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 22;
+  #-READ ONLY- minute = 43;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 275;
+  #-READ ONLY- visibilityInteger = 07/07;
+}
+#==============   MESSAGE 26 ( length=47 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...KJDN 022348Z AUTO 14003KT 09/M01 A2923=;
+  CCCC = KJDN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 47.33;
+  #-READ ONLY- longitude = -106.95;
+  #-READ ONLY- elevation = 811;
+  #-READ ONLY- name = JORDAN AIRPORT;
+  #-READ ONLY- country = United States;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 48;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 140;
+  #-READ ONLY- visibilityInteger = 09/M01;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2923;
+}
+#==============   MESSAGE 27 ( length=61 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...MPTO  030000Z 30004KT 9999 FEW018  26/23 Q1010 NOSIG=;
+  CCCC = MPTO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 9.05;
+  #-READ ONLY- longitude = -79.37;
+  #-READ ONLY- elevation = 45;
+  #-READ ONLY- name = Tocumen;
+  #-READ ONLY- country = Panama;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW018;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 23;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 28 ( length=65 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...MHRO 030000Z 30002KT 9999 SCT020 24/21 Q1015 A3000 NOSIG=;
+  CCCC = MHRO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 16.32;
+  #-READ ONLY- longitude = -86.52;
+  #-READ ONLY- elevation = 5;
+  #-READ ONLY- name = Roatan;
+  #-READ ONLY- country = Honduras;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT020;
+  #-READ ONLY- temperature = 24;
+  #-READ ONLY- dewPointTemperature = 21;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3000;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 29 ( length=76 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EYSA 022350Z 18007KT 7000 NSC M03/M04 Q1011 R14L/29//62...R14R/29//62=;
+  CCCC = EYSA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.52;
+  #-READ ONLY- longitude = 24.08;
+  #-READ ONLY- elevation = 135;
+  #-READ ONLY- name = Siauliai Intl./Mil.;
+  #-READ ONLY- country = Lithuania;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 180;
+  #-READ ONLY- visibilityInMetres = 7000;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = -3;
+  #-READ ONLY- dewPointTemperature = -4;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R14L/29//62;
+  #-READ ONLY- runwayState2 = R14R/29//62;
+}
+#==============   MESSAGE 30 ( length=57 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VAAH 022340Z 03005KT 3500 HZ NSC 17/13 Q1012 NOSIG=;
+  CCCC = VAAH;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 23.07;
+  #-READ ONLY- longitude = 72.63;
+  #-READ ONLY- elevation = 55;
+  #-READ ONLY- name = Ahmadabad;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 030;
+  #-READ ONLY- visibilityInMetres = 3500;
+  #-READ ONLY- presentWeather1 = HZ;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 17;
+  #-READ ONLY- dewPointTemperature = 13;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 31 ( length=60 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VABB 022340Z 00000KT 2200 FU SCT100 25/18 Q1010 NOSIG=;
+  CCCC = VABB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 19.12;
+  #-READ ONLY- longitude = 72.85;
+  #-READ ONLY- elevation = 8;
+  #-READ ONLY- name = Bombay / Santacruz;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 2200;
+  #-READ ONLY- presentWeather1 = FU;
+  #-READ ONLY- clouds1 = SCT100;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 18;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 32 ( length=65 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VANP 022340Z 00000KT 5000 HZ NSC 16/13 Q1014 TEMPO 4000 HZ=;
+  CCCC = VANP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 21.1;
+  #-READ ONLY- longitude = 79.05;
+  #-READ ONLY- elevation = 308;
+  #-READ ONLY- name = Nagpur Sonegaon;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 5000;
+  #-READ ONLY- presentWeather1 = HZ;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 16;
+  #-READ ONLY- dewPointTemperature = 13;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- visibilityInMetresTrend1 = 4000;
+  #-READ ONLY- presentWeather1Trend1 = HZ;
+}
+#==============   MESSAGE 33 ( length=57 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VOHS 022340Z 00000KT 4000 HZ NSC 17/15 Q1015 NOSIG=;
+  CCCC = VOHS;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 4000;
+  #-READ ONLY- presentWeather1 = HZ;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 17;
+  #-READ ONLY- dewPointTemperature = 15;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 34 ( length=84 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VOMM 022340Z 00000KT 4000 -DZ SCT020 FEW025CB BKN100 24/22...     Q1009 NOSIG=;
+  CCCC = VOMM;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 13;
+  #-READ ONLY- longitude = 80.18;
+  #-READ ONLY- elevation = 10;
+  #-READ ONLY- name = Madras / Minambakkam;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 4000;
+  #-READ ONLY- presentWeather1 = -DZ;
+  #-READ ONLY- clouds1 = SCT020;
+  #-READ ONLY- clouds2 = FEW025CB;
+  #-READ ONLY- clouds3 = BKN100;
+  #-READ ONLY- temperature = 24;
+  #-READ ONLY- dewPointTemperature = 22;
+  #-READ ONLY- qnhInHectoPascal = Q1009;
+  #-READ ONLY- qnh = 1009;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 35 ( length=62 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VOTR 022340Z 35005KT 5000 HZ SCT016 BKN100 25/16 Q1010 =;
+  CCCC = VOTR;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 10.77;
+  #-READ ONLY- longitude = 78.72;
+  #-READ ONLY- elevation = 85;
+  #-READ ONLY- name = Tiruchchirapalli;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 350;
+  #-READ ONLY- visibilityInMetres = 5000;
+  #-READ ONLY- presentWeather1 = HZ;
+  #-READ ONLY- clouds1 = SCT016;
+  #-READ ONLY- clouds2 = BKN100;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 16;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 36 ( length=57 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR VOTV 022340Z 00000KT 3000 HZ NSC 23/21 Q1008 NOSIG=;
+  CCCC = VOTV;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 8.47;
+  #-READ ONLY- longitude = 76.95;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Thiruvananthapuram;
+  #-READ ONLY- country = India;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 3000;
+  #-READ ONLY- presentWeather1 = HZ;
+  #-READ ONLY- noSignificantClouds = NSC;
+  #-READ ONLY- temperature = 23;
+  #-READ ONLY- dewPointTemperature = 21;
+  #-READ ONLY- qnhInHectoPascal = Q1008;
+  #-READ ONLY- qnh = 1008;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 37 ( length=52 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR SBSV 030000Z 09010KT 9999 FEW017 26/20 Q1014 =;
+  CCCC = SBSV;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = -12.9;
+  #-READ ONLY- longitude = -38.33;
+  #-READ ONLY- elevation = 6;
+  #-READ ONLY- name = Salvador Aeroporto ;
+  #-READ ONLY- country = Brazil;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW017;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 20;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 38 ( length=79 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...MNMG 030000Z 09004KT 9999 FEW020 29/19 Q1011 A2986 1AC060 1CI300 NOSIG=;
+  CCCC = MNMG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 12.15;
+  #-READ ONLY- longitude = -86.17;
+  #-READ ONLY- elevation = 50;
+  #-READ ONLY- name = Managua A. C. Sandino;
+  #-READ ONLY- country = Nicaragua;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW020;
+  #-READ ONLY- temperature = 29;
+  #-READ ONLY- dewPointTemperature = 19;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2986;
+  #-READ ONLY- skippedGroup = 1AC060;
+  #-READ ONLY- unknownGroup = 1CI300;
+  #-READ ONLY- notDecoded = NOSIG;
+}
+#==============   MESSAGE 39 ( length=46 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR SBSL 030000Z 06008KT CAVOK 27/20 Q1010 =;
+  CCCC = SBSL;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = -2.6;
+  #-READ ONLY- longitude = -44.23;
+  #-READ ONLY- elevation = 53;
+  #-READ ONLY- name = Sao Luiz Aeroporto ;
+  #-READ ONLY- country = Brazil;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 08;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 27;
+  #-READ ONLY- dewPointTemperature = 20;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 40 ( length=95 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZH 022350Z 20006KT 170V230 9999 -SN BKN025 BKN043 M01/M04...    Q1018 R88/29//// NOSIG=;
+  CCCC = LSZH;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 47.48;
+  #-READ ONLY- longitude = 8.53;
+  #-READ ONLY- elevation = 436;
+  #-READ ONLY- name = Zurich-Kloten;
+  #-READ ONLY- country = Switzerland;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 200;
+  #-READ ONLY- variationInWindDirection = 170V230;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = BKN025;
+  #-READ ONLY- clouds2 = BKN043;
+  #-READ ONLY- temperature = -1;
+  #-READ ONLY- dewPointTemperature = -4;
+  #-READ ONLY- qnhInHectoPascal = Q1018;
+  #-READ ONLY- qnh = 1018;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R88/29////;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 41 ( length=59 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSGG 022350Z 22002KT 9999 FEW035 M04/M05 Q1020 NOSIG=;
+  CCCC = LSGG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 46.25;
+  #-READ ONLY- longitude = 6.13;
+  #-READ ONLY- elevation = 420;
+  #-READ ONLY- name = Geneve-Cointrin;
+  #-READ ONLY- country = Switzerland;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW035;
+  #-READ ONLY- temperature = -4;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHectoPascal = Q1020;
+  #-READ ONLY- qnh = 1020;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 42 ( length=58 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZB 022350Z AUTO VRB01KT 9999 OVC050 M03/M03 Q1019=;
+  CCCC = LSZB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 46.92;
+  #-READ ONLY- longitude = 7.5;
+  #-READ ONLY- elevation = 505;
+  #-READ ONLY- name = Bern / Belp ;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = OVC050;
+  #-READ ONLY- temperature = -3;
+  #-READ ONLY- dewPointTemperature = -3;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 43 ( length=51 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZA 022350Z AUTO 01003KT CAVOK 01/M08 Q1013=;
+  CCCC = LSZA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 46;
+  #-READ ONLY- longitude = 8.97;
+  #-READ ONLY- elevation = 273;
+  #-READ ONLY- name = Lugano;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 010;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 44 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSMA 022350Z NIL=;
+  CCCC = LSMA;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 45 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSMD 022350Z NIL=;
+  CCCC = LSMD;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 46 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSME 022350Z NIL=;
+  CCCC = LSME;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 47 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSMM 022350Z NIL=;
+  CCCC = LSMM;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 48 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSMP 022350Z NIL=;
+  CCCC = LSMP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 46.82;
+  #-READ ONLY- longitude = 6.95;
+  #-READ ONLY- elevation = 490;
+  #-READ ONLY- name = Payerne;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 49 ( length=66 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSMS 022350Z AUTO VRB01KT 8000NDV NCD M04/M06 Q1019 RMK BLU=;
+  CCCC = LSMS;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 8000NDV;
+  #-READ ONLY- noCloudsDetected = NCD;
+  #-READ ONLY- temperature = -4;
+  #-READ ONLY- dewPointTemperature = -6;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- remark = BLU;
+}
+#==============   MESSAGE 50 ( length=73 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...MGGT 030000Z 36012KT 9999 FEW018 SCT080 18/13 Q1026 A3030 FEW200=;
+  CCCC = MGGT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 14.58;
+  #-READ ONLY- longitude = -90.52;
+  #-READ ONLY- elevation = 1489;
+  #-READ ONLY- name = Guatemala Aeropuertola Aurora ;
+  #-READ ONLY- country = Guatemala;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 12;
+  #-READ ONLY- windDirection = 360;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW018;
+  #-READ ONLY- clouds2 = SCT080;
+  #-READ ONLY- temperature = 18;
+  #-READ ONLY- dewPointTemperature = 13;
+  #-READ ONLY- qnhInHectoPascal = Q1026;
+  #-READ ONLY- qnh = 1026;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3030;
+  #-READ ONLY- skippedGroup = FEW200;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 51 ( length=65 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EVLA 022350Z AUTO 16009KT 140V200 9000 FEW006 00/M00 Q1009=;
+  CCCC = EVLA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.52;
+  #-READ ONLY- longitude = 21.08;
+  #-READ ONLY- elevation = 5;
+  #-READ ONLY- name = Liepaja International Airport;
+  #-READ ONLY- country = Latvia;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 160;
+  #-READ ONLY- variationInWindDirection = 140V200;
+  #-READ ONLY- visibilityInMetres = 9000;
+  #-READ ONLY- clouds1 = FEW006;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1009;
+  #-READ ONLY- qnh = 1009;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 52 ( length=68 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EVVA 022350Z AUTO 18009KT 3900 RASN BKN004 OVC014 01/01 Q1008=;
+  CCCC = EVVA;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 180;
+  #-READ ONLY- visibilityInMetres = 3900;
+  #-READ ONLY- presentWeather1 = RASN;
+  #-READ ONLY- clouds1 = BKN004;
+  #-READ ONLY- clouds2 = OVC014;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = 1;
+  #-READ ONLY- qnhInHectoPascal = Q1008;
+  #-READ ONLY- qnh = 1008;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 53 ( length=73 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR GVAC 030000Z 07017KT 9999 SCT014 BKN100 BKN200 22/15 Q1019...NOSIG=;
+  CCCC = GVAC;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 16.73;
+  #-READ ONLY- longitude = -22.95;
+  #-READ ONLY- elevation = 54;
+  #-READ ONLY- name = Sal;
+  #-READ ONLY- country = Cape Verde;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 17;
+  #-READ ONLY- windDirection = 070;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT014;
+  #-READ ONLY- clouds2 = BKN100;
+  #-READ ONLY- clouds3 = BKN200;
+  #-READ ONLY- temperature = 22;
+  #-READ ONLY- dewPointTemperature = 15;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 54 ( length=48 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR HLLT 022350Z...22005KT CAV0K 09/M02 Q1020=;
+  CCCC = HLLT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32.67;
+  #-READ ONLY- longitude = 13.15;
+  #-READ ONLY- elevation = 80;
+  #-READ ONLY- name = Tripoli Inter-National Airport;
+  #-READ ONLY- country = Libya;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- skippedGroup = CAV0K;
+  #-READ ONLY- temperature = 9;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1020;
+  #-READ ONLY- qnh = 1020;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 55 ( length=54 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR HLLB 022345Z...32017KT 9999 SCT020 18/11 Q1017 =;
+  CCCC = HLLB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32.1;
+  #-READ ONLY- longitude = 20.27;
+  #-READ ONLY- elevation = 131;
+  #-READ ONLY- name = Benina;
+  #-READ ONLY- country = Libya;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 45;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 17;
+  #-READ ONLY- windDirection = 320;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT020;
+  #-READ ONLY- temperature = 18;
+  #-READ ONLY- dewPointTemperature = 11;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 56 ( length=62 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LMML 022345Z AUTO 30014KT 9999NDV FEW034/// 15/09 Q1015=;
+  CCCC = LMML;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 35.85;
+  #-READ ONLY- longitude = 14.48;
+  #-READ ONLY- elevation = 91;
+  #-READ ONLY- name = Luqa;
+  #-READ ONLY- country = Malta;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 45;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 14;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW034///;
+  #-READ ONLY- temperature = 15;
+  #-READ ONLY- dewPointTemperature = 9;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 57 ( length=46 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR HLLT 022350Z 22005KT CAV0K 09/M02 Q1020=;
+  CCCC = HLLT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32.67;
+  #-READ ONLY- longitude = 13.15;
+  #-READ ONLY- elevation = 80;
+  #-READ ONLY- name = Tripoli Inter-National Airport;
+  #-READ ONLY- country = Libya;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- skippedGroup = CAV0K;
+  #-READ ONLY- temperature = 9;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1020;
+  #-READ ONLY- qnh = 1020;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 58 ( length=67 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EGYP 022350Z 23012KT 9999 -RA FEW004 BKN005 08/07 Q0983 YLO1=;
+  CCCC = EGYP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = -51.82;
+  #-READ ONLY- longitude = -58.45;
+  #-READ ONLY- elevation = 74;
+  #-READ ONLY- name = Mount Pleasant Airport;
+  #-READ ONLY- country = South Georgia and the Islands;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 12;
+  #-READ ONLY- windDirection = 230;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -RA;
+  #-READ ONLY- clouds1 = FEW004;
+  #-READ ONLY- clouds2 = BKN005;
+  #-READ ONLY- temperature = 8;
+  #-READ ONLY- dewPointTemperature = 7;
+  #-READ ONLY- qnhInHectoPascal = Q0983;
+  #-READ ONLY- qnh = 0983;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = YLO1;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 59 ( length=75 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSGC 022350Z AUTO 22003KT 9999 -SN SCT011 OVC029 M06/M07...    Q1016=;
+  CCCC = LSGC;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 47.13;
+  #-READ ONLY- longitude = 7.4;
+  #-READ ONLY- elevation = 1027;
+  #-READ ONLY- name = Les Eplatures;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = SCT011;
+  #-READ ONLY- clouds2 = OVC029;
+  #-READ ONLY- temperature = -6;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1016;
+  #-READ ONLY- qnh = 1016;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 60 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSGS 022350Z NIL=;
+  CCCC = LSGS;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 46.22;
+  #-READ ONLY- longitude = 7.33;
+  #-READ ONLY- elevation = 482;
+  #-READ ONLY- name = Sion;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 61 ( length=62 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZG 022350Z AUTO 23008KT 9999 -SN OVC046 M01/M04 Q1019=;
+  CCCC = LSZG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 48.05;
+  #-READ ONLY- longitude = 8.38;
+  #-READ ONLY- elevation = 430;
+  #-READ ONLY- name = Grenchen;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 08;
+  #-READ ONLY- windDirection = 230;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = OVC046;
+  #-READ ONLY- temperature = -1;
+  #-READ ONLY- dewPointTemperature = -4;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 62 ( length=61 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZR 022350Z AUTO 26009KT 8000 -SN BKN046 01/M05 Q1017=;
+  CCCC = LSZR;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 47.58;
+  #-READ ONLY- longitude = 10.27;
+  #-READ ONLY- elevation = 398;
+  #-READ ONLY- name = Saint Gallen-Altenrhein;
+  #-READ ONLY- country = Switzerland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 260;
+  #-READ ONLY- visibilityInMetres = 8000;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = BKN046;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 63 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZS 022350Z NIL=;
+  CCCC = LSZS;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 64 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZC 022350Z NIL=;
+  CCCC = LSZC;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 65 ( length=65 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR LSZL 022350Z AUTO VRB01KT 9999NDV NCD 00/M07 Q1013 RMK BLU=;
+  CCCC = LSZL;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- noCloudsDetected = NCD;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- remark = BLU;
+}
+#==============   MESSAGE 66 ( length=58 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESGG 022350Z 06003KT CAVOK M12/M13 Q1012 R03/19//95=;
+  CCCC = ESGG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 57.67;
+  #-READ ONLY- longitude = 12.3;
+  #-READ ONLY- elevation = 169;
+  #-READ ONLY- name = Goteborg / Landvetter;
+  #-READ ONLY- country = Sweden;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -12;
+  #-READ ONLY- dewPointTemperature = -13;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R03/19//95;
+}
+#==============   MESSAGE 67 ( length=74 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESGJ 022350Z 00000KT 9999 SG BKN005 M11/M11 Q1012 RESN...R19/720070=;
+  CCCC = ESGJ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 57.77;
+  #-READ ONLY- longitude = 14.08;
+  #-READ ONLY- elevation = 226;
+  #-READ ONLY- name = Jonkoping Flygplats;
+  #-READ ONLY- country = Sweden;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = SG;
+  #-READ ONLY- clouds1 = BKN005;
+  #-READ ONLY- temperature = -11;
+  #-READ ONLY- dewPointTemperature = -11;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R19/720070;
+}
+#==============   MESSAGE 68 ( length=47 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESGP 022350Z VRB02KT CAVOK M10/M11 Q1014=;
+  CCCC = ESGP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 57.78;
+  #-READ ONLY- longitude = 11.88;
+  #-READ ONLY- elevation = 20;
+  #-READ ONLY- name = Goteborg / Save;
+  #-READ ONLY- country = Sweden;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -10;
+  #-READ ONLY- dewPointTemperature = -11;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 69 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESGT 022350Z NIL=;
+  CCCC = ESGT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 58.32;
+  #-READ ONLY- longitude = 12.35;
+  #-READ ONLY- elevation = 41;
+  #-READ ONLY- name = Trollhattan Private ;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 70 ( length=64 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESMK 022350Z AUTO 29005KT 9999NDV FEW024/// M08/M09 Q1012=;
+  CCCC = ESMK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.92;
+  #-READ ONLY- longitude = 14.08;
+  #-READ ONLY- elevation = 23;
+  #-READ ONLY- name = Kristianstad / Everod;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 290;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW024///;
+  #-READ ONLY- temperature = -8;
+  #-READ ONLY- dewPointTemperature = -9;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 71 ( length=70 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESMQ 022350Z AUTO 34010KT 9999NDV -SN OVC017/// M07/M08...Q1011=;
+  CCCC = ESMQ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.73;
+  #-READ ONLY- longitude = 16.3;
+  #-READ ONLY- elevation = 16;
+  #-READ ONLY- name = Kalmar;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 340;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = OVC017///;
+  #-READ ONLY- temperature = -7;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 72 ( length=58 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESMS 022350Z 34007KT CAVOK M10/M11 Q1012 R17/0///95=;
+  CCCC = ESMS;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.55;
+  #-READ ONLY- longitude = 13.37;
+  #-READ ONLY- elevation = 106;
+  #-READ ONLY- name = Malmo / Sturup;
+  #-READ ONLY- country = Sweden;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 340;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -10;
+  #-READ ONLY- dewPointTemperature = -11;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R17/0///95;
+}
+#==============   MESSAGE 73 ( length=64 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESMT 022350Z AUTO 05006KT 9999NDV SCT089/// M09/M11 Q1013=;
+  CCCC = ESMT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.68;
+  #-READ ONLY- longitude = 12.83;
+  #-READ ONLY- elevation = 30;
+  #-READ ONLY- name = Halmstad Swedish Air Force Base ;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = SCT089///;
+  #-READ ONLY- temperature = -9;
+  #-READ ONLY- dewPointTemperature = -11;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 74 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESMX 022350Z NIL=;
+  CCCC = ESMX;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.85;
+  #-READ ONLY- longitude = 14.83;
+  #-READ ONLY- elevation = 199;
+  #-READ ONLY- name = Vaxjo;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 75 ( length=64 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESTA 022350Z AUTO 08004KT 9999NDV OVC120/// M08/M10 Q1012=;
+  CCCC = ESTA;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 080;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = OVC120///;
+  #-READ ONLY- temperature = -8;
+  #-READ ONLY- dewPointTemperature = -10;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 76 ( length=61 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ESTL 022350Z AUTO 00000KT 3900NDV BR NCD M14/M15 Q1013=;
+  CCCC = ESTL;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.07;
+  #-READ ONLY- longitude = 13.2;
+  #-READ ONLY- elevation = 43;
+  #-READ ONLY- name = Ljungbyhed;
+  #-READ ONLY- country = Sweden;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 3900NDV;
+  #-READ ONLY- presentWeather1 = BR;
+  #-READ ONLY- noCloudsDetected = NCD;
+  #-READ ONLY- temperature = -14;
+  #-READ ONLY- dewPointTemperature = -15;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 77 ( length=125 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDF 022350Z 25007KT 9999 FEW022 SCT042 BKN060 03/01 Q1015...     R25L/2///95 R25C/2///95 R25R/2///95 R18/21//95 NOSIG=;
+  CCCC = EDDF;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 50.05;
+  #-READ ONLY- longitude = 8.6;
+  #-READ ONLY- elevation = 111;
+  #-READ ONLY- name = Frankfurt / M-Flughafen;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW022;
+  #-READ ONLY- clouds2 = SCT042;
+  #-READ ONLY- clouds3 = BKN060;
+  #-READ ONLY- temperature = 3;
+  #-READ ONLY- dewPointTemperature = 1;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R25L/2///95;
+  #-READ ONLY- runwayState2 = R25C/2///95;
+  #-READ ONLY- runwayState3 = R25R/2///95;
+  #-READ ONLY- runwayState4 = R18/21//95;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 78 ( length=59 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDH 022350Z 25003KT 9999 FEW017 M02/M04 Q1014 NOSIG=;
+  CCCC = EDDH;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 53.63;
+  #-READ ONLY- longitude = 10;
+  #-READ ONLY- elevation = 16;
+  #-READ ONLY- name = Hamburg-Fuhlsbuettel;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW017;
+  #-READ ONLY- temperature = -2;
+  #-READ ONLY- dewPointTemperature = -4;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 79 ( length=61 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDK 022350Z 27007KT 9999 -DZ BKN008 03/02 Q1015 NOSIG=;
+  CCCC = EDDK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 50.87;
+  #-READ ONLY- longitude = 7.17;
+  #-READ ONLY- elevation = 91;
+  #-READ ONLY- name = Koeln / Bonn;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 270;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -DZ;
+  #-READ ONLY- clouds1 = BKN008;
+  #-READ ONLY- temperature = 3;
+  #-READ ONLY- dewPointTemperature = 2;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 80 ( length=64 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDL 022350Z 25005KT 8000 SCT004 BKN006 03/02 Q1015 NOSIG=;
+  CCCC = EDDL;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 51.3;
+  #-READ ONLY- longitude = 6.77;
+  #-READ ONLY- elevation = 45;
+  #-READ ONLY- name = Duesseldorf;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInMetres = 8000;
+  #-READ ONLY- clouds1 = SCT004;
+  #-READ ONLY- clouds2 = BKN006;
+  #-READ ONLY- temperature = 3;
+  #-READ ONLY- dewPointTemperature = 2;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 81 ( length=84 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDM 022350Z 27015KT 9999 -SN FEW012 BKN018 M00/M02 Q1014 TEMPO...     BKN012=;
+  CCCC = EDDM;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 48.35;
+  #-READ ONLY- longitude = 11.78;
+  #-READ ONLY- elevation = 453;
+  #-READ ONLY- name = Munchen;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 15;
+  #-READ ONLY- windDirection = 270;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = FEW012;
+  #-READ ONLY- clouds2 = BKN018;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- clouds1Trend1 = BKN012;
+}
+#==============   MESSAGE 82 ( length=81 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDN 022350Z 28010KT 5000 -SN FEW007 OVC010 01/M00 Q1013...     R28/29//95=;
+  CCCC = EDDN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 49.5;
+  #-READ ONLY- longitude = 11.05;
+  #-READ ONLY- elevation = 318;
+  #-READ ONLY- name = Nuernberg;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 280;
+  #-READ ONLY- visibilityInMetres = 5000;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = FEW007;
+  #-READ ONLY- clouds2 = OVC010;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R28/29//95;
+}
+#==============   MESSAGE 83 ( length=63 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDS 022350Z 24007KT 9999 -SN SCT016 BKN045 01/M02 Q1016=;
+  CCCC = EDDS;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 48.68;
+  #-READ ONLY- longitude = 9.22;
+  #-READ ONLY- elevation = 396;
+  #-READ ONLY- name = Stuttgart-Echterdingen;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 240;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = SCT016;
+  #-READ ONLY- clouds2 = BKN045;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1016;
+  #-READ ONLY- qnh = 1016;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 84 ( length=52 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDT 022350Z 29004KT 6000 BKN007 00/M00 Q1012=;
+  CCCC = EDDT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 52.57;
+  #-READ ONLY- longitude = 13.32;
+  #-READ ONLY- elevation = 37;
+  #-READ ONLY- name = Berlin-Tegel;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 290;
+  #-READ ONLY- visibilityInMetres = 6000;
+  #-READ ONLY- clouds1 = BKN007;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 85 ( length=73 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDV 022350Z 31005KT 8000 FEW004 SCT009 BKN030 00/M00...     Q1014=;
+  CCCC = EDDV;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 52.47;
+  #-READ ONLY- longitude = 9.68;
+  #-READ ONLY- elevation = 56;
+  #-READ ONLY- name = Hannover;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 310;
+  #-READ ONLY- visibilityInMetres = 8000;
+  #-READ ONLY- clouds1 = FEW004;
+  #-READ ONLY- clouds2 = SCT009;
+  #-READ ONLY- clouds3 = BKN030;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 86 ( length=88 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKCH 022350Z 07007KT 9999 FEW012 M06/M08 Q1012 04550164...54550148 12990399 NOSIG=;
+  CCCC = EKCH;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.62;
+  #-READ ONLY- longitude = 12.65;
+  #-READ ONLY- elevation = 5;
+  #-READ ONLY- name = Koebenhavn / Kastrup;
+  #-READ ONLY- country = Denmark;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 070;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW012;
+  #-READ ONLY- temperature = -6;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 04550164;
+  #-READ ONLY- unknownGroup = 54550148;
+  #-READ ONLY- notDecoded = 12990399 NOSIG;
+}
+#==============   MESSAGE 87 ( length=56 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKBI 022350Z 15001KT CAVOK M09/M10 Q1012 09720177=;
+  CCCC = EKBI;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.73;
+  #-READ ONLY- longitude = 9.17;
+  #-READ ONLY- elevation = 75;
+  #-READ ONLY- name = Billund Lufthavn;
+  #-READ ONLY- country = Denmark;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = 150;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -9;
+  #-READ ONLY- dewPointTemperature = -10;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 09720177;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 88 ( length=77 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKYT 022350Z 09006KT 2600 -SHSN FEW006 BKN022 M04/M04...Q1013 08590299=;
+  CCCC = EKYT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 57.1;
+  #-READ ONLY- longitude = 9.85;
+  #-READ ONLY- elevation = 3;
+  #-READ ONLY- name = Aalborg;
+  #-READ ONLY- country = Denmark;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- visibilityInMetres = 2600;
+  #-READ ONLY- presentWeather1 = -SHSN;
+  #-READ ONLY- clouds1 = FEW006;
+  #-READ ONLY- clouds2 = BKN022;
+  #-READ ONLY- temperature = -4;
+  #-READ ONLY- dewPointTemperature = -4;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 08590299;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 89 ( length=84 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKRK 022350Z AUTO 31004KT 9999NDV BKN130/// M11/M12 Q1012...99920251 99951026=;
+  CCCC = EKRK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.58;
+  #-READ ONLY- longitude = 12.13;
+  #-READ ONLY- elevation = 44;
+  #-READ ONLY- name = Koebenhavn / Roskilde;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 310;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN130///;
+  #-READ ONLY- temperature = -11;
+  #-READ ONLY- dewPointTemperature = -12;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 99920251;
+  #-READ ONLY- unknownGroup = 99951026;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 90 ( length=75 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKAH 022350Z AUTO 28001KT 9999NDV BKN071/// M06/M08 Q1013...99910261=;
+  CCCC = EKAH;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.3;
+  #-READ ONLY- longitude = 10.62;
+  #-READ ONLY- elevation = 23;
+  #-READ ONLY- name = Tirstrup;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = 280;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN071///;
+  #-READ ONLY- temperature = -6;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 99910261;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 91 ( length=64 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKEB 022350Z AUTO 14007KT 9999NDV SCT130/// M07/M08 Q1012=;
+  CCCC = EKEB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.53;
+  #-READ ONLY- longitude = 8.57;
+  #-READ ONLY- elevation = 30;
+  #-READ ONLY- name = Esbjerg;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 140;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = SCT130///;
+  #-READ ONLY- temperature = -7;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 92 ( length=76 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKRN 022350Z AUTO 01008KT 9999NDV SCT009/// BKN075///...M00/M00 Q1010=;
+  CCCC = EKRN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.07;
+  #-READ ONLY- longitude = 14.75;
+  #-READ ONLY- elevation = 16;
+  #-READ ONLY- name = Roenne;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 08;
+  #-READ ONLY- windDirection = 010;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = SCT009///;
+  #-READ ONLY- clouds2 = BKN075///;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 93 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKVJ 022353Z NIL=;
+  CCCC = EKVJ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56;
+  #-READ ONLY- longitude = 8.35;
+  #-READ ONLY- elevation = 5;
+  #-READ ONLY- name = Stauning Lufthavn;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 53;
+}
+#==============   MESSAGE 94 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKSB 022353Z NIL=;
+  CCCC = EKSB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 54.97;
+  #-READ ONLY- longitude = 9.78;
+  #-READ ONLY- elevation = 7;
+  #-READ ONLY- name = Soenderborg Lufthavn;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 53;
+}
+#==============   MESSAGE 95 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKSN 022353Z NIL=;
+  CCCC = EKSN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 57.5;
+  #-READ ONLY- longitude = 10.22;
+  #-READ ONLY- elevation = 28;
+  #-READ ONLY- name = Sindal Flyveplads;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 53;
+}
+#==============   MESSAGE 96 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKVD 022353Z NIL=;
+  CCCC = EKVD;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.43;
+  #-READ ONLY- longitude = 9.33;
+  #-READ ONLY- elevation = 44;
+  #-READ ONLY- name = Vamdrup;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 53;
+}
+#==============   MESSAGE 97 ( length=23 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKOD 022353Z NIL=;
+  CCCC = EKOD;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.48;
+  #-READ ONLY- longitude = 10.33;
+  #-READ ONLY- elevation = 17;
+  #-READ ONLY- name = Odense / Beldringe;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 53;
+}
+#==============   MESSAGE 98 ( length=76 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKKA 022350Z 09003KT CAVOK M06/M08 Q1012 59910295 RMK...FEW078 SCT140=;
+  CCCC = EKKA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.3;
+  #-READ ONLY- longitude = 9.12;
+  #-READ ONLY- elevation = 52;
+  #-READ ONLY- name = Karup;
+  #-READ ONLY- country = Denmark;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -6;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 59910295;
+  #-READ ONLY- remark = FEW078 SCT140;
+}
+#==============   MESSAGE 99 ( length=65 )                 ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKSP 022350Z 00000KT CAVOK M10/M11 Q1013 RMK FEW100 SCT200=;
+  CCCC = EKSP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.23;
+  #-READ ONLY- longitude = 9.27;
+  #-READ ONLY- elevation = 43;
+  #-READ ONLY- name = Skrydstrup;
+  #-READ ONLY- country = Denmark;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -10;
+  #-READ ONLY- dewPointTemperature = -11;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- remark = FEW100 SCT200;
+}
+#==============   MESSAGE 100 ( length=95 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKHN 022350Z AUTO 20014G24KT 140V300 9999NDV SCT021///...BKN074/// BKN110/// 04/01 Q1013=;
+  CCCC = EKHN;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 14;
+  #-READ ONLY- windDirection = 200;
+  #-READ ONLY- variationInWindDirection = 140V300;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = SCT021///;
+  #-READ ONLY- clouds2 = BKN074///;
+  #-READ ONLY- clouds3 = BKN110///;
+  #-READ ONLY- temperature = 4;
+  #-READ ONLY- dewPointTemperature = 1;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 101 ( length=75 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKHR 022350Z AUTO 19014KT 9999NDV FEW020/// BKN120///...03/M02 Q1011=;
+  CCCC = EKHR;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 14;
+  #-READ ONLY- windDirection = 190;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW020///;
+  #-READ ONLY- clouds2 = BKN120///;
+  #-READ ONLY- temperature = 3;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 102 ( length=64 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EKAV 022350Z AUTO VRB01KT 9999NDV OVC058/// M02/M08 Q1013=;
+  CCCC = EKAV;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 55.08;
+  #-READ ONLY- longitude = 11.78;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Avno Danish Air Force Base ;
+  #-READ ONLY- country = Denmark;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = OVC058///;
+  #-READ ONLY- temperature = -2;
+  #-READ ONLY- dewPointTemperature = -8;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 103 ( length=90 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMCL 022340Z 27006KT 10SM  SKC 28/21 A2995...      RMK SLP132 57003 902 HZY/ISOL CI=;
+  CCCC = MMCL;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 24.82;
+  #-READ ONLY- longitude = -107.4;
+  #-READ ONLY- elevation = 39;
+  #-READ ONLY- name = Culiacan, Sin.;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 270;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- skyClear = SKC;
+  #-READ ONLY- temperature = 28;
+  #-READ ONLY- dewPointTemperature = 21;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2995;
+  #-READ ONLY- remark = SLP132 57003 902 HZY/ISOL CI;
+}
+#==============   MESSAGE 104 ( length=81 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMCN 022340Z 26005KT 10SM  SCT200 28/10 A2992...      RMK SLP132 8/001 HZY=;
+  CCCC = MMCN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 27.95;
+  #-READ ONLY- longitude = -110.8;
+  #-READ ONLY- elevation = 62;
+  #-READ ONLY- name = Ciudad Obregon;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 260;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- clouds1 = SCT200;
+  #-READ ONLY- temperature = 28;
+  #-READ ONLY- dewPointTemperature = 10;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2992;
+  #-READ ONLY- remark = SLP132 8/001 HZY;
+}
+#==============   MESSAGE 105 ( length=99 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMDO 022347Z 22009KT 14SM  FEW200 23/M05 A3018...      RMK SLP134 57006 902 8/002 DSNT CU NE=;
+  CCCC = MMDO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 24.13;
+  #-READ ONLY- longitude = -104.53;
+  #-READ ONLY- elevation = 1857;
+  #-READ ONLY- name = Durango Airport;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 47;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- visibilityInteger = 14SM;
+  #-READ ONLY- clouds1 = FEW200;
+  #-READ ONLY- temperature = 23;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3018;
+  #-READ ONLY- remark = SLP134 57006 902 8/002 DSNT CU NE;
+}
+#==============   MESSAGE 106 ( length=66 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMGM 022340Z 18007KT 10SM  SCT200 23/16 A2992 RMK 8/001 HZY=;
+  CCCC = MMGM;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 27.97;
+  #-READ ONLY- longitude = -110.93;
+  #-READ ONLY- elevation = 27;
+  #-READ ONLY- name = Guaymas International Airport;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 180;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- clouds1 = SCT200;
+  #-READ ONLY- temperature = 23;
+  #-READ ONLY- dewPointTemperature = 16;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2992;
+  #-READ ONLY- remark = 8/001 HZY;
+}
+#==============   MESSAGE 107 ( length=72 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMHO 022342Z 25004KT 12SM  SKC 29/02 A2999 RMK SLP155 52008...910=;
+  CCCC = MMHO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 29.07;
+  #-READ ONLY- longitude = -110.95;
+  #-READ ONLY- elevation = 211;
+  #-READ ONLY- name = Hermosillo, Son.;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 42;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInteger = 12SM;
+  #-READ ONLY- skyClear = SKC;
+  #-READ ONLY- temperature = 29;
+  #-READ ONLY- dewPointTemperature = 2;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2999;
+  #-READ ONLY- remark = SLP155 52008...910;
+}
+#==============   MESSAGE 108 ( length=81 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMLM 022343Z 27007KT 10SM  FEW220 26/15 A2995...      RMK SLP142 8/001 HZY=;
+  CCCC = MMLM;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 25.68;
+  #-READ ONLY- longitude = -109.08;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Los Mochis Airport;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 43;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 270;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- clouds1 = FEW220;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 15;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2995;
+  #-READ ONLY- remark = SLP142 8/001 HZY;
+}
+#==============   MESSAGE 109 ( length=87 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMLP 022344Z 36010KT 10SM  BKN200 25/15 A2998...      RMK SLP190 52013 928 8/006=;
+  CCCC = MMLP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 24.07;
+  #-READ ONLY- longitude = -110.37;
+  #-READ ONLY- elevation = 21;
+  #-READ ONLY- name = La Paz International Airport;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 44;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 360;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- clouds1 = BKN200;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 15;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2998;
+  #-READ ONLY- remark = SLP190 52013 928 8/006;
+}
+#==============   MESSAGE 110 ( length=68 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMLT 022344Z 36006KT 8SM  FEW200 25/18 A2997 RMK SLP149 8/001=;
+  CCCC = MMLT;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 26.02;
+  #-READ ONLY- longitude = -111.35;
+  #-READ ONLY- elevation = 15;
+  #-READ ONLY- name = Loreto, B. C. S.;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 44;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 360;
+  #-READ ONLY- visibilityInteger = 8SM;
+  #-READ ONLY- clouds1 = FEW200;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 18;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2997;
+  #-READ ONLY- remark = SLP149 8/001;
+}
+#==============   MESSAGE 111 ( length=86 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMML 022345Z 00000KT 10SM  SKC 26/09 A2998...      RMK SLP157 52009 963 ISOL-CI=;
+  CCCC = MMML;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32.63;
+  #-READ ONLY- longitude = -117;
+  #-READ ONLY- elevation = 22;
+  #-READ ONLY- name = Mexicali International Airport ;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 45;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- skyClear = SKC;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 9;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2998;
+  #-READ ONLY- remark = SLP157 52009 963 ISOL-CI;
+}
+#==============   MESSAGE 112 ( length=72 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMMZ 022341Z 26010KT 12SM  SKC 26/19 A2991 RMK SLP130 57003...905=;
+  CCCC = MMMZ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 23.17;
+  #-READ ONLY- longitude = -106.27;
+  #-READ ONLY- elevation = 10;
+  #-READ ONLY- name = Mazatlan / G. Buelna;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 41;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 260;
+  #-READ ONLY- visibilityInteger = 12SM;
+  #-READ ONLY- skyClear = SKC;
+  #-READ ONLY- temperature = 26;
+  #-READ ONLY- dewPointTemperature = 19;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2991;
+  #-READ ONLY- remark = SLP130 57003...905;
+}
+#==============   MESSAGE 113 ( length=90 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMSD 022346Z 15010KT 15SM  FEW040 25/18 A2998...      RMK SLP144 52009 909 8/500 CI=;
+  CCCC = MMSD;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 23.15;
+  #-READ ONLY- longitude = -109.7;
+  #-READ ONLY- elevation = 109;
+  #-READ ONLY- name = San Jose Del Cabo ;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 46;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 150;
+  #-READ ONLY- visibilityInteger = 15SM;
+  #-READ ONLY- clouds1 = FEW040;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 18;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2998;
+  #-READ ONLY- remark = SLP144 52009 909 8/500 CI;
+}
+#==============   MESSAGE 114 ( length=65 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMSL 022342Z 22009KT 12SM  SCT040 25/18 A3002 RMK 8/500 CI=;
+  CCCC = MMSL;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 42;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- visibilityInteger = 12SM;
+  #-READ ONLY- clouds1 = SCT040;
+  #-READ ONLY- temperature = 25;
+  #-READ ONLY- dewPointTemperature = 18;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3002;
+  #-READ ONLY- remark = 8/500 CI;
+}
+#==============   MESSAGE 115 ( length=90 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMTJ 022351Z 28009KT 7SM  SCT200 18/12 A3009...      RMK SLP203 57015 901 8/002 HZY=;
+  CCCC = MMTJ;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 32.55;
+  #-READ ONLY- longitude = -116.97;
+  #-READ ONLY- elevation = 152;
+  #-READ ONLY- name = Tijuana International Airport ;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 51;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 280;
+  #-READ ONLY- visibilityInteger = 7SM;
+  #-READ ONLY- clouds1 = SCT200;
+  #-READ ONLY- temperature = 18;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3009;
+  #-READ ONLY- remark = SLP203 57015 901 8/002 HZY;
+}
+#==============   MESSAGE 116 ( length=53 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFHK 022350Z VRB01KT CAVOK M17/M20 Q1012 NOSIG=;
+  CCCC = EFHK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 60.32;
+  #-READ ONLY- longitude = 24.97;
+  #-READ ONLY- elevation = 51;
+  #-READ ONLY- name = Helsinki-Vantaa;
+  #-READ ONLY- country = Finland;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -17;
+  #-READ ONLY- dewPointTemperature = -20;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 117 ( length=61 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFJY 022350Z AUTO 13002KT 9999 -SN NCD...M18/M19 Q1009=;
+  CCCC = EFJY;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 62.4;
+  #-READ ONLY- longitude = 25.68;
+  #-READ ONLY- elevation = 141;
+  #-READ ONLY- name = Jyvaskyla;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 130;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- noCloudsDetected = NCD;
+  #-READ ONLY- temperature = -18;
+  #-READ ONLY- dewPointTemperature = -19;
+  #-READ ONLY- qnhInHectoPascal = Q1009;
+  #-READ ONLY- qnh = 1009;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 118 ( length=69 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFKU 022350Z AUTO 20007KT 4900 -SN BKN012...M14/M15 Q1008 RESN=;
+  CCCC = EFKU;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 63.02;
+  #-READ ONLY- longitude = 27.8;
+  #-READ ONLY- elevation = 98;
+  #-READ ONLY- name = Kuopio;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 200;
+  #-READ ONLY- visibilityInMetres = 4900;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = BKN012;
+  #-READ ONLY- temperature = -14;
+  #-READ ONLY- dewPointTemperature = -15;
+  #-READ ONLY- qnhInHectoPascal = Q1008;
+  #-READ ONLY- qnh = 1008;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 119 ( length=61 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFOU 022350Z AUTO 02003KT CAVOK M19/M21 Q1009 120/0084=;
+  CCCC = EFOU;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 64.93;
+  #-READ ONLY- longitude = 25.37;
+  #-READ ONLY- elevation = 12;
+  #-READ ONLY- name = Oulu;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 03;
+  #-READ ONLY- windDirection = 020;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -19;
+  #-READ ONLY- dewPointTemperature = -21;
+  #-READ ONLY- qnhInHectoPascal = Q1009;
+  #-READ ONLY- qnh = 1009;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- skippedGroup = 120/0084;
+  #-READ ONLY- notDecoded = ;
+}
+#==============   MESSAGE 120 ( length=71 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFRO 022350Z AUTO 03002KT 6000 -SG SCT022...BKN030 M12/M13 Q1008=;
+  CCCC = EFRO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 66.57;
+  #-READ ONLY- longitude = 25.83;
+  #-READ ONLY- elevation = 197;
+  #-READ ONLY- name = Rovaniemi;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 030;
+  #-READ ONLY- visibilityInMetres = 6000;
+  #-READ ONLY- presentWeather1 = -SG;
+  #-READ ONLY- clouds1 = SCT022;
+  #-READ ONLY- clouds2 = BKN030;
+  #-READ ONLY- temperature = -12;
+  #-READ ONLY- dewPointTemperature = -13;
+  #-READ ONLY- qnhInHectoPascal = Q1008;
+  #-READ ONLY- qnh = 1008;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 121 ( length=73 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFTP 022350Z AUTO VRB02KT 3200 -SHSN BKN130...BKN145 M19/M21 Q1011=;
+  CCCC = EFTP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 61.42;
+  #-READ ONLY- longitude = 23.58;
+  #-READ ONLY- elevation = 112;
+  #-READ ONLY- name = Tampere / Pirkkala;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 3200;
+  #-READ ONLY- presentWeather1 = -SHSN;
+  #-READ ONLY- clouds1 = BKN130;
+  #-READ ONLY- clouds2 = BKN145;
+  #-READ ONLY- temperature = -19;
+  #-READ ONLY- dewPointTemperature = -21;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 122 ( length=63 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFTU 022350Z AUTO VRB02KT CAVOK M17/M18 Q1011 R08/92//86=;
+  CCCC = EFTU;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 60.52;
+  #-READ ONLY- longitude = 22.27;
+  #-READ ONLY- elevation = 49;
+  #-READ ONLY- name = Turku;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- cavok = CAVOK;
+  #-READ ONLY- temperature = -17;
+  #-READ ONLY- dewPointTemperature = -18;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R08/92//86;
+}
+#==============   MESSAGE 123 ( length=98 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EFVA 022350Z AUTO 18004KT 9999 -SN FEW014/// BKN037///...BKN098/// M13/M14 Q1010 R16/410195=;
+  CCCC = EFVA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 63.05;
+  #-READ ONLY- longitude = 21.77;
+  #-READ ONLY- elevation = 4;
+  #-READ ONLY- name = Vaasa;
+  #-READ ONLY- country = Finland;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 180;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = FEW014///;
+  #-READ ONLY- clouds2 = BKN037///;
+  #-READ ONLY- clouds3 = BKN098///;
+  #-READ ONLY- temperature = -13;
+  #-READ ONLY- dewPointTemperature = -14;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R16/410195;
+}
+#==============   MESSAGE 124 ( length=90 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDB 022350Z 32005KT 8000 -SN FEW005 SCT016 BKN038 00/M01 Q1011...     TEMPO BKN008=;
+  CCCC = EDDB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 52.38;
+  #-READ ONLY- longitude = 13.52;
+  #-READ ONLY- elevation = 47;
+  #-READ ONLY- name = Berlin-Schoenefeld;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 320;
+  #-READ ONLY- visibilityInMetres = 8000;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = FEW005;
+  #-READ ONLY- clouds2 = SCT016;
+  #-READ ONLY- clouds3 = BKN038;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -1;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- clouds1Trend1 = BKN008;
+}
+#==============   MESSAGE 125 ( length=78 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDC 022350Z 30005KT 4500 -SG BR BKN003 M01/M01 Q1010...     R04/690394=;
+  CCCC = EDDC;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 51.13;
+  #-READ ONLY- longitude = 13.75;
+  #-READ ONLY- elevation = 230;
+  #-READ ONLY- name = Dresden-Klotzsche;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- visibilityInMetres = 4500;
+  #-READ ONLY- presentWeather1 = -SG;
+  #-READ ONLY- presentWeather2 = BR;
+  #-READ ONLY- clouds1 = BKN003;
+  #-READ ONLY- temperature = -1;
+  #-READ ONLY- dewPointTemperature = -1;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R04/690394;
+}
+#==============   MESSAGE 126 ( length=82 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDE 022350Z 30006KT 9999 -SN SCT010 BKN043 M00/M01 Q1012...     R88/550246=;
+  CCCC = EDDE;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 50.98;
+  #-READ ONLY- longitude = 10.97;
+  #-READ ONLY- elevation = 315;
+  #-READ ONLY- name = Erfurt-Bindersleben;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 06;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- clouds1 = SCT010;
+  #-READ ONLY- clouds2 = BKN043;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -1;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R88/550246;
+}
+#==============   MESSAGE 127 ( length=57 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDG 022350Z VRB01KT 9999 BKN030 01/00 Q1015 NOSIG=;
+  CCCC = EDDG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 52.13;
+  #-READ ONLY- longitude = 7.7;
+  #-READ ONLY- elevation = 48;
+  #-READ ONLY- name = Muenster / Osnabrueck;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 01;
+  #-READ ONLY- windDirection = Variable;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = BKN030;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- nosig = NOSIG;
+}
+#==============   MESSAGE 128 ( length=78 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDP 022350Z 31009KT 4200 -SN BR BKN004 00/00 Q1012 TEMPO...     BKN005=;
+  CCCC = EDDP;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 51.42;
+  #-READ ONLY- longitude = 12.23;
+  #-READ ONLY- elevation = 144;
+  #-READ ONLY- name = Leipzig-Schkeuditz;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 310;
+  #-READ ONLY- visibilityInMetres = 4200;
+  #-READ ONLY- presentWeather1 = -SN;
+  #-READ ONLY- presentWeather2 = BR;
+  #-READ ONLY- clouds1 = BKN004;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = 0;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- changeIndicatorCodedTrend1 = TEMPO;
+  #-READ ONLY- clouds1Trend1 = BKN005;
+}
+#==============   MESSAGE 129 ( length=77 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDR 022350Z 25008KT 9999 FEW008 BKN050 00/M01 Q1017...     R27/290195=;
+  CCCC = EDDR;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 49.22;
+  #-READ ONLY- longitude = 7.12;
+  #-READ ONLY- elevation = 322;
+  #-READ ONLY- name = Saarbruecken / Ensheim;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 08;
+  #-READ ONLY- windDirection = 250;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW008;
+  #-READ ONLY- clouds2 = BKN050;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -1;
+  #-READ ONLY- qnhInHectoPascal = Q1017;
+  #-READ ONLY- qnh = 1017;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R27/290195;
+}
+#==============   MESSAGE 130 ( length=63 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR EDDW 022350Z 22002KT 9999 BKN022 01/M02 Q1014 R88/290194=;
+  CCCC = EDDW;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 53.05;
+  #-READ ONLY- longitude = 8.8;
+  #-READ ONLY- elevation = 3;
+  #-READ ONLY- name = Bremen;
+  #-READ ONLY- country = Germany;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 220;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = BKN022;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = -2;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- runwayState1 = R88/290194;
+}
+#==============   MESSAGE 131 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMAD 022330Z NIL=;
+  CCCC = OMAD;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 24.43;
+  #-READ ONLY- longitude = 54.47;
+  #-READ ONLY- elevation = 5;
+  #-READ ONLY- name = Abu Dhabi Bateen Airport;
+  #-READ ONLY- country = United Arab Emirates;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+}
+#==============   MESSAGE 132 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMAH 022330Z NIL=;
+  CCCC = OMAH;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+}
+#==============   MESSAGE 133 ( length=54 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMAM 022330Z 00000KT 9999NDV FEW030 18/14 Q1014=;
+  CCCC = OMAM;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW030;
+  #-READ ONLY- temperature = 18;
+  #-READ ONLY- dewPointTemperature = 14;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 134 ( length=72 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMDL 022330Z AUTO 30005KT 260V360 /////NDV //// ///// 19/12 Q1015=;
+  CCCC = OMDL;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 300;
+  #-READ ONLY- variationInWindDirection = 260V360;
+  #-READ ONLY- visibilityInMetres = /////NDV;
+  #-READ ONLY- missingField1 = ////;
+  #-READ ONLY- missingField2 = /////;
+  #-READ ONLY- temperature = 19;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 135 ( length=64 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMDM 022330Z AUTO 24002KT /////NDV //// ///// 17/15 Q1013=;
+  CCCC = OMDM;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 240;
+  #-READ ONLY- visibilityInMetres = /////NDV;
+  #-READ ONLY- missingField1 = ////;
+  #-READ ONLY- missingField2 = /////;
+  #-READ ONLY- temperature = 17;
+  #-READ ONLY- dewPointTemperature = 15;
+  #-READ ONLY- qnhInHectoPascal = Q1013;
+  #-READ ONLY- qnh = 1013;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 136 ( length=53 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMLW 022330Z 00000KT 8000NDV ///// 16/12 Q1014=;
+  CCCC = OMLW;
+  #-READ ONLY- coordinatesPresent = 0;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = 8000NDV;
+  #-READ ONLY- missingField1 = /////;
+  #-READ ONLY- temperature = 16;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHectoPascal = Q1014;
+  #-READ ONLY- qnh = 1014;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 137 ( length=64 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMMZ 022330Z AUTO 31002KT /////NDV //// ///// 17/12 Q0997=;
+  CCCC = OMMZ;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 02;
+  #-READ ONLY- windDirection = 310;
+  #-READ ONLY- visibilityInMetres = /////NDV;
+  #-READ ONLY- missingField1 = ////;
+  #-READ ONLY- missingField2 = /////;
+  #-READ ONLY- temperature = 17;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHectoPascal = Q0997;
+  #-READ ONLY- qnh = 0997;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 138 ( length=64 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMSN 022330Z AUTO 00000KT /////NDV //// ///// 21/14 Q1019=;
+  CCCC = OMSN;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 00;
+  #-READ ONLY- windDirection = 000;
+  #-READ ONLY- visibilityInMetres = /////NDV;
+  #-READ ONLY- missingField1 = ////;
+  #-READ ONLY- missingField2 = /////;
+  #-READ ONLY- temperature = 21;
+  #-READ ONLY- dewPointTemperature = 14;
+  #-READ ONLY- qnhInHectoPascal = Q1019;
+  #-READ ONLY- qnh = 1019;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 139 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMSW 022330Z NIL=;
+  CCCC = OMSW;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+}
+#==============   MESSAGE 140 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR OMTH 022330Z NIL=;
+  CCCC = OMTH;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 30;
+}
+#==============   MESSAGE 141 ( length=55 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MMIO 022340Z 36010KT 10SM SKC 19/12 A3013 RMK SC=;
+  CCCC = MMIO;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 25.45;
+  #-READ ONLY- longitude = -100.98;
+  #-READ ONLY- elevation = 1790;
+  #-READ ONLY- name = Saltillo, Coah.;
+  #-READ ONLY- country = Mexico;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 40;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 360;
+  #-READ ONLY- visibilityInteger = 10SM;
+  #-READ ONLY- skyClear = SKC;
+  #-READ ONLY- temperature = 19;
+  #-READ ONLY- dewPointTemperature = 12;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3013;
+  #-READ ONLY- remark = SC;
+}
+#==============   MESSAGE 142 ( length=86 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...MNMG 030000Z 09004KT 9999 FEW020 29/19 Q1011 A2986 1AC060 1CI300...     NOSIG=;
+  CCCC = MNMG;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 12.15;
+  #-READ ONLY- longitude = -86.17;
+  #-READ ONLY- elevation = 50;
+  #-READ ONLY- name = Managua A. C. Sandino;
+  #-READ ONLY- country = Nicaragua;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 04;
+  #-READ ONLY- windDirection = 090;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW020;
+  #-READ ONLY- temperature = 29;
+  #-READ ONLY- dewPointTemperature = 19;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A2986;
+  #-READ ONLY- skippedGroup = 1AC060;
+  #-READ ONLY- unknownGroup = 1CI300;
+  #-READ ONLY- notDecoded = NOSIG;
+}
+#==============   MESSAGE 143 ( length=41 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR...KEHA 022348Z AUTO 16009KT 11/M04=;
+  CCCC = KEHA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 37;
+  #-READ ONLY- longitude = -101.88;
+  #-READ ONLY- elevation = 1104;
+  #-READ ONLY- name = Elkhart, Elkhart-Morton County Airport;
+  #-READ ONLY- country = United States;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 48;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 160;
+  #-READ ONLY- visibilityInteger = 11/M04;
+}
+#==============   MESSAGE 144 ( length=51 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR MYNN 030000Z 05010KT 9999 FEW022 24/18 A3014=;
+  CCCC = MYNN;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 25.05;
+  #-READ ONLY- longitude = -77.47;
+  #-READ ONLY- elevation = 3;
+  #-READ ONLY- name = Nassau Airport;
+  #-READ ONLY- country = Bahamas, The;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 03;
+  #-READ ONLY- hour = 00;
+  #-READ ONLY- minute = 00;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 10;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = FEW022;
+  #-READ ONLY- temperature = 24;
+  #-READ ONLY- dewPointTemperature = 18;
+  #-READ ONLY- qnhInHundrethsOfInchOfMercury = A3014;
+}
+#==============   MESSAGE 145 ( length=46 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENDR 022350Z AUTO 15005KT M02/M07 Q1015=;
+  CCCC = ENDR;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 64.68;
+  #-READ ONLY- longitude = 8.28;
+  #-READ ONLY- elevation = 0;
+  #-READ ONLY- name = Draugen;
+  #-READ ONLY- country = Norway;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 05;
+  #-READ ONLY- windDirection = 150;
+  #-READ ONLY- temperature = -2;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+}
+#==============   MESSAGE 146 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENEK 022350Z NIL=;
+  CCCC = ENEK;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 56.55;
+  #-READ ONLY- longitude = 3.25;
+  #-READ ONLY- elevation = 3;
+  #-READ ONLY- name = Ekofisk Oil Platform;
+  #-READ ONLY- country = Norway;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 147 ( length=59 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENGC 022350Z 06023KT 9999 BKN033 02/M06 Q1011 W06/S5=;
+  CCCC = ENGC;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 61.03;
+  #-READ ONLY- longitude = 2.03;
+  #-READ ONLY- elevation = 10;
+  #-READ ONLY- name = Gullfax Platform ;
+  #-READ ONLY- country = Norway;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 23;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = BKN033;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -6;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W06/S5;
+}
+#==============   MESSAGE 148 ( length=59 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENHE 022350Z 02009KT 9999 BKN040 00/M10 Q1015 W03/S4=;
+  CCCC = ENHE;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 65.82;
+  #-READ ONLY- longitude = 2.92;
+  #-READ ONLY- elevation = 0;
+  #-READ ONLY- name = Heidrun;
+  #-READ ONLY- country = Norway;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 09;
+  #-READ ONLY- windDirection = 020;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = BKN040;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -10;
+  #-READ ONLY- qnhInHectoPascal = Q1015;
+  #-READ ONLY- qnh = 1015;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W03/S4;
+}
+#==============   MESSAGE 149 ( length=59 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENOA 022350Z 04017KT 9999 SCT032 00/M07 Q1010 W///S4=;
+  CCCC = ENOA;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 59.32;
+  #-READ ONLY- longitude = 10.45;
+  #-READ ONLY- elevation = 15;
+  #-READ ONLY- name = Oseberg ;
+  #-READ ONLY- country = Norway;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 17;
+  #-READ ONLY- windDirection = 040;
+  #-READ ONLY- visibilityInMetres = 9999;
+  #-READ ONLY- clouds1 = SCT032;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S4;
+}
+#==============   MESSAGE 150 ( length=83 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENSL 022350Z AUTO 06012KT 9999NDV BKN034/// 03/M05 Q1009...           W06/S4=;
+  CCCC = ENSL;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 12;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN034///;
+  #-READ ONLY- temperature = 3;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHectoPascal = Q1009;
+  #-READ ONLY- qnh = 1009;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W06/S4;
+}
+#==============   MESSAGE 151 ( length=83 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENFB 022350Z AUTO 04021KT 9999NDV BKN038/// 02/M05 Q1011...           W///S5=;
+  CCCC = ENFB;
+  #-READ ONLY- coordinatesPresent = 1;
+  #-READ ONLY- latitude = 59.9;
+  #-READ ONLY- longitude = 10.63;
+  #-READ ONLY- elevation = 1;
+  #-READ ONLY- name = Oslo / Fornebu;
+  #-READ ONLY- country = Norway;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 21;
+  #-READ ONLY- windDirection = 040;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN038///;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -5;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S5;
+}
+#==============   MESSAGE 152 ( length=93 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENSF 022350Z AUTO 05022KT 9999NDV FEW038/// SCT042/// 02/M06...           Q1011 W///S5=;
+  CCCC = ENSF;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 22;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW038///;
+  #-READ ONLY- clouds2 = SCT042///;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -6;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S5;
+}
+#==============   MESSAGE 153 ( length=23 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENNE 022350Z NIL=;
+  CCCC = ENNE;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- nil = NIL;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+}
+#==============   MESSAGE 154 ( length=104 )               ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENQR 022350Z AUTO 06015G26KT 040V110 9999NDV BKN035///...           BKN039/// 02/M06 Q1011 W///S5=;
+  CCCC = ENQR;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 15;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- variationInWindDirection = 040V110;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN035///;
+  #-READ ONLY- clouds2 = BKN039///;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -6;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S5;
+}
+#==============   MESSAGE 155 ( length=93 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENSE 022350Z AUTO 05024KT 9999NDV FEW033/// BKN038/// 01/M07...           Q1012 W///S5=;
+  CCCC = ENSE;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 24;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW033///;
+  #-READ ONLY- clouds2 = BKN038///;
+  #-READ ONLY- temperature = 1;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1012;
+  #-READ ONLY- qnh = 1012;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S5;
+}
+#==============   MESSAGE 156 ( length=83 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENQC 022350Z AUTO 06012KT 9999NDV FEW030/// 00/M07 Q1010...           W///S4=;
+  CCCC = ENQC;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 12;
+  #-READ ONLY- windDirection = 060;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = FEW030///;
+  #-READ ONLY- temperature = 0;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W///S4;
+}
+#==============   MESSAGE 157 ( length=65 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENQA 022350Z AUTO 05012KT 9999NDV NCD M01/M09 Q1011 W03/S4=;
+  CCCC = ENQA;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 12;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- noCloudsDetected = NCD;
+  #-READ ONLY- temperature = -1;
+  #-READ ONLY- dewPointTemperature = -9;
+  #-READ ONLY- qnhInHectoPascal = Q1011;
+  #-READ ONLY- qnh = 1011;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W03/S4;
+}
+#==============   MESSAGE 158 ( length=91 )                ==============
+METAR {
+  #-READ ONLY- theMessage = METAR ENHM 022350Z AUTO 05007KT 360V100 9999NDV BKN041/// 02/M07...           Q1010 W08/S4=;
+  CCCC = ENHM;
+  #-READ ONLY- coordinatesPresent = 0;
+  #-READ ONLY- auto = AUTO;
+  year = 2015;
+  month = 4;
+  #-READ ONLY- day = 02;
+  #-READ ONLY- hour = 23;
+  #-READ ONLY- minute = 50;
+  #-READ ONLY- windUnits = knots;
+  #-READ ONLY- windSpeed = 07;
+  #-READ ONLY- windDirection = 050;
+  #-READ ONLY- variationInWindDirection = 360V100;
+  #-READ ONLY- visibilityInMetres = 9999NDV;
+  #-READ ONLY- clouds1 = BKN041///;
+  #-READ ONLY- temperature = 2;
+  #-READ ONLY- dewPointTemperature = -7;
+  #-READ ONLY- qnhInHectoPascal = Q1010;
+  #-READ ONLY- qnh = 1010;
+  #-READ ONLY- qnhUnits = hPa;
+  #-READ ONLY- seaState = W08/S4;
+}

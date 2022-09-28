@@ -1,0 +1,17 @@
+Description: Since lbpng and libaec are used, eccodes needs to link against them
+Author: Alastair McKinstry <mckinstry@debian.org>
+Last-Updated: 2020-10-18
+Forwarded: no
+  A better fix would be to make these conditional
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -195,7 +195,7 @@
+ ###############################################################################
+ # macro processing
+ 
+-set( ECCODES_EXTRA_LIBRARIES    "" )
++set( ECCODES_EXTRA_LIBRARIES    png;aec )
+ set( ECCODES_EXTRA_INCLUDE_DIRS "" )
+ set( ECCODES_EXTRA_DEFINITIONS  "" )
+ 

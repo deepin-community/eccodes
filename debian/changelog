@@ -1,0 +1,474 @@
+eccodes (2.23.0-2) unstable; urgency=medium
+
+  * Rebuild against gfortran-11 to provide grib_api.mod
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 11 Oct 2021 13:01:15 +0100
+
+eccodes (2.23.0-1.1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Fix 'Flow control statements are not properly nested' error.
+    (closes: #995328)
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 30 Sep 2021 08:52:35 +0100
+
+eccodes (2.23.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.6.0
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 28 Aug 2021 09:51:07 +0100
+
+eccodes (2.22.1-2) unstable; urgency=medium
+
+  * Push to unstable
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 16 Aug 2021 04:38:24 +0100
+
+eccodes (2.22.1-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 21 Jun 2021 11:38:18 +0100
+
+eccodes (2.22.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 23 May 2021 14:49:58 +0100
+
+eccodes (2.21.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.5.1
+  * Move branches in d/gbp.conf to DEP-14 names
+  * Point vcs-git to debian/latest branch
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 26 Mar 2021 13:15:42 +0000
+
+eccodes (2.20.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 21 Jan 2021 12:30:31 +0000
+
+eccodes (2.19.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 11 Nov 2020 08:17:42 +0000
+
+eccodes (2.19.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Set ECCODES_EXTRA_LIBRARIES to -lpng, -laec
+  * Library versions changed 0.0.0 -> 0
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 18 Oct 2020 18:18:46 +0100
+
+eccodes (2.18.0-4) unstable; urgency=medium
+
+  * Fix build to ensure dpkg-builpackage -A works
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 24 Jul 2020 17:13:15 +0100
+
+eccodes (2.18.0-3) unstable; urgency=medium
+
+  * Disable arg-mismatch warnings on gfortran-10. Closes: #957159
+  * Move to debhelper 13
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 22 Jul 2020 10:55:44 +0100
+
+eccodes (2.18.0-2) unstable; urgency=medium
+
+  * Backout incomplete gfortran-10 patch. Closes: #964110
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 02 Jul 2020 13:20:59 +0100
+
+eccodes (2.18.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 01 Jul 2020 16:48:26 +0100
+
+eccodes (2.17.0-2) unstable; urgency=medium
+
+  * Use ecbuild rather than cmake buildsystem
+  * Rebuild against latest dh-fortran-mod for gfortran-10 transition
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 23 Apr 2020 11:04:05 +0100
+
+eccodes (2.17.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.5.0
+  * Use dh-sequence-fortran-mod instead of --with fortran_mod
+  * ecbuild.patch: Fix path for check_linker to look in
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 14 Mar 2020 16:34:06 +0000
+
+eccodes (2.16.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 16 Jan 2020 10:19:57 +0000
+
+eccodes (2.15.0-1) unstable; urgency=medium
+
+  * Drop Fortran-Mod: clause in d/control; dh_fortran_mod now uses
+    ${misc:Depends} instead. 
+  * New upstream release
+  * Standards-Version: 4.4.1.0
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 29 Nov 2019 14:00:37 +0000
+
+eccodes (2.14.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 13 Oct 2019 08:17:15 +0100
+
+eccodes (2.14.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 07 Oct 2019 13:37:13 +0100
+
+eccodes (2.13.1-2) unstable; urgency=medium
+
+  * Use ecbuild rather than cmake.
+  * Rebuild with gfortran-9 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 15 Aug 2019 15:14:30 +0100
+
+eccodes (2.13.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix data samples path in magics-import.cmake for metview 5.6
+  * Now need to chrpath -d grib_to_netcdf
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 12 Aug 2019 08:22:44 +0100
+
+eccodes (2.13.0-3) unstable; urgency=medium
+
+  * Fix d/rules regression in cmake file editing. Closes: #933359
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 05 Aug 2019 16:31:30 +0100
+
+eccodes (2.13.0-2) unstable; urgency=medium
+
+  * d/rules: cmake config changes in paths needed for magics++
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 28 Jul 2019 10:36:07 +0100
+
+eccodes (2.13.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.4.0
+  * Now use debhelper-compat 12
+  * Drop python support; now supplied in separate src package
+  * d/rules changes because cmake files now installed ib /usr/lib
+    upstream
+  * Add ifs_samples to libeccodes-data/install
+  * Change needed to docs because DH_COMPAT=12 installs in
+    /usr/share/doc/libeccodes-dev
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 21 Jul 2019 14:20:51 +0100
+
+eccodes (2.12.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 13 Jun 2019 14:35:54 +0100
+
+eccodes (2.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * B-D on gfortran | fortran-compiler
+  * Add README.md, NOTICE, NEWS to docs
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 16 Feb 2019 08:39:23 +0000
+
+eccodes (2.10.0-3) unstable; urgency=medium
+
+  * Standards-Version: 4.3.0
+  * Build against dh-fortran-mod (>= 0.11) for canonical compiler link
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 07 Jan 2019 19:24:37 +0000
+
+eccodes (2.10.0-2) unstable; urgency=medium
+
+  * Rebuild with dh-fortran-mod 0.7 for postrm script error.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 21 Dec 2018 06:58:43 +0000
+
+eccodes (2.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop call to dpkg-parsechangelog in d/rules
+  * Use dh-fortran-mod >= 0.5, with Fortran-Mod
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 19 Dec 2018 07:26:15 +0000
+
+eccodes (2.9.2-4) unstable; urgency=medium
+
+  * Remove links to eccodes_memfs, too. Closes: #915014
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 29 Nov 2018 16:04:28 +0000
+
+eccodes (2.9.2-3) unstable; urgency=medium
+
+  * Disable MEMFS usage to pick up defs changes
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 19 Nov 2018 13:05:13 +0000
+
+eccodes (2.9.2-2) unstable; urgency=medium
+
+  * Don't use hard-coded python. Closes: #913270
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 14 Nov 2018 12:00:29 +0000
+
+eccodes (2.9.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 13 Nov 2018 07:05:48 +0000
+
+eccodes (2.9.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Undo hard-coded gfortran-8; now the default
+  * Update URLs in debian/watch
+  * Standards-Version: 4.2.1
+  * Drop hard-coded xz compression in d/source/options
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 30 Sep 2018 12:43:23 +0100
+
+eccodes (2.8.0-4) unstable; urgency=medium
+
+  * Fix cmake files regression in d/rules
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 13 Jul 2018 14:16:49 +0100
+
+eccodes (2.8.0-3) unstable; urgency=medium
+
+  * Standards-Version: 4.1.5
+  * Fix paths installed in eccodes cmake files that breaks odb-api
+ 
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 11 Jul 2018 19:04:49 +0100
+
+eccodes (2.8.0-2) unstable; urgency=medium
+
+  * Add support for python3.7
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 05 Jul 2018 13:55:49 +0100
+
+eccodes (2.8.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop redundant X-Python-Version >= 2.7 clause
+  * Drop unused disable-tests patch
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 27 Jun 2018 07:11:51 +0100
+
+eccodes (2.7.3-3) unstable; urgency=medium
+
+  * Fix FTBFS with dpkg-buildpackage -A. Closes: #901106.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 10 Jun 2018 16:49:58 +0100
+
+eccodes (2.7.3-2) unstable; urgency=medium
+
+  * Compile with gfortran-8 for fortran transition.
+  * Use dh-fortran-mod to track fortran version
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 06 May 2018 15:42:45 +0100
+
+eccodes (2.7.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.1.4; no changes required
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 20 Apr 2018 06:22:48 +0100
+
+eccodes (2.7.0-3) unstable; urgency=medium
+
+  * Move /usr/include/* to /usr/include/$(TRIPLET)
+  * Mark libeccodes-dev as Multi-Arch: same
+  * Drop sanitize-path script for mod files; changes now in gfortran
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 22 Mar 2018 15:47:12 +0000
+
+eccodes (2.7.0-2) unstable; urgency=medium
+
+  * Don't build with OMP_THREADS on hppa. Closes: #892575
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 15 Mar 2018 11:51:10 +0000
+
+eccodes (2.7.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 02 Mar 2018 18:14:10 +0000
+
+eccodes (2.6.0-2) unstable; urgency=medium
+
+  * Point VCS in debian/control to salsa.debian.org
+  * Standards-Version: 4.1.3; no changes required
+  * Drop build-path of filename from gfortran mod files for reproducibility
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 01 Feb 2018 11:23:32 +0000
+
+eccodes (2.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.1.2; no changes required
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 24 Dec 2017 07:15:53 +0000
+
+eccodes (2.5.0-4) unstable; urgency=medium
+
+  * Re-enable DISABLE_OS_CHECK. 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 20 Nov 2017 09:13:49 +0000
+
+eccodes (2.5.0-3) unstable; urgency=medium
+
+  * Also sanitize eccodes_ecbuild_config.h for reproducibility
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 21 Oct 2017 19:08:30 +0100
+
+eccodes (2.5.0-2) unstable; urgency=medium
+
+  * Sanitize cmake scripts further, removing build paths for reproduciblity.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 11 Oct 2017 13:19:59 +0100
+
+eccodes (2.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version: 4.1.1
+  * Remove obsolete DISABLE_OS_CHECK
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 03 Oct 2017 19:56:11 +0100
+
+eccodes (2.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - patches reqfreshed.
+    - patch for cmake fix obsolete; fixed upstream
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 13 Aug 2017 12:00:20 +0100
+
+eccodes (2.4.0-4) unstable; urgency=medium
+
+  * FIx URLs for git repo in debian/control. Closes: #868297
+  * Add B-D on libnetcdf-dev.
+  * Fix for FTFBS with cmake-3.9.0. Closes: #870040
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 30 Jul 2017 07:42:22 +0100
+
+eccodes (2.4.0-3) experimental; urgency=medium
+
+  * Now build with memfs support
+  * Add debian/gbp.conf file for git branches
+  * Re-enable tests by default
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 21 Jul 2017 15:20:49 +0100
+
+eccodes (2.4.0-2) unstable; urgency=medium
+
+  * Standards-Version: 4.0.0; no changes required
+  * Support all python3 versions. Closes: #867531
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 10 Jul 2017 12:59:21 +0100
+
+eccodes (2.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+   - Don't include all /usr/bin/* in libeeccodes-tools.install
+   - Fixes to py3 for python3
+  * Fix symlink in docs. Closes: 866161
+  * Add watch file
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 03 Jul 2017 12:16:13 +0100
+
+eccodes (2.3.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 23 Jun 2017 00:19:12 +0100
+
+eccodes (2.2.0-1) expetimental; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 25 Mar 2017 10:33:28 +0000
+
+eccodes (2.1.0-1) experimental; urgency=medium
+
+  * New upstream release
+   - hurd patch now merged upstream
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 17 Feb 2017 20:20:18 +0000
+
+eccodes (2.0.2-5) unstable; urgency=medium
+
+  * Change deps on libeccodes-tools: put mksh,pdksh ahead of RC-buggy ksh
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 23 Dec 2016 16:03:15 +0000
+
+eccodes (2.0.2-4) unstable; urgency=medium
+
+  * Add versioned Breaks on libemos-bin. Closes: #847146.
+  * Ack. previously fixed bug: Closes: #846561
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 07 Dec 2016 10:14:27 +0000
+
+eccodes (2.0.2-3) unstable; urgency=medium
+
+  * Add Breaks/Replaces python3-eccodes / python3-gribapi. Closes: #847146
+  * Minor fixes to gribapi.py for python3
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 06 Dec 2016 10:45:03 +0000
+
+eccodes (2.0.2-2) unstable; urgency=medium
+
+  * eccodes-targets-release.cmake: change /usr/lib to M-A directory in ./rules
+    needed by emoslib, magics++, etc.
+  * Mark libeccodes0 as M-A: same
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 29 Nov 2016 15:19:47 +0000
+
+eccodes (2.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 28 Nov 2016 15:09:45 +0000
+
+eccodes (2.0.0-2) unstable; urgency=medium
+
+  * Split dh_fixperms for dpkg-buildpackage -A . Closes: #844167
+  * Mark --no-parallel. Parallel builds currently unsafe. 
+    Closes: #844172, #844174
+  * Split data from libeccodes0 library to separate package. Closes: #844065
+  * Move souce package from "libdevel" section to "science"
+  * Set libeccodes-doc as multi-arch: foreign
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 14 Nov 2016 08:48:02 +0000
+
+eccodes (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Openjpeg2 patch now merged upstream
+    - add remove-rpms.patch to remove refs to missing files
+  * Additional copyright notices, thanks to Thorsten Alteholz
+  * Now link to libjquery-js for jquery.js docs
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 28 Oct 2016 06:53:26 +0100
+
+eccodes (0.16.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #815890)
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 29 Jul 2016 05:06:19 +0100

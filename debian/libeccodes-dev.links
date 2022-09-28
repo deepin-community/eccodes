@@ -1,0 +1,2 @@
+/usr/lib/${DEB_HOST_MULTIARCH}/libeccodes.so.0 /usr/lib/${DEB_HOST_MULTIARCH}/libeccodes.so
+/usr/lib/${DEB_HOST_MULTIARCH}/libeccodes_f90.so.0 /usr/lib/${DEB_HOST_MULTIARCH}/libeccodes_f90.so

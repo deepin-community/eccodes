@@ -1,0 +1,56 @@
+From: Dragoslav Sicarov <Dragoslav.Sicarov@imgtec.com>
+Subject: FTBFS: grib-api - tests fail for mips
+Date: Sun, 29 Dec 2013 15:13:16 +0000
+Forwarded: https://software.ecmwf.int/issues/browse/SUP-1589
+Last-Updated: 2016-07-27
+
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733510
+
+FTBFS: 21 of 38 tests fail when trying to build package from source on
+mips. Part of build log has been attached.
+
+The root cause of failing tests for mips is in function
+grib_encode_unsigned_long() that is used for writing into grib message
+buffer (function is implemented differently for big-endian and
+little-endian architectures).
+
+On big-endian architectures, function uses shift operations, where in
+some corner-case situations left operand (which is of type unsigned
+long; size of long equals 4 bytes for 32bit system) is shifted right by
+32 bits.
+
+According to C standard, if the value of the right operand of shift
+operation is negative, or is greater than or equal to the width of the
+left operand, the behaviour is undefined.
+
+On 32-bit mips architecture shift operations by a variable number of
+bits are translated to/use 'srlv' and 'sllv' instructions which shift
+left operand by (right_operand mod 32) bits. In case of shifting by 32
+bits, this results in left operand being unchanged. However, in order
+for this package to function properly a result of 0 is expected.
+
+Proposed patch fixes these corner-cases by setting the result of shift
+operation to 0 if right operand is greater than or equal to size of long
+(actually, no shifting is performed, the result is set to zero).
+
+--- a/src/grib_bits_fast_big_endian.c
++++ b/src/grib_bits_fast_big_endian.c
+@@ -196,8 +196,16 @@
+         countOfLeftmostBits = max_nbits - startBit;
+         startBit            = max_nbits - remainingBits;
+         remainingBits -= countOfLeftmostBits;
+-        destination[nextWord] =
+-            ((destination[nextWord] >> countOfLeftmostBits) << countOfLeftmostBits) + (VALUE(val, startBit, countOfLeftmostBits));
++	if (countOfLeftmostBits < max_nbits)
++	  {
++	    destination[nextWord] =
++	      ((destination[nextWord] >> countOfLeftmostBits) << countOfLeftmostBits)
++	      + (VALUE(val,startBit,countOfLeftmostBits));
++	  }
++	else
++	  {
++	    destination[nextWord] = (VALUE(val,startBit,countOfLeftmostBits));
++	  }
+         startBit = 0;
+         nextWord++;
+     }

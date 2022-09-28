@@ -1,0 +1,19 @@
+--- a/memfs/CMakeLists.txt
++++ b/memfs/CMakeLists.txt
+@@ -50,7 +50,15 @@
+ endif()
+ 
+ if( HAVE_MEMFS )
+-    ecbuild_add_library(TARGET    eccodes_memfs
++  ecbuild_add_library(TARGET    eccodes_memfs
++    VERSION 0
++    CFLAGS ${CFLAGS}
++                        SOURCES   ${generated_c_files}
++                        GENERATED ${generated_c_files})
++  ecbuild_add_library(TARGET    eccodes_memfs_static
++    VERSION 0
++    CFLAGS ${CFLAGS}
++    TYPE static 
+                         SOURCES   ${generated_c_files}
+                         GENERATED ${generated_c_files})
+ endif()

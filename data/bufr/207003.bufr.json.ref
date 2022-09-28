@@ -1,0 +1,894 @@
+{ "messages" : [ 
+  [
+
+    {
+      "key" : "bufrHeaderSubCentre",
+      "value" : 0
+    },
+    {
+      "key" : "bufrHeaderCentre",
+      "value" : 98
+    },
+    {
+      "key" : "dataCategory",
+      "value" : 21
+    },
+    {
+      "key" : "dataSubCategory",
+      "value" : 202
+    },
+    {
+      "key" : "masterTablesVersionNumber",
+      "value" : 15
+    },
+    {
+      "key" : "localTablesVersionNumber",
+      "value" : 0
+    },
+    {
+      "key" : "typicalYearOfCentury",
+      "value" : 12
+    },
+    {
+      "key" : "typicalMonth",
+      "value" : 11
+    },
+    {
+      "key" : "typicalDay",
+      "value" : 2
+    },
+    {
+      "key" : "typicalHour",
+      "value" : 0
+    },
+    {
+      "key" : "typicalMinute",
+      "value" : 0
+    },
+    {
+      "key" : "numberOfSubsets",
+      "value" : 2
+    },
+    {
+      "key" : "observedData",
+      "value" : 1
+    },
+    {
+      "key" : "compressedData",
+      "value" : 1
+    },
+    {
+      "key" : "unexpandedDescriptors",
+      "value" : 310060
+    },
+    [
+      [
+
+        {
+          "key" : "satelliteIdentifier",
+          "value" : 224,
+          "index" : 1,
+          "code" : "001007",
+          "units" : "CODE TABLE",
+          "scale" : 0,
+          "reference" : 0,
+          "width" : 10
+        },
+        [
+
+          {
+            "key" : "centre",
+            "value" : 160,
+            "index" : 2,
+            "code" : "001033",
+            "units" : "CODE TABLE",
+            "scale" : 0,
+            "reference" : 0,
+            "width" : 8
+          },
+          [
+
+            {
+              "key" : "satelliteInstruments",
+              "value" : 620,
+              "index" : 3,
+              "code" : "002019",
+              "units" : "CODE TABLE",
+              "scale" : 0,
+              "reference" : 0,
+              "width" : 11
+            },
+            [
+
+              {
+                "key" : "satelliteClassification",
+                "value" : 3,
+                "index" : 4,
+                "code" : "002020",
+                "units" : "CODE TABLE",
+                "scale" : 0,
+                "reference" : 0,
+                "width" : 9
+              },
+              [
+
+                {
+                  "key" : "year",
+                  "value" : 2012,
+                  "index" : 5,
+                  "code" : "004001",
+                  "units" : "a",
+                  "scale" : 0,
+                  "reference" : 0,
+                  "width" : 12
+                },
+                [
+
+                  {
+                    "key" : "month",
+                    "value" : 11,
+                    "index" : 6,
+                    "code" : "004002",
+                    "units" : "mon",
+                    "scale" : 0,
+                    "reference" : 0,
+                    "width" : 4
+                  },
+                  [
+
+                    {
+                      "key" : "day",
+                      "value" : 2,
+                      "index" : 7,
+                      "code" : "004003",
+                      "units" : "d",
+                      "scale" : 0,
+                      "reference" : 0,
+                      "width" : 6
+                    },
+                    [
+
+                      {
+                        "key" : "hour",
+                        "value" : 0,
+                        "index" : 8,
+                        "code" : "004004",
+                        "units" : "h",
+                        "scale" : 0,
+                        "reference" : 0,
+                        "width" : 5
+                      },
+                      [
+
+                        {
+                          "key" : "minute",
+                          "value" : 0,
+                          "index" : 9,
+                          "code" : "004005",
+                          "units" : "min",
+                          "scale" : 0,
+                          "reference" : 0,
+                          "width" : 6
+                        },
+                        [
+
+                          {
+                            "key" : "second",
+                            "value" : 27.584,
+                            "index" : 10,
+                            "code" : "004006",
+                            "units" : "s",
+                            "scale" : 3,
+                            "reference" : 0,
+                            "width" : 16
+                          },
+                          {
+                            "key" : "DistanceFromEarthCentreInDirectionOf0DegreesLongitude",
+                            "value" : 6.67522e+06,
+                            "index" : 11,
+                            "code" : "027031",
+                            "units" : "m",
+                            "scale" : 2,
+                            "reference" : -1073741824,
+                            "width" : 31
+                          },
+                          {
+                            "key" : "DistanceFromEarthCentreInDirection90DegreesEast",
+                            "value" : 2.62845e+06,
+                            "index" : 12,
+                            "code" : "028031",
+                            "units" : "m",
+                            "scale" : 2,
+                            "reference" : -1073741824,
+                            "width" : 31
+                          },
+                          {
+                            "key" : "DistanceFromEarthCentreInDirectionOfNorthPole",
+                            "value" : 696571,
+                            "index" : 13,
+                            "code" : "010031",
+                            "units" : "m",
+                            "scale" : 2,
+                            "reference" : -1073741824,
+                            "width" : 31
+                          },
+                          [
+
+                            {
+                              "key" : "latitude",
+                              "value" :
+                              [
+                                4.96669, 5.05004 
+                              ],
+                              "index" : 14,
+                              "code" : "005001",
+                              "units" : "deg",
+                              "scale" : 5,
+                              "reference" : -9000000,
+                              "width" : 25
+                            },
+                            [
+
+                              {
+                                "key" : "longitude",
+                                "value" :
+                                [
+                                  24.5414, 24.3926 
+                                ],
+                                "index" : 15,
+                                "code" : "006001",
+                                "units" : "deg",
+                                "scale" : 5,
+                                "reference" : -18000000,
+                                "width" : 26
+                              },
+                              [
+
+                                {
+                                  "key" : "satelliteZenithAngle",
+                                  "value" :
+                                  [
+                                    25.41, 24.2 
+                                  ],
+                                  "index" : 16,
+                                  "code" : "007024",
+                                  "units" : "deg",
+                                  "scale" : 2,
+                                  "reference" : -9000,
+                                  "width" : 15
+                                },
+                                [
+
+                                  {
+                                    "key" : "bearingOrAzimuth",
+                                    "value" :
+                                    [
+                                      282.91, 281.97 
+                                    ],
+                                    "index" : 17,
+                                    "code" : "005021",
+                                    "units" : "deg",
+                                    "scale" : 2,
+                                    "reference" : 0,
+                                    "width" : 16
+                                  },
+                                  [
+
+                                    {
+                                      "key" : "solarZenithAngle",
+                                      "value" :
+                                      [
+                                        150.05, 150.22 
+                                      ],
+                                      "index" : 18,
+                                      "code" : "007025",
+                                      "units" : "deg",
+                                      "scale" : 2,
+                                      "reference" : -9000,
+                                      "width" : 15
+                                    },
+                                    [
+
+                                      {
+                                        "key" : "solarAzimuth",
+                                        "value" :
+                                        [
+                                          111.28, 111.22 
+                                        ],
+                                        "index" : 19,
+                                        "code" : "005022",
+                                        "units" : "deg",
+                                        "scale" : 2,
+                                        "reference" : 0,
+                                        "width" : 16
+                                      },
+                                      [
+
+                                        {
+                                          "key" : "orbitQualifier",
+                                          "value" : 1,
+                                          "index" : 20,
+                                          "code" : "008075",
+                                          "units" : "CODE TABLE",
+                                          "scale" : 0,
+                                          "reference" : 0,
+                                          "width" : 2
+                                        },
+                                        [
+
+                                          {
+                                            "key" : "scanLineNumber",
+                                            "value" : 1,
+                                            "index" : 21,
+                                            "code" : "005041",
+                                            "units" : "Numeric",
+                                            "scale" : 0,
+                                            "reference" : 0,
+                                            "width" : 13
+                                          },
+                                          [
+
+                                            {
+                                              "key" : "fieldOfRegardNumber",
+                                              "value" : 9,
+                                              "index" : 22,
+                                              "code" : "005045",
+                                              "units" : "Numeric",
+                                              "scale" : 0,
+                                              "reference" : 0,
+                                              "width" : 8
+                                            },
+                                            [
+
+                                              {
+                                                "key" : "fieldOfViewNumber",
+                                                "value" :
+                                                [
+                                                  7, 8 
+                                                ],
+                                                "index" : 23,
+                                                "code" : "005043",
+                                                "units" : "Numeric",
+                                                "scale" : 0,
+                                                "reference" : 0,
+                                                "width" : 8
+                                              },
+                                              [
+
+                                                {
+                                                  "key" : "orbitNumber",
+                                                  "value" : 5258,
+                                                  "index" : 24,
+                                                  "code" : "005040",
+                                                  "units" : "Numeric",
+                                                  "scale" : 0,
+                                                  "reference" : 0,
+                                                  "width" : 24
+                                                },
+                                                {
+                                                  "key" : "heightOfLandSurface",
+                                                  "value" :
+                                                  [
+                                                    597, 538 
+                                                  ],
+                                                  "index" : 25,
+                                                  "code" : "010001",
+                                                  "units" : "m",
+                                                  "scale" : 0,
+                                                  "reference" : -400,
+                                                  "width" : 15
+                                                },
+                                                [
+
+                                                  {
+                                                    "key" : "height",
+                                                    "value" : 829880,
+                                                    "index" : 26,
+                                                    "code" : "007002",
+                                                    "units" : "m",
+                                                    "scale" : -1,
+                                                    "reference" : -40,
+                                                    "width" : 17
+                                                  },
+                                                  {
+                                                    "key" : "landFraction",
+                                                    "value" : 1,
+                                                    "index" : 27,
+                                                    "code" : "021166",
+                                                    "units" : "Numeric",
+                                                    "scale" : 2,
+                                                    "reference" : 0,
+                                                    "width" : 7
+                                                  },
+                                                  [
+
+                                                    {
+                                                      "key" : "landOrSeaQualifier",
+                                                      "value" : 0,
+                                                      "index" : 28,
+                                                      "code" : "008012",
+                                                      "units" : "CODE TABLE",
+                                                      "scale" : 0,
+                                                      "reference" : 0,
+                                                      "width" : 2
+                                                    },
+                                                    {
+                                                      "key" : "cloudCoverTotal",
+                                                      "value" : null,
+                                                      "index" : 29,
+                                                      "code" : "020010",
+                                                      "units" : "%",
+                                                      "scale" : 0,
+                                                      "reference" : 0,
+                                                      "width" : 7
+                                                    },
+                                                    {
+                                                      "key" : "heightOfTopOfCloud",
+                                                      "value" : null,
+                                                      "index" : 30,
+                                                      "code" : "020014",
+                                                      "units" : "m",
+                                                      "scale" : -1,
+                                                      "reference" : -40,
+                                                      "width" : 11
+                                                    },
+                                                    [
+
+                                                      {
+                                                        "key" : "radianceTypeFlags",
+                                                        "value" : 2048,
+                                                        "index" : 31,
+                                                        "code" : "002165",
+                                                        "units" : "FLAG TABLE",
+                                                        "scale" : 0,
+                                                        "reference" : 0,
+                                                        "width" : 15
+                                                      },
+                                                      {
+                                                        "key" : "scanLevelQualityFlags",
+                                                        "value" : 0,
+                                                        "index" : 32,
+                                                        "code" : "033075",
+                                                        "units" : "FLAG TABLE",
+                                                        "scale" : 0,
+                                                        "reference" : 0,
+                                                        "width" : 13
+                                                      },
+                                                      [
+
+                                                        {
+                                                          "key" : "band",
+                                                          "value" : 2,
+                                                          "index" : 33,
+                                                          "code" : "008076",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 6
+                                                        },
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 65000,
+                                                            "index" : 34,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 109500,
+                                                            "index" : 35,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          },
+                                                          {
+                                                            "key" : "startChannel",
+                                                            "value" : 1,
+                                                            "index" : 36,
+                                                            "code" : "025140",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "endChannel",
+                                                            "value" : 713,
+                                                            "index" : 37,
+                                                            "code" : "025141",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "calibrationQualityFlags",
+                                                            "value" : 0,
+                                                            "index" : 38,
+                                                            "code" : "033076",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 9
+                                                          },
+                                                          {
+                                                            "key" : "fieldOfViewQualityFlags",
+                                                            "value" : 1024,
+                                                            "index" : 39,
+                                                            "code" : "033077",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 19
+                                                          }
+                                                        ]
+                                                      ],
+                                                      [
+
+                                                        {
+                                                          "key" : "band",
+                                                          "value" : 3,
+                                                          "index" : 40,
+                                                          "code" : "008076",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 6
+                                                        },
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 121000,
+                                                            "index" : 41,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 175000,
+                                                            "index" : 42,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          },
+                                                          {
+                                                            "key" : "startChannel",
+                                                            "value" : 714,
+                                                            "index" : 43,
+                                                            "code" : "025140",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "endChannel",
+                                                            "value" : 1146,
+                                                            "index" : 44,
+                                                            "code" : "025141",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "calibrationQualityFlags",
+                                                            "value" : 0,
+                                                            "index" : 45,
+                                                            "code" : "033076",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 9
+                                                          },
+                                                          {
+                                                            "key" : "fieldOfViewQualityFlags",
+                                                            "value" : 1024,
+                                                            "index" : 46,
+                                                            "code" : "033077",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 19
+                                                          }
+                                                        ]
+                                                      ],
+                                                      [
+
+                                                        {
+                                                          "key" : "band",
+                                                          "value" : 4,
+                                                          "index" : 47,
+                                                          "code" : "008076",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 6
+                                                        },
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 215500,
+                                                            "index" : 48,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "waveNumber",
+                                                            "value" : 255000,
+                                                            "index" : 49,
+                                                            "code" : "006029",
+                                                            "units" : "/m",
+                                                            "scale" : 1,
+                                                            "reference" : 0,
+                                                            "width" : 22
+                                                          },
+                                                          {
+                                                            "key" : "startChannel",
+                                                            "value" : 1147,
+                                                            "index" : 50,
+                                                            "code" : "025140",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "endChannel",
+                                                            "value" : 1305,
+                                                            "index" : 51,
+                                                            "code" : "025141",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 14
+                                                          },
+                                                          {
+                                                            "key" : "calibrationQualityFlags",
+                                                            "value" : 0,
+                                                            "index" : 52,
+                                                            "code" : "033076",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 9
+                                                          },
+                                                          {
+                                                            "key" : "fieldOfViewQualityFlags",
+                                                            "value" : 1024,
+                                                            "index" : 53,
+                                                            "code" : "033077",
+                                                            "units" : "FLAG TABLE",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 19
+                                                          }
+                                                        ]
+                                                      ],
+                                                      [
+
+                                                        {
+                                                          "key" : "band",
+                                                          "value" : null,
+                                                          "index" : 54,
+                                                          "code" : "008076",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 6
+                                                        },
+                                                        {
+                                                          "key" : "geolocationQuality",
+                                                          "value" : 0,
+                                                          "index" : 55,
+                                                          "code" : "033078",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 4
+                                                        },
+                                                        {
+                                                          "key" : "qualityInformation",
+                                                          "value" : 0,
+                                                          "index" : 56,
+                                                          "code" : "033003",
+                                                          "units" : "CODE TABLE",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 3
+                                                        },
+                                                        {
+                                                          "key" : "extendedDelayedDescriptorReplicationFactor",
+                                                          "value" : 5,
+                                                          "index" : 57,
+                                                          "code" : "031002",
+                                                          "units" : "Numeric",
+                                                          "scale" : 0,
+                                                          "reference" : 0,
+                                                          "width" : 16
+                                                        },
+                                                        [
+
+                                                          {
+                                                            "key" : "channelNumber",
+                                                            "value" : 1,
+                                                            "index" : 58,
+                                                            "code" : "005042",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 11
+                                                          },
+                                                          {
+                                                            "key" : "channelRadiance",
+                                                            "value" :
+                                                            [
+                                                              0.0462895, 0.0469285 
+                                                            ],
+                                                            "index" : 59,
+                                                            "code" : "014044",
+                                                            "units" : "W m-2 sr-1 cm",
+                                                            "scale" : 7,
+                                                            "reference" : -100000,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "channelNumber",
+                                                            "value" : 2,
+                                                            "index" : 60,
+                                                            "code" : "005042",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 11
+                                                          },
+                                                          {
+                                                            "key" : "channelRadiance",
+                                                            "value" :
+                                                            [
+                                                              0.0454931, 0.0458891 
+                                                            ],
+                                                            "index" : 61,
+                                                            "code" : "014044",
+                                                            "units" : "W m-2 sr-1 cm",
+                                                            "scale" : 7,
+                                                            "reference" : -100000,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "channelNumber",
+                                                            "value" : 3,
+                                                            "index" : 62,
+                                                            "code" : "005042",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 11
+                                                          },
+                                                          {
+                                                            "key" : "channelRadiance",
+                                                            "value" :
+                                                            [
+                                                              0.0421172, 0.041389 
+                                                            ],
+                                                            "index" : 63,
+                                                            "code" : "014044",
+                                                            "units" : "W m-2 sr-1 cm",
+                                                            "scale" : 7,
+                                                            "reference" : -100000,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "channelNumber",
+                                                            "value" : 4,
+                                                            "index" : 64,
+                                                            "code" : "005042",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 11
+                                                          },
+                                                          {
+                                                            "key" : "channelRadiance",
+                                                            "value" :
+                                                            [
+                                                              0.0453741, 0.0447059 
+                                                            ],
+                                                            "index" : 65,
+                                                            "code" : "014044",
+                                                            "units" : "W m-2 sr-1 cm",
+                                                            "scale" : 7,
+                                                            "reference" : -100000,
+                                                            "width" : 22
+                                                          }
+                                                        ],
+                                                        [
+
+                                                          {
+                                                            "key" : "channelNumber",
+                                                            "value" : 5,
+                                                            "index" : 66,
+                                                            "code" : "005042",
+                                                            "units" : "Numeric",
+                                                            "scale" : 0,
+                                                            "reference" : 0,
+                                                            "width" : 11
+                                                          },
+                                                          {
+                                                            "key" : "channelRadiance",
+                                                            "value" :
+                                                            [
+                                                              0.0431189, 0.0430633 
+                                                            ],
+                                                            "index" : 67,
+                                                            "code" : "014044",
+                                                            "units" : "W m-2 sr-1 cm",
+                                                            "scale" : 7,
+                                                            "reference" : -100000,
+                                                            "width" : 22
+                                                          }
+                                                        ]
+                                                      ]
+                                                    ]
+                                                  ]
+                                                ]
+                                              ]
+                                            ]
+                                          ]
+                                        ]
+                                      ]
+                                    ]
+                                  ]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+]
+
+]}

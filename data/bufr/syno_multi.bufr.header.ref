@@ -1,0 +1,27 @@
+message: 0
+  dataCategory: 0
+  dataSubCategory: 1
+  typicalDate: 20090124
+  bufrHeaderCentre: 98
+  bufrHeaderSubCentre: 0
+  masterTablesVersionNumber: 13
+  localTablesVersionNumber: 1
+  numberOfSubsets: 1
+message: 1
+  dataCategory: 0
+  dataSubCategory: 1
+  typicalDate: 20090124
+  bufrHeaderCentre: 98
+  bufrHeaderSubCentre: 0
+  masterTablesVersionNumber: 13
+  localTablesVersionNumber: 1
+  numberOfSubsets: 1
+message: 2
+  dataCategory: 0
+  dataSubCategory: 1
+  typicalDate: 20090124
+  bufrHeaderCentre: 98
+  bufrHeaderSubCentre: 0
+  masterTablesVersionNumber: 13
+  localTablesVersionNumber: 1
+  numberOfSubsets: 1

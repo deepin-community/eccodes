@@ -1,0 +1,105 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+include /usr/share/dpkg/pkg-info.mk
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
+INCDIR=/usr/include/$(DEB_HOST_MULTIARCH)
+BUILDDIR=$(CURDIR)/debian/build
+DESTDIR=$(CURDIR)/debian/tmp
+CMAKEDIR:=$(DESTDIR)/$(LIBDIR)/cmake/eccodes
+
+# For hardening
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS) #  -fPIC
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
+
+
+GF10_FLAGS:=$(if $(filter $(shell readlink /usr/bin/gfortran), gfortran-10), \
+                 -fallow-invalid-boz -fallow-argument-mismatch, )
+FFLAGS=$(shell dpkg-buildflags --get FFLAGS) $(GF10_FLAGS)
+
+export LDFLAGS CFLAGS CPPFLAGS CXXFLAGS
+
+# Don't do OMP_THREADS on some archs
+OMP_THREADS:= On
+
+# Don't test on mips. will time out most of the time on low-powered archs
+DO_TEST:=true
+ARCH:=$(shell dpkg --print-architecture)
+ifeq ($(ARCH), mips)
+DO_TEST:=false
+endif
+ifeq ($(ARCH),hppa)
+DO_TEST:=false
+OMP_THREADS:=Off
+endif
+
+# Pull in ecbuild macros rather than local ones
+BUILD_FLAGS =  \
+	-DENABLE_INSTALL_ECCODES_DEFINITIONS=ON \
+	-DENABLE_INSTALL_ECCODES_SAMPLES=ON \
+	-DENABLE_PNG=ON \
+	-DENABLE_AEC=ON \
+	-DENABLE_RPATHS=OFF \
+	-DENABLE_RELATIVE_RPATHS=OFF \
+	-DCMAKE_C_CFLAGS="${CFLAGS} ${LDFLAGS}" \
+	-DENABLE_ALIGN_MEMORY=ON \
+	-DENABLE_GRIB_TIMER=ON \
+	-DENABLE_ECCODES_OMP_THREADS=$(OMP_THREADS)  \
+
+%:
+	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    ${BUILD_FLAGS} 
+	( cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
+
+override_dh_install:
+	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(DESTDIR)  
+	# Move to multiarch dir
+	mkdir -p  $(DESTDIR)/$(INCDIR)
+	mv $(DESTDIR)/usr/include/*.h $(DESTDIR)/$(INCDIR)
+	for d in libeccodes_f90.so	libeccodes.so ; do \
+		chrpath -d $(DESTDIR)/$(LIBDIR)/$$d.0 ; done
+	chrpath -d $(DESTDIR)/usr/bin/grib_to_netcdf
+	dh_install
+	# Setup cmake files for magics++, metview, etc.
+	sed -i -e 's%$${_IMPORT_PREFIX}/include%/usr/include/${DEB_HOST_MULTIARCH}%g' 	$(CMAKEDIR)/eccodes-targets.cmake
+	sed -i -e 's%/usr/lib/libeccodes%${LIBDIR}/libeccodes%' 			$(CMAKEDIR)/eccodes-targets-release.cmake
+	sed -i -e 's%$${_IMPORT_PREFIX}%/usr%'                  			$(CMAKEDIR)/eccodes-targets-release.cmake
+	sed -i -e 's%${LIBDIR}/libopenjpeg.so;%%' 					$(CMAKEDIR)/eccodes-targets-release.cmake
+	sed -i -e 's%;${LIBDIR}/libpng.so%%g' 						$(CMAKEDIR)/eccodes-targets-release.cmake
+	sed -i -e 's%;${LIBDIR}/libopenjpeg.so%%g' 					$(CMAKEDIR)/eccodes-config.cmake
+	sed -i -e 's%$${PACKAGE_PREFIX_DIR}/lib/cmake/eccodes%${LIBDIR}/cmake/eccodes%g' $(CMAKEDIR)/eccodes-config.cmake
+	sed -i -e 's%;${LIBDIR}/libpng.so%%g' 						$(CMAKEDIR)/eccodes-config.cmake
+	# For bit-reproducibility, sanitize the build paths
+	for f in eccodes-config.cmake eccodes-import.cmake ; do \
+		sed -i -e 's%${CURDIR}%/build/eccodes%g' $(CMAKEDIR)/$$f ; \
+		sed -i -e 's%$${eccodes_BASE_DIR}/share%/usr/share%g' $(CMAKEDIR)/$$f ; \
+		done
+	# file exists on full builds only
+	[ - e debian/libeccodes-dev/$(INCDIR)/eccodes_ecbuild_config.h ] && ( \
+		sed -i -e 's%${CURDIR}%/build/eccodes%g'  debian/libeccodes-dev/$(INCDIR)/eccodes_ecbuild_config.h \
+		) || true	
+
+override_dh_auto_clean:
+	dh_auto_clean
+	# Things that upstream leaves behind
+	rm -f configure.ac configure configure.in
+	rm -f tests/bitmap.rules tests/out.grib1 tests/out.grib2 tests/out.gribidx \
+	      tests/rules tests/simple_ieee_test.grib1.txt tests/statistics.filter \
+	      tests/statistics.out tests/x.grib \
+	      data/change_scanning_rotated_ll.filter examples/F90/index.idx
+
+override_dh_fixperms:
+	dh_fixperms
+	test -e /usr/bin/dh_buildinfo && dh_buildinfo
+	-chmod -x debian/libeccodes-dev/usr/share/doc/libeccodes-dev/examples/F90/include.sh
+	-chmod +x debian/libeccodes-data/usr/share/eccodes/definitions/installDefinitions.sh
+
+override_dh_auto_test:
+	$(DO_TEST) && ( LD_LIBRARY_PATH=$(CURDIR)/debian/build/lib dh_auto_test  ) || true
