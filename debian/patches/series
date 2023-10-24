@@ -1,10 +1,8 @@
+fast-big-endian.patch
 grib_bits.diff
 static-libs.patch
 reproducible.patch
-disable-download-tests.patch
-static-fix.patch
-remove-rpms.patch
+# disable-download-tests.patch
+# static-fix.patch
 memfs.patch
-ecbuild.patch
-# gfortran-10.patch
 missing-libs.patch

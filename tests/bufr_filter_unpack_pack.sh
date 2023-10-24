@@ -8,9 +8,9 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
-set -u
+
 cd ${data_dir}/bufr
 
 # Define a common label for all the tmp files
@@ -57,5 +57,19 @@ for f in $files; do
   rm -f $temp
 done
 
+# ECC-989: Valgrind error: setting 'unpack=1' before setting unexpandedDescriptors
+# ---------------------------------------------------------------------------------
+f="$ECCODES_SAMPLES_PATH/BUFR4.tmpl"
+cat > $fRules <<EOF
+ set unpack=1;
+ set unexpandedDescriptors={4025};
+EOF
+${tools_dir}/codes_bufr_filter $fRules $f
 
+# Other expanded stuff
+# ---------------------
+f="$ECCODES_SAMPLES_PATH/BUFR4.tmpl"
+echo 'print "[expandedOriginalReferences:i]";' | ${tools_dir}/codes_bufr_filter - $f
+
+# Clean up
 rm -f $fRules $fLog $temp

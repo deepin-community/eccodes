@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 # Enter data dir
 cd ${data_dir}/bufr
@@ -36,6 +36,11 @@ id=`${tools_dir}/bufr_get -p edition,identifier avhn_87.bufr`
 id=`${tools_dir}/bufr_get -p edition,identifier aaen_55.bufr`
 [ "$id" = "4 BUFR" ]
 
+set +e
+${tools_dir}/bufr_get -p identifier:d avhn_87.bufr
+status=$?
+set -e
+[ $status -ne 0 ]
 
 #-------------------------------------------
 # Test "-p" switch
@@ -100,5 +105,21 @@ result=`${tools_dir}/bufr_get -f -p isSatellite,ident b003_56.bufr`
 [ "$result" = "1 not_found" ]
 
 
+# Check key 'file'
+result=`${tools_dir}/bufr_get -p file b004_145.bufr`
+[ "$result" = "b004_145.bufr" ]
+
+# Decoding the "unpack" key also decodes the whole Data Section
+result=`${tools_dir}/bufr_get -f -p heightOfStation aaen_55.bufr`
+[ "$result" = "not_found" ]
+result=`${tools_dir}/bufr_get -p unpack,heightOfStation aaen_55.bufr`
+[ "$result" = "0 858000" ]
+result=`${tools_dir}/bufr_get -p unpack:d,heightOfStation aaen_55.bufr`
+[ "$result" = "0 858000" ]
+result=`${tools_dir}/bufr_get -p unpack:s,heightOfStation aaen_55.bufr`
+[ "$result" = "0 858000" ]
+
+
 # Clean up
 rm -f $fLog $fTmp $res_get $tempRef
+

@@ -7,11 +7,11 @@
 # granted to it by virtue of its status as an intergovernmental organisation
 # nor does it submit to any jurisdiction.
 
-import traceback
-import sys
+import getopt
 import os
 import re
-import getopt
+import sys
+import traceback
 
 from eccodes import *
 
@@ -63,9 +63,10 @@ def generate_tables(INPUT, what):
             codes_release(bufr)
             continue
         if codes_get(bufr, "numberOfSubsets") == 0:
-            # print('BUFR message number of subsets == 0. Ignoring')
+            # When we reach a message whose number of subsets == 0, we're done.
+            # All messages after this one encode observations (not tables)
             codes_release(bufr)
-            continue
+            break
 
         if DEBUG:
             print(f"Processing message {cnt+1}")

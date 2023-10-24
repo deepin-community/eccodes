@@ -1,0 +1,36 @@
+# Some files used to be symlinks, now they are directories
+# This puts the appropriate dpkg-maintscript-helper fragments in place to cope
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/7 13 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/8 13 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/9 13 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/10 13 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/11 13 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/wmo/12 13 2.28.0-1 libeccodes-data
+
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/1 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/2 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/20 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/21 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/31 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/41 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/42 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/64 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/110 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/174 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/221 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/222 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/223 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/224 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/225 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/226 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/227 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/228 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/229 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/230 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/231 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/232 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/233 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/234 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/235 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/236 0 2.28.0-1 libeccodes-data
+symlink_to_dir /usr/share/eccodes/definitions/bufr/tables/0/local/8/78/237 0 2.28.0-1 libeccodes-data

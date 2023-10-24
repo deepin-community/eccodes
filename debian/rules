@@ -51,7 +51,7 @@ BUILD_FLAGS =  \
 	-DENABLE_ECCODES_OMP_THREADS=$(OMP_THREADS)  \
 
 %:
-	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel
+	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel --with fortran_mod
 
 override_dh_auto_configure:
 	dh_auto_configure -- \

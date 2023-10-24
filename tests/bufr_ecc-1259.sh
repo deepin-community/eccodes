@@ -8,11 +8,9 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
-set -u
-REDIRECT=/dev/null
-label="bufr_ecc-1259-test"
+. ./include.ctest.sh
 
+label="bufr_ecc-1259_test"
 tempBufr=temp.$label.bufr
 tempFilt=temp.$label.filt
 tempOut=temp.$label.out
@@ -34,7 +32,7 @@ EOF
 ${tools_dir}/bufr_filter -f $tempFilt $sample_bufr4 2>$tempOut
 
 # Check the right error message came out
-grep -q "ECCODES ERROR.*Error while setting key pack (Encoding invalid)" $tempOut
+grep -q "ECCODES ERROR.*Error while setting key 'pack' (Encoding invalid)" $tempOut
 
 
 # Now fix the order of keys and rerun

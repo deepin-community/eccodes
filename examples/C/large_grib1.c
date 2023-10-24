@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "eccodes.h"
 
 /* See JIRA issue GRIB-361 */
@@ -17,19 +18,29 @@ int main()
 {
     const int ni = 2880;
     const int nj = 2880;
+    size_t numbytes = 0;
     double* values;
     int i                = 0;
     codes_handle* h      = NULL;
     const char* filename = "bigfile.grib";
 
-    values = (double*)malloc(ni * nj * sizeof(double));
+#ifndef ECCODES_ON_WINDOWS
+    unsigned int seed = time(NULL);
+#endif
+
+    numbytes = ni * nj * sizeof(double);
+    values = (double*)malloc(numbytes);
     if (!values) {
-        printf("Malloc failed\n");
-        exit(1);
+        fprintf(stderr, "Malloc failed - requested %zu bytes\n", numbytes);
+        return 1;
     }
 
     for (i = 0; i < ni * nj; i++) {
-        double r  = rand() * 1.0 / RAND_MAX;
+        #ifndef ECCODES_ON_WINDOWS
+            double r  = rand_r(&seed) * 1.0 / RAND_MAX;
+        #else
+            double r  = rand() * 1.0 / RAND_MAX;
+        #endif
         values[i] = r;
     }
 
@@ -63,7 +74,6 @@ int main()
     CODES_CHECK(codes_set_double_array(h, "values", values, ni * nj), 0);
 
     codes_write_message(h, filename, "w");
-    /*printf("Wrote file %s\n", filename);*/
 
     codes_handle_delete(h);
     free(values);

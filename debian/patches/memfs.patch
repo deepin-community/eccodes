@@ -1,6 +1,6 @@
 --- a/memfs/CMakeLists.txt
 +++ b/memfs/CMakeLists.txt
-@@ -50,7 +50,15 @@
+@@ -48,7 +48,15 @@
  endif()
  
  if( HAVE_MEMFS )

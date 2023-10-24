@@ -8,13 +8,13 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
-set -u
+. ./include.ctest.sh
+
 # ---------------------------------------------------------
 # This is the test for the JIRA issue ECC-1167
 # GRIB: Allow setting byte array as string
 # ---------------------------------------------------------
-label="grib_ecc-1167-test"
+label="grib_ecc-1167_test"
 temp1=temp.${label}.1.grib
 temp2=temp.${label}.2.grib
 errlog=temp.${label}.err
@@ -32,6 +32,7 @@ grib_check_key_equals $temp2 uuidOfHGrid '10991111111111111111115000110000'
 
 
 # Test errors
+# --------------
 set +e
 # Invalid HEX
 ${tools_dir}/grib_set -s uuidOfHGrid=DEZZBEef10203040b00b1e50001100FF $temp1 $temp2 2>$errlog
@@ -39,6 +40,15 @@ status=$?
 set -e
 [ $status -ne 0 ]
 grep -q "Invalid hex byte specfication 'ZZ'" $errlog
+
+# Packing as an integer
+set +e
+${tools_dir}/grib_set -s uuidOfHGrid=12345 $temp1 $temp2 2>$errlog
+status=$?
+set -e
+[ $status -ne 0 ]
+grep -q "Should not pack 'uuidOfHGrid' as an integer" $errlog
+grep -q "Try packing as a string" $errlog
 
 
 # Clean up

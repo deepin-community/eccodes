@@ -8,9 +8,9 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 set -u
-label="grib_levtype"
+label="grib_levtype_test"
 
 if [ ! -d "$ECCODES_DEFINITION_PATH" ]; then
     echo "Test $0 disabled. No definitions directory"
@@ -50,5 +50,13 @@ for lt in $levtypes; do
         fi
     fi
 done
+
+# ECC-1328
+params='228007 228011'
+for p in $params; do
+    ${tools_dir}/grib_set -s paramId=$p $sample2 $tempGrib
+    grib_check_key_equals $tempGrib 'mars.levtype,typeOfLevel' 'sfc entireLake'
+done
+
 
 rm -f $tempGrib

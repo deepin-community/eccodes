@@ -3,17 +3,23 @@
 # Configure the file which all CMake tests will include
 configure_file( include.ctest.sh.in  include.ctest.sh  @ONLY )
 
-execute_process( COMMAND ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_SOURCE_DIR}/include.sh ${CMAKE_CURRENT_BINARY_DIR} )
 
 # Add all the tests
 ####################
 if( HAVE_BUILD_TOOLS )
     list( APPEND tests_sanity
+          codes_ecc-1392
+          codes_datetime_julian
+          codes_set_paths
           grib_set_pv
           grib_set_data
+          bufr_ecc-1284
+          bufr_ecc-1019
+          get_native_type
           grib_ecc-671 )
     list( APPEND tests_extra
           grib_index
+          codes_dump
           grib_copy_message
           bufr_copy_message
           grib_get_keys
@@ -37,6 +43,7 @@ if( HAVE_BUILD_TOOLS )
           grib_read_from_file
           grib_get_set_uuid
           grib_clone
+          grib_ecc-1316
           bufr_attributes
           bufr_copy_data
           bufr_clone
@@ -59,6 +66,8 @@ else()
     list( APPEND tests_sanity
           grib_set_pv
           grib_set_data
+          codes_set_paths
+          get_native_type
           grib_ecc-671 )
     list( APPEND tests_extra
           grib_index
@@ -94,25 +103,25 @@ else()
           get_product_kind )
 endif()
 
-foreach( tool ${tests_sanity} )
-    ecbuild_add_test( TARGET          eccodes_f_${tool}
-                      SOURCES         ${tool}.f90
+foreach( atest ${tests_sanity} )
+    ecbuild_add_test( TARGET          eccodes_f_${atest}
+                      SOURCES         ${atest}.f90
                       LINKER_LANGUAGE Fortran
                       LIBS            eccodes_f90 eccodes
                       CONDITION       HAVE_FORTRAN
                       LABELS          "sanity"
                       RESOURCES       bufr_read_scatterometer_f.ref
-                      COMMAND         ${CMAKE_CURRENT_SOURCE_DIR}/${tool}.sh )
+                      COMMAND         ${CMAKE_CURRENT_SOURCE_DIR}/${atest}.sh )
 endforeach()
-foreach( tool ${tests_extra} )
-    ecbuild_add_test( TARGET          eccodes_f_${tool}
-                      SOURCES         ${tool}.f90
+foreach( atest ${tests_extra} )
+    ecbuild_add_test( TARGET          eccodes_f_${atest}
+                      SOURCES         ${atest}.f90
                       LINKER_LANGUAGE Fortran
                       LIBS            eccodes_f90 eccodes
                       CONDITION       HAVE_FORTRAN AND ENABLE_EXTRA_TESTS
                       RESOURCES       bufr_read_scatterometer_f.ref
-                      COMMAND         ${CMAKE_CURRENT_SOURCE_DIR}/${tool}.sh
-                      TEST_DEPENDS    eccodes_download_gribs eccodes_download_bufrs )
+                      COMMAND         ${CMAKE_CURRENT_SOURCE_DIR}/${atest}.sh
+                      TEST_DEPENDS    eccodes_download_gribs eccodes_download_bufrs eccodes_download_bufr_refs )
 endforeach()
 
 # Test for CCSDS (AEC) packing
@@ -120,7 +129,7 @@ ecbuild_add_test( TARGET          eccodes_f_grib_set_packing
                   SOURCES         grib_set_packing.f90
                   LINKER_LANGUAGE Fortran
                   LIBS            eccodes_f90 eccodes
-                  CONDITION       HAVE_AEC AND HAVE_FORTRAN
+                  CONDITION       HAVE_BUILD_TOOLS AND HAVE_AEC AND HAVE_FORTRAN
                   COMMAND         ${CMAKE_CURRENT_SOURCE_DIR}/grib_set_packing.sh )
 
 # Executables without a shell script

@@ -13,7 +13,7 @@
  *
  * Description: convert fields accumulated from 0 step in
  *              fields accumulated in the interval between
- *			    a field and another. In the input file the fields
+ *              a field and another. In the input file the fields
  *              must be in ascending order in the step.
  *              step must be the most external loop (slower varying index)
  *
@@ -35,7 +35,6 @@ int main(int argc, char** argv)
 {
     int err        = 0, i;
     double* values = NULL;
-    double max, min, average;
     size_t values_len = 0;
 
     FILE* in = NULL;

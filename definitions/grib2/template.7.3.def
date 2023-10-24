@@ -14,6 +14,7 @@ meta codedValues data_g22order_packing(
      referenceValue,
      binaryScaleFactor,
      decimalScaleFactor,
+     optimizeScaleFactor,
 
      typeOfOriginalFieldValues ,
      groupSplittingMethodUsed,
@@ -42,3 +43,6 @@ meta values data_apply_bitmap(codedValues,
 alias data.packedValues=codedValues;
 
 template statistics "common/statistics_grid.def";
+
+meta numberOfMissing count_missing(bitmap,unusedBitsInBitmap,numberOfDataPoints,missingValueManagementUsed) : dump;
+alias numberOfMissingValues=numberOfMissing;

@@ -1,5 +1,7 @@
 # (C) Copyright 2005- ECMWF.
 
+# TEMPLATE 7.50001, Second order
+
 if (bitsPerValue) {
  meta groupWidths unsigned_bits(widthOfWidths,numberOfGroups) : read_only;
  meta groupLengths unsigned_bits(widthOfLengths,numberOfGroups) : read_only;
@@ -20,7 +22,7 @@ if(bitmapPresent)   {
      unitsBias,
      changingPrecision,
      numberOfCodedValues,
-     bitsPerValue, 
+     bitsPerValue,
      referenceValue,
      binaryScaleFactor,
      decimalScaleFactor,
@@ -49,7 +51,7 @@ if(bitmapPresent)   {
 	 numberOfPoints
 
    ): read_only;
-   alias data.packedValues = codedValues; 
+   alias data.packedValues = codedValues;
 
    meta values data_apply_bitmap(codedValues,bitmap,missingValue,binaryScaleFactor) : dump;
 } else {
@@ -62,7 +64,7 @@ if(bitmapPresent)   {
 		 unitsBias,
 		 changingPrecision,
 		 numberOfCodedValues,
-		 bitsPerValue, 
+		 bitsPerValue,
 		 referenceValue,
 		 binaryScaleFactor,
 		 decimalScaleFactor,
@@ -98,3 +100,4 @@ if(bitmapPresent)   {
 meta packingError simple_packing_error(bitsPerValue,binaryScaleFactor,decimalScaleFactor,referenceValue,ieee) : no_copy;
 
 template statistics "common/statistics_grid.def";
+template missing_values "common/missing_values_grid.def";

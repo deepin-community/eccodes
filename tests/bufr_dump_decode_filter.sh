@@ -9,7 +9,7 @@
 #
 
 set -x
-. ./include.sh
+. ./include.ctest.sh
 
 cd ${data_dir}/bufr
 
@@ -17,12 +17,12 @@ cd ${data_dir}/bufr
 label="bufr_dump_decode_filter_test"
 
 # Create log file
-fLog=${label}".log"
+fLog=temp.${label}".log"
 rm -f $fLog
 touch $fLog
 
 # Define filter rules file
-fRules=${label}.filter
+fRules=temp.${label}.filter
 
 #-----------------------------------------------------------
 # NOTE: not all of our BUFR files pass this test. bufr_filter is limited
@@ -53,4 +53,14 @@ do
     rm -f $fRules
   fi
 done
+
+# Check expected failures
+set +e
+${tools_dir}/bufr_dump -Dfilter ${data_dir}/bufr/tropical_cyclone.bufr > $fLog 2>&1
+status=$?
+set -e
+[ $status -eq 1 ]
+grep -q "Cannot dump filter for multi-message BUFR files" $fLog
+
+# Clean up
 rm -f $fLog $fRules

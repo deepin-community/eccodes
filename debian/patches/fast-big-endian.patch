@@ -1,0 +1,16 @@
+Description: Disable fast big-endian; breaks on s390x due to const limitations
+Author: Alastair McKinstry <mckinstry@debian.org>
+Last-Updated: 2023-06-17
+Forwarded:  no
+
+--- a/src/grib_accessor_class_data_complex_packing.cc
++++ b/src/grib_accessor_class_data_complex_packing.cc
+@@ -633,7 +633,7 @@
+             sub_k--;
+         }
+ 
+-#if FAST_BIG_ENDIAN
++#if 0
+         grib_encode_double_array_complex((maxv - hcount) * 2, &(val[i]), bits_per_value, reference_value, &(scals[lup]), d, s, lres, &lpos);
+         i += (maxv - hcount) * 2;
+ #else

@@ -27,6 +27,7 @@
 #                     [ OMP <number-of-threads-per-mpi-task> ]
 #                     [ ENABLED ON|OFF ]
 #                     [ LIBS <library1> [<library2> ...] ]
+#                     [ NO_AS_NEEDED ]
 #                     [ INCLUDES <path1> [<path2> ...] ]
 #                     [ DEFINITIONS <definition1> [<definition2> ...] ]
 #                     [ PERSISTENT <file1> [<file2> ...] ]
@@ -105,6 +106,9 @@
 # LIBS : optional
 #   list of libraries to link against (CMake targets or external libraries)
 #
+# NO_AS_NEEDED: optional
+#   add --no-as-needed linker flag, to prevent stripping libraries that looks like are not used
+#
 # INCLUDES : optional
 #   list of paths to add to include directories
 #
@@ -177,7 +181,7 @@
 
 function( ecbuild_add_test )
 
-  set( options           )
+  set( options           NO_AS_NEEDED )
   set( single_value_args TARGET ENABLED COMMAND TYPE LINKER_LANGUAGE MPI OMP WORKING_DIRECTORY )
   set( multi_value_args  SOURCES OBJECTS LIBS INCLUDES TEST_DEPENDS DEPENDS LABELS ARGS
                          PERSISTENT DEFINITIONS RESOURCES TEST_DATA CFLAGS
@@ -336,7 +340,11 @@ function( ecbuild_add_test )
         list(REMOVE_ITEM _PAR_LIBS optimized)
         ecbuild_filter_list(LIBS LIST ${_PAR_LIBS} LIST_INCLUDE lib LIST_EXCLUDE skipped_lib)
         ecbuild_debug("ecbuild_add_test(${_PAR_TARGET}): linking with [${lib}]")
-        target_link_libraries( ${_PAR_TARGET} ${lib} )
+        if ( _PAR_NO_AS_NEEDED AND CMAKE_SYSTEM_NAME MATCHES "Linux" AND CMAKE_CXX_COMPILER_ID MATCHES "GNU" )
+          target_link_libraries( ${_PAR_TARGET} -Wl,--no-as-needed ${lib} )
+        else()
+          target_link_libraries( ${_PAR_TARGET} ${lib} )
+        endif()
         ecbuild_debug("ecbuild_add_test(${_PAR_TARGET}): [${skipped_lib}] not found - not linking")
       endif()
 
@@ -352,6 +360,20 @@ function( ecbuild_add_test )
         target_compile_definitions(${_PAR_TARGET} PRIVATE ${_PAR_DEFINITIONS})
         ecbuild_debug("ecbuild_add_test(${_PAR_TARGET}): adding definitions ${_PAR_DEFINITIONS}")
       endif()
+
+      # set linker language
+      if( DEFINED _PAR_LINKER_LANGUAGE )
+        ecbuild_debug("ecbuild_add_test(${_PAR_TARGET}): using linker language ${_PAR_LINKER_LANGUAGE}")
+        set_target_properties( ${_PAR_TARGET} PROPERTIES LINKER_LANGUAGE ${_PAR_LINKER_LANGUAGE} )
+        if( ECBUILD_${_PAR_LINKER_LANGUAGE}_IMPLICIT_LINK_LIBRARIES )
+          target_link_libraries( ${_PAR_TARGET} ${ECBUILD_${_PAR_LINKER_LANGUAGE}_IMPLICIT_LINK_LIBRARIES} )
+        endif()
+      endif()
+
+      if( ECBUILD_IMPLICIT_LINK_LIBRARIES )
+        target_link_libraries( ${_PAR_TARGET} ${ECBUILD_IMPLICIT_LINK_LIBRARIES} )
+      endif()
+
 
       # set build location to local build dir
       # not the project base as defined for libs and execs

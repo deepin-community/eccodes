@@ -8,8 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
-set -u
+. ./include.ctest.sh
 
 label="filter_substr_test"
 temp=temp.$label.txt
@@ -35,5 +34,19 @@ EOF
 ${tools_dir}/grib_filter - $sample 2>$temp <<EOF
     transient xx = substr("abc", -1, -1);
 EOF
-grep -q "Invalid substring" $temp
+cat $temp
+grep -q "Invalid substring.*start=" $temp
+
+${tools_dir}/grib_filter - $sample 2>$temp <<EOF
+    transient xx = substr("abc", 0, 0);
+EOF
+cat $temp
+grep -q "Invalid substring.*length must be > 0" $temp
+
+${tools_dir}/grib_filter - $sample 2>$temp <<EOF
+    transient xx = substr("abc", 0, 8);
+EOF
+cat $temp
+grep -q "Invalid substring.*start.*length" $temp
+# Clean up
 rm -f $temp

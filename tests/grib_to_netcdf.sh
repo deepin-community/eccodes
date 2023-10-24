@@ -7,7 +7,7 @@
 # In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 
-. ./include.sh
+. ./include.ctest.sh
 
 if [ $ECCODES_ON_WINDOWS -eq 1 ]; then
     # m2-bash messes with the system path.
@@ -22,16 +22,11 @@ if [ $ECCODES_ON_WINDOWS -eq 1 ]; then
     export PATH=$PATH:$CONDA_PREFIX/Library/bin
 fi
 
-# Disable if autotools being used
-src_config=${src_dir}/config.h
-if [ -f ${src_config} ]; then
-    exit 0
-fi
-
 label="grib_to_netcdf_test"
 tempGrib=temp.${label}.grib
 tempNetcdf=temp.${label}.nc
 tempText=temp.${label}.txt
+tempDir=temp.${label}.dir
 
 have_netcdf4=0
 
@@ -64,8 +59,9 @@ if [ $ECCODES_ON_WINDOWS -eq 0 ]; then
     set -e
     if [ $stat -eq 0 ]; then
         have_netcdf4=1
-        res=`${tools_dir}/grib_get -TA -p identifier,versionNumberOfSuperblock $tempNetcdf`
-        [ "$res" = "HDF5 0" ]
+        ${tools_dir}/grib_dump -TA -O $tempNetcdf
+        res=`${tools_dir}/grib_get -TA -p identifier $tempNetcdf`
+        [ "$res" = "HDF5" ]
     fi
 fi
 
@@ -77,7 +73,7 @@ grib_files="\
  regular_gaussian_surface.grib1 \
  missing.grib2"
 
-ncf_types="NC_SHORT NC_INT NC_FLOAT NC_DOUBLE"
+ncf_types="NC_INT NC_FLOAT NC_DOUBLE"
 
 # Go thru all the specified GRIB files and convert them to NetCDF
 for dt in $ncf_types; do
@@ -128,6 +124,35 @@ set -e
 grep -q "GRIB message 2 has different resolution" $tempText
 
 rm -f $tempGrib2
+
+echo "Test directory traversal ..."
+# ------------------------------------
+rm -f $tempNetcdf
+mkdir -p $tempDir/subdir
+cp ${data_dir}/regular_latlon_surface.grib2 $tempDir/subdir
+${tools_dir}/grib_to_netcdf -o $tempNetcdf $tempDir > $tempText
+[ -f "$tempNetcdf" ]
+grep -q "Processing input file .*/subdir/regular_latlon_surface.grib2" $tempText
+rm -rf $tempDir
+
+echo "Enable/Disable Checks ..."
+# ---------------------------------
+rm -f $tempNetcdf
+input=${data_dir}/regular_latlon_surface.grib2
+cat $input $input > $tempGrib
+# By default checks are enabled. So this should fail
+set +e
+${tools_dir}/grib_to_netcdf -o $tempNetcdf $tempGrib > $tempText 2>&1
+status=$?
+set -e
+[ $status -ne 0 ]
+grep -q "Wrong number of fields" $tempText
+
+export GRIB_TO_NETCDF_CHECKVALIDTIME=0
+${tools_dir}/grib_to_netcdf -o $tempNetcdf $tempGrib
+[ -f "$tempNetcdf" ]
+unset GRIB_TO_NETCDF_CHECKVALIDTIME
+
 
 # Clean up
 rm -f $tempNetcdf $tempGrib $tempText

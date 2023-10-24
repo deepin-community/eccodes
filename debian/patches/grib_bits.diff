@@ -2,7 +2,7 @@ From: Dragoslav Sicarov <Dragoslav.Sicarov@imgtec.com>
 Subject: FTBFS: grib-api - tests fail for mips
 Date: Sun, 29 Dec 2013 15:13:16 +0000
 Forwarded: https://software.ecmwf.int/issues/browse/SUP-1589
-Last-Updated: 2016-07-27
+Last-Updated: 2023-03-23
 
 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=733510
 
@@ -33,8 +33,8 @@ Proposed patch fixes these corner-cases by setting the result of shift
 operation to 0 if right operand is greater than or equal to size of long
 (actually, no shifting is performed, the result is set to zero).
 
---- a/src/grib_bits_fast_big_endian.c
-+++ b/src/grib_bits_fast_big_endian.c
+--- a/src/grib_bits_fast_big_endian.cc
++++ b/src/grib_bits_fast_big_endian.cc
 @@ -196,8 +196,16 @@
          countOfLeftmostBits = max_nbits - startBit;
          startBit            = max_nbits - remainingBits;

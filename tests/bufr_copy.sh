@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 # Enter data dir
 cd ${data_dir}/bufr
@@ -96,6 +96,18 @@ storm=`${tools_dir}/bufr_get -s unpack=1 -p stormIdentifier $fBufrTmp`
 rm -f $fBufrTmp
 ${tools_dir}/bufr_copy -s unpack=1 -w stormIdentifier=none $fBufrInput $fBufrTmp
 [ ! -f "$fBufrTmp" ]
+
+
+#-------------------------------------------------------------------
+echo "Test: corner cases ..."
+#-------------------------------------------------------------------
+echo BUFR > $fBufrTmp
+set +e
+${tools_dir}/bufr_copy $fBufrTmp /dev/null > $fLog 2>&1
+status=$?
+set -e
+[ $status -ne 0 ]
+grep -w "unreadable message" $fLog
 
 
 # Clean up
