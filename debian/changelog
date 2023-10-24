@@ -1,3 +1,10 @@
+eccodes (2.32.0-1deepin1) unstable; urgency=medium
+
+  * Import orig-data.tar.xz in SCM.
+  * No longer override dh_auto_configure.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 24 Oct 2023 14:48:18 +0800
+
 eccodes (2.32.0-1) unstable; urgency=medium
 
   * New upstream release
