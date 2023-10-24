@@ -26,15 +26,15 @@ Forwarded: no
                           PRIVATE_LIBS    eccodes ${ECCODES_PTHREADS_LIBRARIES} )
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -436,6 +436,7 @@
- 
- 
- ecbuild_add_library( TARGET    eccodes
-+                     VERSION 0
-                      SOURCES   ${CMAKE_CURRENT_BINARY_DIR}/grib_api_version.c
-                               # griby.c gribl.c
-                               ${grib_api_srcs}
-@@ -453,3 +454,25 @@
+@@ -433,6 +433,7 @@
+                      SOURCES   ${CMAKE_CURRENT_BINARY_DIR}/grib_api_version.cc
+                               # griby.cc gribl.cc
+                               ${eccodes_src_files}
++	             VERSION  0
+                      #PRIVATE_LIBS      ${ECCODES_EXTRA_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${CMATH_LIBRARIES}
+                      PRIVATE_INCLUDES "${AEC_INCLUDE_DIRS}" "${PNG_INCLUDE_DIRS}"
+                      PRIVATE_LIBS ${ECCODES_EXTRA_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${AEC_LIBRARIES} ${PNG_LIBRARIES}
+@@ -447,3 +448,25 @@
                      PUBLIC_INCLUDES
                                $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/src>
                                $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/src> )
@@ -42,8 +42,8 @@ Forwarded: no
 +ecbuild_add_library( TARGET    eccodes_static
 +  		      TYPE      STATIC
 +                     VERSION   0
-+                     SOURCES   ${CMAKE_CURRENT_BINARY_DIR}/grib_api_version.c
-+                              # griby.c gribl.c
++                     SOURCES   ${CMAKE_CURRENT_BINARY_DIR}/grib_api_version.cc
++                              # griby.cc gribl.cc
 +                              ${grib_api_srcs}
 +                     #PRIVATE_LIBS      ${ECCODES_EXTRA_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${CMATH_LIBRARIES}
 +                     PRIVATE_INCLUDES "${AEC_INCLUDE_DIRS}"

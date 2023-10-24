@@ -8,12 +8,10 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
-REDIRECT=/dev/null
-
-this_test="octa_grid.test"
-temp=temp.$this_test
+label="grib_octahedral_test"
+temp=temp.$label.txt
 
 # All our current GRIB samples (with reduced gaussian grids) are NON-Octahedral
 for s in $ECCODES_SAMPLES_PATH/reduced_gg_pl*.tmpl; do

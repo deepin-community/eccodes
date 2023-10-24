@@ -7,15 +7,11 @@
 ! virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 !
 !
-! FORTRAN 90 Implementation: bufr_read_synop
-!
 ! Description: How to read SYNOP BUFR messages.
-
+!
 ! Please note that SYNOP reports can be encoded in various ways in BUFR. Therefore the code
 ! below might not work directly for other types of SYNOP messages than the one used in the
 ! example. It is advised to use bufr_dump first to understand the structure of these messages.
-
-!
 !
 program bufr_read_synop
    use eccodes
@@ -30,11 +26,9 @@ program bufr_read_synop
 
    call codes_open_file(ifile, '../../data/bufr/syno_multi.bufr', 'r')
 
-   ! The first bufr message is loaded from file,
-   ! ibufr is the bufr id to be used in subsequent calls
-   call codes_bufr_new_from_file(ifile, ibufr, iret)
-
-   do while (iret /= CODES_END_OF_FILE)
+   do while (.true.)
+      call codes_bufr_new_from_file(ifile, ibufr, iret)
+      if (iret == CODES_END_OF_FILE) exit
 
       write (*, *) 'message: ', count
 
@@ -61,18 +55,18 @@ program bufr_read_synop
       write (*, *) '  longitude:', lat
 
       ! 2m temperature
-      call codes_get(ibufr, 'airTemperatureAt2M', t2m); 
+      call codes_get(ibufr, 'airTemperatureAt2M', t2m);
       write (*, *) '  airTemperatureAt2M:', t2m
 
       ! 2m dewpoint temperature
-      call codes_get(ibufr, 'dewpointTemperatureAt2M', td2m); 
+      call codes_get(ibufr, 'dewpointTemperatureAt2M', td2m);
       write (*, *) '  dewpointTemperatureAt2M:', td2m
 
       ! 10m wind
-      call codes_get(ibufr, 'windSpeedAt10M', ws); 
+      call codes_get(ibufr, 'windSpeedAt10M', ws);
       write (*, *) '  windSpeedAt10M:', ws
 
-      call codes_get(ibufr, 'windDirectionAt10M', wdir); 
+      call codes_get(ibufr, 'windDirectionAt10M', wdir);
       write (*, *) '  windDirectionAt10M:', wdir
 
       ! The cloud information is stored in several blocks in the
@@ -105,9 +99,6 @@ program bufr_read_synop
 
       ! Release the bufr message
       call codes_release(ibufr)
-
-      ! Load the next bufr message
-      call codes_bufr_new_from_file(ifile, ibufr, iret)
 
       count = count + 1
 

@@ -7,8 +7,6 @@
 ! virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 !
 !
-! FORTRAN 90 implementation: bufr_keys_iterator
-!
 !
 ! Description: How to use keys_iterator functions and the
 !              codes_bufr_keys_iterator structure to get all the available
@@ -23,21 +21,22 @@ program bufr_keys_iterator
    integer            :: count = 0
    character(len=256) :: key
    integer            :: kiter
+   integer            :: subset = 1
 
    call codes_open_file(ifile, '../../data/bufr/syno_1.bufr', 'r')
 
-   ! The first bufr message is loaded from file,
-   ! ibufr is the bufr id to be used in subsequent calls
+   ! The first BUFR message is loaded from file,
+   ! ibufr is the BUFR id to be used in subsequent calls
    call codes_bufr_new_from_file(ifile, ibufr, iret)
 
    do while (iret /= CODES_END_OF_FILE)
 
-      ! Get and print some keys form the BUFR header
+      ! Get and print some keys from the BUFR header
       write (*, *) 'message: ', count
 
       ! We need to instruct ecCodes to expand all the descriptors
       ! i.e. unpack the data values
-      call codes_set(ibufr, "unpack", 1); 
+      call codes_set(ibufr, "unpack", 1);
       ! Create BUFR keys iterator
       call codes_bufr_keys_iterator_new(ibufr, kiter, iret)
 
@@ -53,7 +52,12 @@ program bufr_keys_iterator
       do while (iret == CODES_SUCCESS)
          ! Print key name
          call codes_bufr_keys_iterator_get_name(kiter, key)
-         write (*, *) '  ', trim(key)
+         if (key == 'subsetNumber') then
+            write (*, *) '  Subset ', subset
+            subset = subset + 1
+         else
+            write (*, *) '  ', trim(key)
+         end if
 
          ! Get next key
          call codes_bufr_keys_iterator_next(kiter, iret)
@@ -62,10 +66,10 @@ program bufr_keys_iterator
       ! Delete key iterator
       call codes_bufr_keys_iterator_delete(kiter)
 
-      ! Release the bufr message
+      ! Release the BUFR message
       call codes_release(ibufr)
 
-      ! Load the next bufr message
+      ! Load the next BUFR message
       call codes_bufr_new_from_file(ifile, ibufr, iret)
 
       count = count + 1

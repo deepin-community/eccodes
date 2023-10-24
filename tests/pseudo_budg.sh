@@ -9,12 +9,13 @@
 #
 
 
-. ./include.sh
+. ./include.ctest.sh
 
 label="pseudo_budg_test"
-set -u
+
 tempOut=temp.$label.txt
 tempRef=temp.$label.ref
+tempBud=temp.$label.bud
 
 ${tools_dir}/grib_ls -j ${data_dir}/budg > $tempOut
 cat > $tempRef << EOF
@@ -31,6 +32,11 @@ cat > $tempRef << EOF
 EOF
 diff $tempRef $tempOut
 
+# Set date
+${tools_dir}/grib_set -s date=20170102 ${data_dir}/budg $tempBud
+res=`${tools_dir}/grib_get -p mars.date $tempBud`
+[ "$res" = "20170102" ]
+
 ${tools_dir}/grib_dump ${data_dir}/budg
 ${tools_dir}/grib_dump -O ${data_dir}/budg
 
@@ -41,5 +47,17 @@ ${tools_dir}/grib_ls -jm $tempOut
 ms=`${tools_dir}/grib_get -p mars.step $tempOut`
 [ "$ms" = "19" ]
 
+# ECC-1491
+cat ${data_dir}/budg ${data_dir}/budg > $tempBud
+${tools_dir}/grib_get -p count,offset $tempBud > $tempOut
+cat > $tempRef << EOF
+1 0
+2 6000
+EOF
+diff $tempRef $tempOut
 
-rm -f $tempRef $tempOut
+# Count
+count=`${tools_dir}/grib_count ${data_dir}/budg`
+[ $count -eq 1 ]
+
+rm -f $tempRef $tempOut $tempBud

@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 #set -x
 
 REDIRECT=/dev/null
@@ -117,8 +117,16 @@ grib_check_key_equals $temp section2Length 5
 rm -f $temp
 
 
-# Local Definition 5
-# -----------------------
+# Local Definition 4: Ocean model data
+# ---------------------------------------
+${tools_dir}/grib_set -s \
+  localDefinitionNumber=4,coordinate2Flag=2,averaging1Flag=1,coordinate1Flag=1,coordinate2Start=1234 \
+  $sample_g1 $temp
+grib_check_key_equals $temp "mars.levelist,roundedMarsLevelist:d,roundedMarsLevelist:s" "1 1.234 1.234"
+
+
+# Local Definition 5: Forecast probability data
+# ---------------------------------------------
 sample_g1=$ECCODES_SAMPLES_PATH/GRIB1.tmpl
 temp=temp.grib_local.grib
 ${tools_dir}/grib_set -s setLocalDefinition=1,localDefinitionNumber=5 $sample_g1 $temp.1
@@ -181,4 +189,23 @@ result=`echo 'print "[ccccIdentifiers]";' | ${tools_dir}/grib_filter - $temp`
 [ "$result" = "kwbc ecmf sabm" ]
 
 
+# ECC-1413: Local Definition 38
+# --------------------------------
+${tools_dir}/grib_set -s \
+   setLocalDefinition=1,localDefinitionNumber=38,type=4i,stream=elda,iterationNumber=23 \
+   $sample_g2 $temp
+grib_check_key_equals $temp 'mars.iteration' '23'
+${tools_dir}/grib_ls -jm $temp > $temp.1
+grep -q "iteration.* 23" $temp.1
+
+# ECC-1540: Local Definition 36
+# --------------------------------
+${tools_dir}/grib_set -s \
+   setLocalDefinition=1,localDefinitionNumber=36,paramId=210170,class=rd,type=4v,stream=elda \
+   $sample_g2 $temp
+grib_check_key_exists $temp mars.number,constituentType,sourceSinkChemicalPhysicalProcess
+${tools_dir}/grib_set -s localDefinitionNumber=36 $temp $temp.1
+${tools_dir}/grib_compare $temp $temp.1
+
+# Clean up
 rm -f $temp $temp.1 $temp.2 $temp.3

@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 # Enter data dir
 cd ${data_dir}/gts
@@ -45,4 +45,12 @@ ${tools_dir}/gts_ls -p TT,AA,II,CCCC,YY,GG,gg,BBB $f 2> $REDIRECT > $res_ls
 
 diff $ref_ls $res_ls >$REDIRECT 2> $REDIRECT
 
+#-------------------------------------------
+# Decode the key 'theMessage'
+#-------------------------------------------
+echo 'print "[theMessage]";' | ${tools_dir}/gts_filter - $gts_file
+
+${tools_dir}/gts_ls -wcount=1 -p theMessage $f
+
+# Clean up
 rm -f $fLog $res_ls 

@@ -9,7 +9,7 @@
 #
 
 set -x
-. ./include.sh
+. ./include.ctest.sh
 
 cd ${data_dir}/bufr
 
@@ -564,6 +564,27 @@ set -e
 ${tools_dir}/codes_bufr_filter -f $fRules $f 2>>$fLog 1>>$fLog
 
 
+#-----------------------------------------------------------
+# Test: with invalid string key
+#-----------------------------------------------------------
+cat > $fRules <<EOF
+ set unexpandedDescriptors={1015};
+ set stationOrSiteName="Caesar non supra grammaticos"; # Too long
+ set pack=1;
+ write;
+EOF
+
+set +e
+f="$ECCODES_SAMPLES_PATH/BUFR4.tmpl"
+echo "Test: Invalid string key" >> $fLog
+${tools_dir}/codes_bufr_filter $fRules $f 2>> $fLog 1>> $fLog
+if [ $? -eq 0 ]; then
+   echo "bufr_filter should have failed if string key is invalid" >&2
+   exit 1
+fi
+set -e
+
+
 #----------------------------------------------------
 # Test: format specifier for integer keys
 #----------------------------------------------------
@@ -648,9 +669,11 @@ cat >$fRules <<EOF
 EOF
 
 ${tools_dir}/codes_bufr_filter -o $fOut $fRules $f 2>> $fLog 1>> $fLog
+res=`${tools_dir}/bufr_get -p bufrTemplate $fOut`
+[ "$res" = "synopLand" ]
 ${tools_dir}/bufr_compare $fOut $fRef #2>> $fLog 1>> $fLog
 
-rm -f $fOut 
+rm -f $fOut
 
 fOut="airep.bufr.out"
 fRef="airep.bufr.out.ref"
@@ -661,6 +684,8 @@ cat >$fRules <<EOF
 EOF
 
 ${tools_dir}/codes_bufr_filter -o $fOut $fRules $f 2>> $fLog 1>> $fLog
+res=`${tools_dir}/bufr_get -p bufrTemplate $fOut`
+[ "$res" = "aircraftReportWithSecondsAndPressure" ]
 ${tools_dir}/bufr_compare $fOut $fRef #2>> $fLog 1>> $fLog
 
 rm -f $fOut 
@@ -690,35 +715,8 @@ EOF
 
 ${tools_dir}/codes_bufr_filter -o ${fout} $fRules $f 2>> $fLog 1>> $fLog
 ${tools_dir}/bufr_compare $fout ${fout}.ref #2>> $fLog 1>> $fLog
+rm -f $fout
 
-#-----------------------------------------------------------
-# ECC-147
-#-----------------------------------------------------------
-cat > $fRules <<EOF
- set unpack=1;
- set relativeHumidity=27;
- set horizontalVisibility=1500;
- set pack=1;
- write;
-EOF
-
-f="syno_1.bufr"
-${tools_dir}/codes_bufr_filter -o ${f}.out $fRules $f
-# This part of the test is meant to fail
-set +e
-${tools_dir}/bufr_compare ${f}.out $f
-status=$?
-set -e
-if [ $status -eq 0 ]; then
-  # compare should have failed and returned a non-zero exit code
-  exit 1
-fi
-# Now blacklist the failing keys and it should pass
-${tools_dir}/bufr_compare -b relativeHumidity,horizontalVisibility ${f}.out $f
-
-rm -f ${f}.out 
-
-rm -f $fRules ${fout} $fLog
 #-----------------------------------------------------------
 # Test:  access subsets by condition 
 #-----------------------------------------------------------
@@ -1258,76 +1256,6 @@ diff ${f}.log.ref ${f}.log
 rm -f ${f}.log ${f}.log.ref ${f}.out $fLog $fRules
 
 #-----------------------------------------------------------
-# Test: fix for ECC-389 
-#-----------------------------------------------------------
-cat > $fRules <<EOF
- set numberOfSubsets=2;
- set unexpandedDescriptors={310008};
- set #14#brightnessTemperature={266.53,266.53000000001};
- set pack=1;
- write;
-EOF
-
-f="amsu_55.bufr"
-
-echo "Test: fix for ECC-389" >> $fLog
-echo "file: $f" >> $fLog
-
-${tools_dir}/codes_bufr_filter -o ${f}.out $fRules $f
-
-cat > $fRules <<EOF
-set unpack=1;
-print "[#14#brightnessTemperature]";
-EOF
-
-${tools_dir}/codes_bufr_filter $fRules ${f}.out > ${f}.log
-
-cat > ${f}.log.ref <<EOF
-266.53
-EOF
-
-diff ${f}.log.ref ${f}.log 
-
-rm -f ${f}.log ${f}.log.ref ${f}.out $fLog $fRules
-
-#-----------------------------------------------------------
-# Test: change width using operator 201YYY
-#-----------------------------------------------------------
-HIGH_TEMPERATURE=10000
-cat > $fRules <<EOF
- set unpack=1;
- set airTemperature=$HIGH_TEMPERATURE;
- set pack=1;
- write;
-EOF
-f="bssh_176.bufr"
-
- # This should fail. Out of Range
-set +e
-${tools_dir}/codes_bufr_filter -o ${f}.out $fRules $f
-status=$?
-set -e
-[ $status -ne 0 ]
-
-# Now change the width of airTemperature to allow high value
-cat > $fRules <<EOF
- set unpack=1;
- set edition=4;
- set unexpandedDescriptors={301022,12023,201138,12101,201000,12023};
- set airTemperature=$HIGH_TEMPERATURE;
- set pack=1;
- print "airTemperature=[airTemperature], width=[airTemperature->width]";
- write;
-EOF
-${tools_dir}/codes_bufr_filter -o ${f}.out $fRules $f > ${f}.log
-
-cat > ${f}.log.ref <<EOF
-airTemperature=$HIGH_TEMPERATURE, width=26
-EOF
-diff ${f}.log.ref ${f}.log
-
-rm -f ${f}.log ${f}.log.ref ${f}.out $fLog $fRules
-#-----------------------------------------------------------
 # Test: DateTime
 #-----------------------------------------------------------
 cat > $fRules <<EOF
@@ -1385,6 +1313,29 @@ userDateTimeStart=2457896.88347 userDateStart=20170523 userTimeStart=91212 20170
 userDateTimeStart=2457896.88347 userDateStart=20170523 userTimeStart=91212 20170523091212
 EOF
 
-diff ${f}.log.ref ${f}.log 
+diff ${f}.log.ref ${f}.log
+rm -f $f.log ${f}.log.ref
 
+
+
+# Decode expandedDescriptors as array of string
+cat > $fRules <<EOF
+ print "[expandedDescriptors:s]";
+EOF
+${tools_dir}/codes_bufr_filter $fRules airc_142.bufr > $fLog
+fRef=temp.$label.ref
+cat > $fRef <<EOF
+001006 002061 004001 004002 004003 004004 004005 005001 
+006001 008004 007002 012001 011001 011002 011031 011032 
+011033 020041 222000 031031 031031 031031 031031 031031 
+031031 031031 031031 031031 031031 031031 031031 031031 
+031031 031031 031031 031031 031031 001031 001032 033007 
+033007 033007 033007 033007 033007 033007 033007 033007 
+033007 033007 033007 033007 033007 033007 033007 033007 
+033007
+EOF
+diff $fRef $fLog
+rm -f $fRef
+
+# Clean up
 rm -f ${f}.log ${f}.log.ref ${f}.out $fLog $fRules

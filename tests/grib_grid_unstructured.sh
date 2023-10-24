@@ -8,9 +8,9 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
-label="grib_grid_unstructured"
+label="grib_grid_unstructured_test"
 
 # Only relevant for GRIB2
 sample=$ECCODES_SAMPLES_PATH/GRIB2.tmpl

@@ -12,11 +12,11 @@
 # ---   using the new features of grib_compare that allows
 # ---   namespace comparison
 
-. ./include.sh
+. ./include.ctest.sh
 
 REDIRECT=/dev/null
 
-label="grib_tigge_conv2"
+label="grib_tigge_conv2_test"
 dir="${data_dir}/tigge"
 temp1="temp.${label}.grib1_"
 temp2="temp.${label}.grib2_"

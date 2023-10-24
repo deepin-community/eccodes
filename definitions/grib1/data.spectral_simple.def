@@ -3,6 +3,7 @@
 # moved here to allow different bitsPerValue in second order packing
 unsigned[1] bitsPerValue : dump ;
 alias numberOfBitsContainingEachPackedValue = bitsPerValue;
+alias accuracy = bitsPerValue;
 
 # For grib1 -> grib2
 #constant dataRepresentationTemplateNumber = 50;
@@ -34,7 +35,7 @@ meta codedValues data_g1simple_packing(
 ): read_only;
 
 meta values data_g1shsimple_packing(codedValues,realPart) : dump;
-alias data.packedValues = values; 
+alias data.packedValues = values;
 meta numberOfCodedValues g1number_of_coded_values_sh_simple(bitsPerValue,offsetBeforeData,offsetAfterData,halfByte,numberOfValues) : dump;
 
 template statistics "common/statistics_spectral.def";

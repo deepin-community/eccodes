@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 
 #Define a common label for all the tmp files
@@ -28,7 +28,7 @@ ${examples_dir}/eccodes_f_bufr_get_keys 2> $REDIRECT > $fTmp
 
 #TODO: check the results
 
-#cat  $fTmp
+#cat $fTmp
 
 #Clean up
 rm -f ${fTmp}

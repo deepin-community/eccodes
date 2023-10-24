@@ -7,11 +7,9 @@
 # In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
-. ./include.sh
-set -u
-REDIRECT=/dev/null
+. ./include.ctest.sh
 
-label="grib3_templates"
+label="grib3_templates_test"
 temp1=temp1.$label.grib3
 temp2=temp2.$label.grib3
 

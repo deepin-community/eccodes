@@ -7,7 +7,6 @@
 ! virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 !
 !
-! FORTRAN 90 Implementation: bufr_get_keys
 !
 ! Description: How to read values of different type of keys from BUFR messages.
 !
@@ -27,32 +26,32 @@ program bufr_get_keys
 
    call codes_open_file(ifile, '../../data/bufr/syno_multi.bufr', 'r')
 
-   ! The first bufr message is loaded from file,
-   ! ibufr is the bufr id to be used in subsequent calls
-   call codes_bufr_new_from_file(ifile, ibufr, iret)
+   do while (.true.)
+      ! A BUFR message is loaded from the file,
+      ! ibufr is the BUFR id to be used in subsequent calls
+      call codes_bufr_new_from_file(ifile, ibufr, iret)
+      if (iret == CODES_END_OF_FILE) exit
 
-   do while (iret /= CODES_END_OF_FILE)
-
-      ! Get and print some keys form the BUFR header
+      ! Get and print some keys from the BUFR header
       write (*, *) 'message: ', count
 
       ! We need to instruct ecCodes to expand all the descriptors
       ! i.e. unpack the data values
-      call codes_set(ibufr, "unpack", 1); 
+      call codes_set(ibufr, "unpack", 1);
       ! Get as character
       call codes_get(ibufr, 'typicalDate', typicalDate)
       write (*, *) '  typicalDate:', typicalDate
 
       ! Get as integer
-      call codes_get(ibufr, 'blockNumber', blockNumber); 
+      call codes_get(ibufr, 'blockNumber', blockNumber);
       write (*, *) '  blockNumber:', blockNumber
 
       ! Get as integer
-      call codes_get(ibufr, 'stationNumber', stationNumber); 
+      call codes_get(ibufr, 'stationNumber', stationNumber);
       write (*, *) '  stationNumber:', stationNumber
 
       ! get as real
-      call codes_get(ibufr, 'airTemperatureAt2M', t2m); 
+      call codes_get(ibufr, 'airTemperatureAt2M', t2m);
       write (*, *) '  airTemperatureAt2M:', t2m
 
       ! ---- array of integer ----------------
@@ -81,11 +80,8 @@ program bufr_get_keys
       deallocate (values)
       deallocate (descriptors)
 
-      ! Release the bufr message
+      ! Release the BUFR message
       call codes_release(ibufr)
-
-      ! Load the next bufr message
-      call codes_bufr_new_from_file(ifile, ibufr, iret)
 
       count = count + 1
 

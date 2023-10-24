@@ -8,12 +8,18 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 label="grib_nearest_multiple"
 temp1=$label.temp1.$$
 temp2=$label.temp2.$$
 tempRef=$label.ref.$$
+
+set +e
+${examples_dir}/c_grib_nearest_multiple 2>/dev/null
+status=$?
+set -e
+[ $status -eq 1 ]
 
 cat > $temp1 <<EOF
 1 30 -20

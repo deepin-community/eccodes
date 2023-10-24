@@ -10,8 +10,8 @@
 
 # Tests for Pseudo-GRIB format "DIAG"
 
-. ./include.sh
-label="pseudo-diag-test"
+. ./include.ctest.sh
+label="pseudo_diag_test"
 tempOut=temp.${label}.out
 tempTxt=temp.${label}.txt
 tempRef=temp.${label}.ref
@@ -24,6 +24,10 @@ sample=$ECCODES_SAMPLES_PATH/diag.tmpl
 # ------------------------------------
 ${tools_dir}/grib_ls $sample > $REDIRECT
 ${tools_dir}/grib_dump $sample > $REDIRECT
+
+count=`${tools_dir}/grib_count $sample`
+[ $count -eq 1 ]
+
 
 echo "Check setting integer keys..."
 # ----------------------------------

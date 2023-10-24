@@ -26,25 +26,28 @@ program grib_get_keys
    real, dimension(:), allocatable    ::  values
    integer                            ::  numberOfValues
    real                               ::  average, min_val, max_val
-   integer                            ::  is_missing
+   integer                            ::  is_missing, is_defined
    character(len=10)                  ::  open_mode = 'r'
 
-   call codes_open_file(ifile, &
-                        '../../data/reduced_latlon_surface.grib1', open_mode)
+   call codes_open_file(ifile, '../../data/reduced_latlon_surface.grib1', open_mode)
 
-   ! Loop on all the messages in a file.
+   ! loop on all the messages in a file
+   LOOP: DO WHILE (.true.)
+      ! a new GRIB message is loaded from file.
+      ! igrib is the grib id to be used in subsequent calls
+      call codes_grib_new_from_file(ifile, igrib, iret)
+      if (iret == CODES_END_OF_FILE) exit LOOP
 
-   ! A new GRIB message is loaded from file
-   ! igrib is the grib id to be used in subsequent calls
-   call codes_grib_new_from_file(ifile, igrib, iret)
+      ! check key is defined
+      is_defined = 0
+      call codes_is_defined(igrib, 'Ni', is_defined)
+      write (*, *) 'Key Ni is defined? ', is_defined
 
-   LOOP: DO WHILE (iret /= CODES_END_OF_FILE)
-
-      ! Check if the value of the key is MISSING
-      is_missing = 0; 
-      call codes_is_missing(igrib, 'Ni', is_missing); 
+      ! check if the value of the key is MISSING
+      is_missing = 0
+      call codes_is_missing(igrib, 'Ni', is_missing)
       if (is_missing /= 1) then
-         ! Key value is not missing so get as an integer
+         ! key value is not missing so get as an integer
          call codes_get(igrib, 'Ni', numberOfPointsAlongAParallel)
          write (*, *) 'numberOfPointsAlongAParallel=', &
             numberOfPointsAlongAParallel
@@ -52,41 +55,41 @@ program grib_get_keys
          write (*, *) 'numberOfPointsAlongAParallel is missing'
       end if
 
-      ! Get as an integer
+      ! get as an integer
       call codes_get(igrib, 'Nj', numberOfPointsAlongAMeridian)
       write (*, *) 'numberOfPointsAlongAMeridian=', &
          numberOfPointsAlongAMeridian
 
-      ! Get as a real
+      ! get as a real
       call codes_get(igrib, 'latitudeOfFirstGridPointInDegrees', &
                      latitudeOfFirstPointInDegrees)
       write (*, *) 'latitudeOfFirstGridPointInDegrees=', &
          latitudeOfFirstPointInDegrees
 
-      ! Get as a real
+      ! get as a real
       call codes_get(igrib, 'longitudeOfFirstGridPointInDegrees', &
                      longitudeOfFirstPointInDegrees)
       write (*, *) 'longitudeOfFirstGridPointInDegrees=', &
          longitudeOfFirstPointInDegrees
 
-      ! Get as a real
+      ! get as a real
       call codes_get(igrib, 'latitudeOfLastGridPointInDegrees', &
                      latitudeOfLastPointInDegrees)
       write (*, *) 'latitudeOfLastGridPointInDegrees=', &
          latitudeOfLastPointInDegrees
 
-      ! Get as a real
+      ! get as a real
       call codes_get(igrib, 'longitudeOfLastGridPointInDegrees', &
                      longitudeOfLastPointInDegrees)
       write (*, *) 'longitudeOfLastGridPointInDegrees=', &
          longitudeOfLastPointInDegrees
 
-      ! Get the size of the values array
+      ! get the size of the values array
       call codes_get_size(igrib, 'values', numberOfValues)
       write (*, *) 'numberOfValues=', numberOfValues
 
       allocate (values(numberOfValues), stat=iret)
-      ! Get data values
+      ! get data values
       call codes_get(igrib, 'values', values)
       call codes_get(igrib, 'min', min_val) ! can also be obtained through minval(values)
       call codes_get(igrib, 'max', max_val) ! can also be obtained through maxval(values)
@@ -100,8 +103,6 @@ program grib_get_keys
          ' max is ', max_val
 
       call codes_release(igrib)
-
-      call codes_grib_new_from_file(ifile, igrib, iret)
 
    end do LOOP
 

@@ -85,7 +85,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 39 ;
 	}
-#Total column water vapour
+#Total column vertically-integrated water vapour
 'kg m**-2' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 54 ;
@@ -105,7 +105,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 44 ;
 	}
-#Geopotential Height
+#Geopotential height
 'gpm' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 7 ;
@@ -141,7 +141,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 81 ;
 	}
-#Surface roughness
+#Surface roughness (climatological)
 'm' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 83 ;
@@ -285,7 +285,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 163 ;
 	}
-#Albedo
+#Forecast albedo
 '%' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 84 ;
@@ -665,12 +665,12 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 48 ;
 	}
-#U-component of current 
+#U-component of current
 'm s**-1' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 49 ;
 	}
-#V-component of current 
+#V-component of current
 'm s**-1' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 50 ;
@@ -785,7 +785,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 98 ;
 	}
-#Snow melt
+#Snowmelt
 'kg m**-2' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 99 ;
@@ -945,7 +945,7 @@
 	 table2Version = 200 ;
 	 indicatorOfParameter = 221 ;
 	}
-#Soil Temperature
+#Soil temperature
 'K' = {
 	 table2Version = 200 ;
 	 indicatorOfParameter = 85 ;

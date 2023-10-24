@@ -88,3 +88,63 @@
  parameterCategory = 217 ;
  parameterNumber = 27 ;
 }
+#Particulate matter d <= 1 um
+'mass_concentration_of_pm1_ambient_aerosol_particles_in_air' = {
+ discipline = 192 ;
+ parameterCategory = 210 ;
+ parameterNumber = 72 ;
+}
+#Particulate matter d <= 2.5 um
+'mass_concentration_of_pm2p5_ambient_aerosol_particles_in_air' = {
+ discipline = 192 ;
+ parameterCategory = 210 ;
+ parameterNumber = 73 ;
+}
+#Particulate matter d <= 10 um
+'mass_concentration_of_pm10_ambient_aerosol_particles_in_air' = {
+ discipline = 192 ;
+ parameterCategory = 210 ;
+ parameterNumber = 74 ;
+}
+#Total column vertically-integrated water vapour
+'lwe_thickness_of_atmosphere_mass_content_of_water_vapor' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 137 ;
+}
+#Large-scale precipitation
+'lwe_thickness_of_stratiform_precipitation_amount' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 142 ;
+}
+#Snowfall
+'lwe_thickness_of_snowfall_amount' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 144 ;
+}
+#Total cloud cover
+'cloud_area_fraction' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 164 ;
+}
+#Evaporation
+'lwe_thickness_of_water_evaporation_amount' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 182 ;
+}
+#Albedo (climatological)
+'surface_albedo' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 174 ;
+}
+#Total column ozone
+'atmosphere_mass_content_of_ozone' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 206 ;
+}

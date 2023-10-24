@@ -8,7 +8,7 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-. ./include.sh
+. ./include.ctest.sh
 
 REDIRECT=/dev/null
 
@@ -98,4 +98,14 @@ if [ $HAVE_JPEG -eq 0 ]; then
     set -e
 fi
 
+# Use -s option
+file=$data_dir/sample.grib2
+${tools_dir}/grib_dump -s year=1909 $file > $temp 2>&1
+grep -q "dataDate = 19090206" $temp
+
+# Skip handle
+${tools_dir}/grib_dump -w count=4 $file > $temp 2>&1
+
+
+# Clean up
 rm -f $temp

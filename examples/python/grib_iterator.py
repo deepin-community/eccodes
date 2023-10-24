@@ -8,14 +8,13 @@
 # virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 #
 
-from __future__ import print_function
-import traceback
 import sys
+import traceback
 
 from eccodes import *
 
 VERBOSE = 1  # verbose error reporting
-missingValue = 1e+20  # A value out of range
+missingValue = 1.0e36  # A value out of range
 
 
 def example(INPUT):
@@ -65,7 +64,7 @@ def main():
         if VERBOSE:
             traceback.print_exc(file=sys.stderr)
         else:
-            sys.stderr.write(err.msg + '\n')
+            sys.stderr.write(err.msg + "\n")
 
         return 1
 

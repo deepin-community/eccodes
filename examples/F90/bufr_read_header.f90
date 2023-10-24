@@ -6,9 +6,6 @@
 ! In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
 ! virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 !
-!
-! FORTRAN 90 implementation: bufr_read_header
-!
 ! Description: How to read the header of BUFR messages.
 !
 !
@@ -26,25 +23,25 @@ program bufr_read_header
 
    call codes_open_file(ifile, '../../data/bufr/syno_multi.bufr', 'r')
 
-   ! The first bufr message is loaded from file,
-   ! ibufr is the bufr id to be used in subsequent calls
-   call codes_bufr_new_from_file(ifile, ibufr, iret)
+   do while (.true.)
+      ! A BUFR message is loaded from file,
+      ! ibufr is the BUFR id to be used in subsequent calls
+      call codes_bufr_new_from_file(ifile, ibufr, iret)
+      if (iret == CODES_END_OF_FILE) exit
 
-   do while (iret /= CODES_END_OF_FILE)
-
-      ! Get and print some keys form the BUFR header
+      ! Get and print some keys from the BUFR header
       write (*, *) 'message: ', count
 
-      call codes_get(ibufr, 'dataCategory', dataCategory); 
+      call codes_get(ibufr, 'dataCategory', dataCategory);
       write (*, *) '  dataCategory:', dataCategory
 
-      call codes_get(ibufr, 'dataSubCategory', dataSubCategory); 
+      call codes_get(ibufr, 'dataSubCategory', dataSubCategory);
       write (*, *) '  dataSubCategory:', dataSubCategory
 
-      call codes_get(ibufr, 'typicalDate', typicalDate); 
+      call codes_get(ibufr, 'typicalDate', typicalDate);
       write (*, *) '  typicalDate:', typicalDate
 
-      call codes_get(ibufr, 'bufrHeaderCentre', centre); 
+      call codes_get(ibufr, 'bufrHeaderCentre', centre);
       write (*, *) '  bufrHeaderCentre:', centre
 
       call codes_get(ibufr, 'bufrHeaderSubCentre', subcentre)
@@ -59,11 +56,8 @@ program bufr_read_header
       call codes_get(ibufr, 'numberOfSubsets', numberOfSubsets)
       write (*, *) '  numberOfSubsets:', numberOfSubsets
 
-      ! Release the bufr message
+      ! Release the BUFR message
       call codes_release(ibufr)
-
-      ! Load the next bufr message
-      call codes_bufr_new_from_file(ifile, ibufr, iret)
 
       count = count + 1
 

@@ -10,20 +10,17 @@
 
 # Tests for WRAP
 
-. ./include.sh
-label="wrap-test"
+. ./include.ctest.sh
+label="wrap_test"
 tempOut=temp.${label}.out
 tempTxt=temp.${label}.txt
 tempRef=temp.${label}.ref
-
-REDIRECT=/dev/null
 
 input=$ECCODES_SAMPLES_PATH/wrap.tmpl
 
 ${tools_dir}/grib_dump -TA -O $input
 id=`${tools_dir}/grib_get -TA -p identifier $input`
 [ "$id" = "WRAP" ]
-
 
 # Clean up
 rm -f $tempOut $tempRef $tempTxt

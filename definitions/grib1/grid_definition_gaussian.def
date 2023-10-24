@@ -10,12 +10,12 @@ alias Ny=Nj;
 # Resolution and component flags
 include "grib1/grid_first_last_resandcomp.def";
 
-#  Di - i direction increment
+# Di - i direction increment
 unsigned[2] iDirectionIncrement : can_be_missing,dump,edition_specific;
 meta geography.iDirectionIncrementInDegrees scale(iDirectionIncrement,oneConstant,grib1divider,truncateDegrees) : can_be_missing,dump;
 alias Di = iDirectionIncrement;
 
-#  N - number of parallels between a pole and the equator
+# N - number of parallels between a pole and the equator
 unsigned[2] N : dump ;
 alias numberOfParallelsBetweenAPoleAndTheEquator=N;
 alias geography.N=N;
@@ -66,9 +66,6 @@ if(missing(Ni)){
        latitudeOfLastGridPointInDegrees,longitudeOfLastGridPointInDegrees,
        N,pl,Nj);
    nearest reduced(values,radius,Nj,pl);
-   box reduced_gaussian(latitudeOfFirstGridPointInDegrees,longitudeOfFirstGridPointInDegrees,
-          latitudeOfLastGridPointInDegrees,longitudeOfLastGridPointInDegrees,
-          N,pl);
 
    #meta sumPlArray sum(pl);
    #meta dataGlobal evaluate( sumPlArray == (numberOfValues+numberOfMissing) );
@@ -78,9 +75,6 @@ if(missing(Ni)){
             latitudeFirstInDegrees, latitudeLastInDegrees,
             N,jScansPositively);
    nearest regular(values,radius,Ni,Nj);
- #  box regular_gaussian(latitudeOfFirstGridPointInDegrees,longitudeOfFirstGridPointInDegrees,
- #         latitudeOfLastGridPointInDegrees,longitudeOfLastGridPointInDegrees,
- #         DiInDegrees,Ni,N,iScansNegatively,jScansPositively);
 }
 
 meta latLonValues latlonvalues(values);
