@@ -53,10 +53,10 @@ BUILD_FLAGS =  \
 %:
 	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel --with fortran_mod
 
-override_dh_auto_configure:
-	dh_auto_configure -- \
-	    ${BUILD_FLAGS} 
-	( cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
+#override_dh_auto_configure:
+#	dh_auto_configure -- \
+#	    ${BUILD_FLAGS} 
+#	cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
 
 override_dh_install:
 	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(DESTDIR)  
