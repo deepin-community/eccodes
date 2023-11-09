@@ -11,9 +11,9 @@
 
 const char* grib_get_git_sha1(void)
 {
-    return "24cc5631815648241e69d768a7bb9927a5128823";
+    return "ee49b84c4ab5de1d5b562058a8f786ae5e46c362";
 }
 const char* codes_get_build_date(void)
 {
-    return "2023.10.03";
+    return "2023.10.26";
 }
