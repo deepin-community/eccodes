@@ -23,19 +23,7 @@ FFLAGS=$(shell dpkg-buildflags --get FFLAGS) $(GF10_FLAGS)
 
 export LDFLAGS CFLAGS CPPFLAGS CXXFLAGS
 
-# Don't do OMP_THREADS on some archs
-OMP_THREADS:= On
-
-# Don't test on mips. will time out most of the time on low-powered archs
 DO_TEST:=true
-ARCH:=$(shell dpkg --print-architecture)
-ifeq ($(ARCH), mips)
-DO_TEST:=false
-endif
-ifeq ($(ARCH),hppa)
-DO_TEST:=false
-OMP_THREADS:=Off
-endif
 
 # Pull in ecbuild macros rather than local ones
 BUILD_FLAGS =  \
@@ -48,15 +36,15 @@ BUILD_FLAGS =  \
 	-DCMAKE_C_CFLAGS="${CFLAGS} ${LDFLAGS}" \
 	-DENABLE_ALIGN_MEMORY=ON \
 	-DENABLE_GRIB_TIMER=ON \
-	-DENABLE_ECCODES_OMP_THREADS=$(OMP_THREADS)  \
+	-DENABLE_ECCODES_OMP_THREADS=On  \
 
 %:
 	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel --with fortran_mod
 
-#override_dh_auto_configure:
-#	dh_auto_configure -- \
-#	    ${BUILD_FLAGS} 
-#	cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    ${BUILD_FLAGS} 
+	( cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
 
 override_dh_install:
 	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(DESTDIR)  
