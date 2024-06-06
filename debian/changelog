@@ -1,9 +1,65 @@
-eccodes (2.32.0-1deepin1) unstable; urgency=medium
+eccodes (2.35.0-1) unstable; urgency=medium
 
-  * Import orig-data.tar.xz in SCM.
-  * No longer override dh_auto_configure.
+  * New upstream release
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 24 Oct 2023 14:48:18 +0800
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 15 Apr 2024 08:01:26 +0100
+
+eccodes (2.34.1-1) unstable; urgency=medium
+
+  * New upstream release
+  
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 27 Feb 2024 07:16:39 +0000
+
+eccodes (2.34.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove obsolete Breaks/Replaces/Conflicts from d/control
+  * In dh rule, place env variables before not after the dh call,
+    as otherwise parameters are messed (--no-parallel was being ignored
+    leading to intermittent race  in gfortran mod creation)
+  * Add fortran:Depends to d/control for libecccodes-dev
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 07 Feb 2024 10:00:01 +0000
+
+eccodes (2.33.0-3) unstable; urgency=medium
+
+  * Build with reverted fmoddir to libdir
+  * Build with fortran-support.mk
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 31 Dec 2023 08:19:34 +0000
+
+eccodes (2.33.0-2) unstable; urgency=medium
+
+  * Drop flang build for unsupported archs
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 15 Dec 2023 06:55:10 +0000
+
+eccodes (2.33.0-1) unstable; urgency=medium
+
+  * Enable flang support
+  * New upstream release 2.33.0
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 13 Dec 2023 09:54:23 +0000
+
+eccodes (2.32.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 21 Nov 2023 16:43:49 +0000
+
+eccodes (2.32.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 28 Oct 2023 10:28:02 +0100
+
+eccodes (2.32.0-2) unstable; urgency=medium
+
+  * Drop obsolete 32-bit arch code in d/rules
+  * Depend on architecture-is-64-bit instead of listing archs specifically.
+    Closes: #1054464
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 24 Oct 2023 10:33:26 +0100
 
 eccodes (2.32.0-1) unstable; urgency=medium
 

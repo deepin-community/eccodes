@@ -1309,3 +1309,93 @@
  parameterCategory = 140 ;
  parameterNumber = 249 ;
 }
+#Mean temperature at 2 metres
+'228004' = {
+ discipline = 192 ;
+ parameterCategory = 228 ;
+ parameterNumber = 4 ;
+}
+#Mean surface net radiation flux
+'172149' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 149 ;
+}
+#Surface net radiation
+'149' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 149 ;
+}
+#Top net radiation
+'150' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 150 ;
+}
+#Surface emissivity
+'124' = {
+ discipline = 192 ;
+ parameterCategory = 128 ;
+ parameterNumber = 124 ;
+}
+#Vertical integral of water vapour
+'162055' = {
+ discipline = 192 ;
+ parameterCategory = 162 ;
+ parameterNumber = 55 ;
+}
+#Snow depth
+'190141' = {
+ discipline = 192 ;
+ parameterCategory = 190 ;
+ parameterNumber = 141 ;
+}
+#Mean total snowfall rate
+'172144' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 144 ;
+}
+#Evaporation
+'172182' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 182 ;
+}
+#Mean total precipitation rate
+'172228' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 228 ;
+}
+#Mean large-scale precipitation rate
+'172142' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 142 ;
+}
+#Mean convective precipitation rate
+'172143' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 143 ;
+}
+#Mean runoff rate
+'172205' = {
+ discipline = 192 ;
+ parameterCategory = 172 ;
+ parameterNumber = 205 ;
+}
+#Mean total cloud cover
+'228006' = {
+ discipline = 192 ;
+ parameterCategory = 228 ;
+ parameterNumber = 6 ;
+}
+#Mean of 10 metre wind speed
+'228005' = {
+ discipline = 192 ;
+ parameterCategory = 228 ;
+ parameterNumber = 5 ;
+}

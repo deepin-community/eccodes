@@ -3,12 +3,16 @@
 export DH_VERBOSE=1
 
 include /usr/share/dpkg/pkg-info.mk
+include /usr/share/debhelper/dh-fortran/fortran-support.mk
+
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
 INCDIR=/usr/include/$(DEB_HOST_MULTIARCH)
-BUILDDIR=$(CURDIR)/debian/build
 DESTDIR=$(CURDIR)/debian/tmp
 CMAKEDIR:=$(DESTDIR)/$(LIBDIR)/cmake/eccodes
+
+BUILDDIR:=$(CURDIR)/debian/build
+BUILDDIR_DEFAULT:=$(BUILDDIR)-$(FC_DEFAULT)
 
 # For hardening
 CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
@@ -17,25 +21,10 @@ CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
 LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 
 
-GF10_FLAGS:=$(if $(filter $(shell readlink /usr/bin/gfortran), gfortran-10), \
-                 -fallow-invalid-boz -fallow-argument-mismatch, )
-FFLAGS=$(shell dpkg-buildflags --get FFLAGS) $(GF10_FLAGS)
 
 export LDFLAGS CFLAGS CPPFLAGS CXXFLAGS
 
-# Don't do OMP_THREADS on some archs
-OMP_THREADS:= On
-
-# Don't test on mips. will time out most of the time on low-powered archs
 DO_TEST:=true
-ARCH:=$(shell dpkg --print-architecture)
-ifeq ($(ARCH), mips)
-DO_TEST:=false
-endif
-ifeq ($(ARCH),hppa)
-DO_TEST:=false
-OMP_THREADS:=Off
-endif
 
 # Pull in ecbuild macros rather than local ones
 BUILD_FLAGS =  \
@@ -48,18 +37,19 @@ BUILD_FLAGS =  \
 	-DCMAKE_C_CFLAGS="${CFLAGS} ${LDFLAGS}" \
 	-DENABLE_ALIGN_MEMORY=ON \
 	-DENABLE_GRIB_TIMER=ON \
-	-DENABLE_ECCODES_OMP_THREADS=$(OMP_THREADS)  \
+	-DENABLE_ECCODES_OMP_THREADS=On  \
 
 %:
-	dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR} --no-parallel --with fortran_mod
+	FC=$(FC_DEFAULT) dh $@ --buildsystem=ecbuild --builddirectory=${BUILDDIR_DEFAULT} \
+		--no-parallel --with fortran_mod
 
-#override_dh_auto_configure:
-#	dh_auto_configure -- \
-#	    ${BUILD_FLAGS} 
-#	cd ${BUILDDIR}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    ${BUILD_FLAGS} 
+	( cd ${BUILDDIR_DEFAULT}/data ; tar axpf $(CURDIR)/../eccodes_$(DEB_VERSION_UPSTREAM).orig-data.tar.xz )
 
 override_dh_install:
-	cd $(BUILDDIR) && $(MAKE) install DESTDIR=$(DESTDIR)  
+	cd $(BUILDDIR_DEFAULT) && $(MAKE) install DESTDIR=$(DESTDIR)  
 	# Move to multiarch dir
 	mkdir -p  $(DESTDIR)/$(INCDIR)
 	mv $(DESTDIR)/usr/include/*.h $(DESTDIR)/$(INCDIR)
@@ -102,4 +92,6 @@ override_dh_fixperms:
 	-chmod +x debian/libeccodes-data/usr/share/eccodes/definitions/installDefinitions.sh
 
 override_dh_auto_test:
-	$(DO_TEST) && ( LD_LIBRARY_PATH=$(CURDIR)/debian/build/lib dh_auto_test  ) || true
+	$(DO_TEST) && ( LD_LIBRARY_PATH=${BUILDDIR_DEFAULT}/lib dh_auto_test  ) || true
+	# for f in $(FC_OPTIONAL) ; do \
+	#  ( $(DO_TEST) && ( LD_LIBRARY_PATH=${BUILDDIR}-$$f/lib dh_auto_test  ) || true ) ; done
