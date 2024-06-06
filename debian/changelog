@@ -1,3 +1,10 @@
+eccodes (2.35.0-1deepin1) unstable; urgency=medium
+
+  * Do not unpack orig-data.tar.xz in d/rules since we already have them in
+    data/
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 06 Jun 2024 13:02:57 +0800
+
 eccodes (2.35.0-1) unstable; urgency=medium
 
   * New upstream release
