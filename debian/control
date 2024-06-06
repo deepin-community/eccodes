@@ -3,9 +3,9 @@ Section: science
 Priority: optional
 Maintainer: Alastair McKinstry <mckinstry@debian.org>
 Build-Depends: debhelper-compat (= 13), 
+  architecture-is-64-bit,
   dh-buildinfo, 
-  dh-fortran-mod,
-  gfortran | fortran-compiler, 
+  dh-fortran-mod (>= 0.31),
   ecbuild (>= 3.7.0),
   libjpeg-dev, 
   libpng-dev, 
@@ -20,7 +20,7 @@ Build-Depends: debhelper-compat (= 13),
   libaec-dev,
   libnetcdf-dev,
   libopenjp2-7-dev
-Build-Conflicts: libopenjpeg-dev, libgrib-api-dev
+Build-Conflicts: libopenjpeg-dev, libeccodes-dev
 Standards-Version: 4.6.2
 Homepage: https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home
 Vcs-Browser: https://salsa.debian.org:/science-team/eccodes.git
@@ -28,7 +28,7 @@ Vcs-Git: https://salsa.debian.org:/science-team/eccodes.git -b debian/latest
 
 Package: libeccodes0
 Section: libs
-Architecture: amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64  kfreebsd-amd64 ia64 alpha
+Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libeccodes-data
 Description: GRIB and BUFR enecoding/encoding software library
@@ -47,11 +47,11 @@ Description: GRIB and BUFR enecoding/encoding software library - data
  
 Package: libeccodes-dev
 Section: libdevel
-Architecture: amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64  kfreebsd-amd64 ia64 alpha
+Architecture: any
 Multi-Arch: same
-Depends: libeccodes0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends},
+Depends: libeccodes0 (= ${binary:Version}), 
+  ${misc:Depends}, ${shlibs:Depends},  ${fortran:Depends},
   libaec-dev, libpng-dev, libjpeg-dev, zlib1g-dev
-Conflicts: libgrib-api-dev
 Description: GRIB and BUFR decoding/encoding software library (development)
  ecCodes is the ECMWF encoding/decoding software for GRIB and BUFR.
  .
@@ -59,10 +59,8 @@ Description: GRIB and BUFR decoding/encoding software library (development)
  
 Package: libeccodes-tools
 Section: utils
-Architecture: amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64  kfreebsd-amd64 ia64 alpha
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, mksh | pdksh | zsh | ksh
-Conflicts: libgrib-api-tools
-Breaks: libemos-bin (<< 2:4.4.5-2)
 Description: GRIB decoding/encoding software (utilities)
  ecCodes is the ECMWF encoding/decoding software for GRIB and BUFR.
  .

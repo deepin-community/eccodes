@@ -11,6 +11,14 @@
 . ./include.ctest.sh
 
 label="grib_check_param_concepts_test"
+
+
+if [ $ECCODES_ON_WINDOWS -eq 1 ]; then
+    echo "$0: This test is currently disabled on Windows"
+    exit 0
+fi
+
+
 #
 # Do various checks on the concepts files
 #
@@ -21,6 +29,7 @@ $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/gri
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/ecmf/paramId.def
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/uerra/paramId.def
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/hydro/paramId.def
+$EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/cerise/paramId.def
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/tigge/paramId.def
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/s2s/paramId.def
 $EXEC ${test_dir}/grib_check_param_concepts paramId $ECCODES_DEFINITION_PATH/grib2/localConcepts/era6/paramId.def
@@ -31,6 +40,7 @@ $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/g
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/ecmf/shortName.def
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/uerra/shortName.def
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/hydro/shortName.def
+$EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/cerise/shortName.def
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/tigge/shortName.def
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/s2s/shortName.def
 $EXEC ${test_dir}/grib_check_param_concepts shortName $ECCODES_DEFINITION_PATH/grib2/localConcepts/era6/shortName.def
@@ -67,8 +77,11 @@ defs_dirs="
 
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/uerra
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/hydro
+ $ECCODES_DEFINITION_PATH/grib2/localConcepts/cerise
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/tigge
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/s2s
+ $ECCODES_DEFINITION_PATH/grib2/localConcepts/era6
+ $ECCODES_DEFINITION_PATH/grib2/localConcepts/destine
 
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/egrr
  $ECCODES_DEFINITION_PATH/grib2/localConcepts/ekmi

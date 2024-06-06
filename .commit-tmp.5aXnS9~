@@ -1,0 +1,6 @@
+Remove obsolete Breaks/Replaces/Conflicts from d/control
+
+* Remove obsolete Breaks/Replaces/Conflicts from d/control
+* In dh rule, place env variables before not after the dh call,
+  as otherwise parameters are messed (--no-parallel was being ignored
+  leading to intermittent race  in gfortran mod creation)

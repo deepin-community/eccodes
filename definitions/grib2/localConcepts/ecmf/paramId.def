@@ -548,12 +548,6 @@
 	 parameterCategory = 128 ;
 	 parameterNumber = 123 ;
 	}
-#Surface emissivity
-'124' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 124 ;
-	}
 #Vertically integrated total energy
 '125' = {
 	 discipline = 192 ;
@@ -623,18 +617,6 @@
 	 parameterNumber = 198 ;
 	 typeOfFirstFixedSurface = 1 ;
 	 typeOfStatisticalProcessing = 1 ;
-	}
-#Surface net radiation
-'149' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 149 ;
-	}
-#Top net radiation
-'150' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 150 ;
 	}
 #Logarithm of surface pressure
 '152' = {
@@ -2596,6 +2578,24 @@
 	 discipline = 192 ;
 	 parameterCategory = 171 ;
 	 parameterNumber = 122 ;
+	}
+#Mean surface runoff rate
+'172008' = {
+	 localTablesVersion = 1 ;
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 202 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Mean sub-surface runoff rate
+'172009' = {
+	 localTablesVersion = 1 ;
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 204 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Volcanic ash aerosol mixing ratio
 '210013' = {
@@ -13843,6 +13843,214 @@
 	 typeOfSecondFixedSurface = 255 ;
 	 typeOfStatisticalProcessing = 1 ;
 	}
+#Time-mean snow depth
+'235141' = {
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 254 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Time-mean low cloud cover
+'235186' = {
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 6 ;
+	 parameterNumber = 193 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Time-mean medium cloud cover
+'235187' = {
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 6 ;
+	 parameterNumber = 194 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Time-mean high cloud cover
+'235188' = {
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 6 ;
+	 parameterNumber = 195 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Time-mean forecast albedo
+'235243' = {
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 19 ;
+	 parameterNumber = 193 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+#Covariance between 2-metre temperature and volumetric soil water layer 1
+'254001' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 192 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and volumetric soil water layer 1
+'254002' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 193 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between surface soil moisture and volumetric soil water layer 1
+'254003' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 194 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and volumetric soil water layer 2
+'254004' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 195 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and volumetric soil water layer 2
+'254005' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 196 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between surface soil moisture and volumetric soil water layer 2
+'254006' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 197 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and volumetric soil water layer 3
+'254007' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 198 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and volumetric soil water layer 3
+'254008' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 199 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between surface soil moisture and volumetric soil water layer 3
+'254009' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 200 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and soil temperature layer 1
+'254010' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 201 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and soil temperature layer 1
+'254011' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 202 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and soil temperature layer 2
+'254012' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 203 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and soil temperature layer 2
+'254013' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 204 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and soil temperature layer 3
+'254014' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 205 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and soil temperature layer 3
+'254015' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 206 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and temperature of snow layer 1
+'254016' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 207 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and temperature of snow layer 1
+'254017' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 208 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and temperature of snow layer 2
+'254018' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 209 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and temperature of snow layer 2
+'254019' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 210 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre temperature and temperature of snow layer 3
+'254020' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 211 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
+#Covariance between 2-metre relative humidity and temperature of snow layer 3
+'254021' = {
+	 localTablesVersion = 1 ;
+	 discipline = 254 ;
+	 parameterCategory = 254 ;
+	 parameterNumber = 212 ;
+	 typeOfFirstFixedSurface = 254 ;
+	}
 #Surface roughness length for heat
 '260651' = {
 	 localTablesVersion = 1 ;
@@ -18837,21 +19045,30 @@
 	}
 #Mean large-scale precipitation rate
 '172142' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 142 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 196 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Mean convective precipitation rate
 '172143' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 143 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 195 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Mean total snowfall rate
 '172144' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 144 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 198 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Boundary layer dissipation
 '172145' = {
@@ -18870,12 +19087,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 147 ;
-	}
-#Mean surface net radiation flux
-'172149' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 149 ;
 	}
 #Mean short-wave heating rate
 '172153' = {
@@ -18939,9 +19150,12 @@
 	}
 #Evaporation
 '172182' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 182 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 199 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Mean sunshine duration rate
 '172189' = {
@@ -18969,9 +19183,12 @@
 	}
 #Mean runoff rate
 '172205' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 205 ;
+	 localTablesVersion = 1 ;
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 201 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Top net solar radiation, clear sky
 '172208' = {
@@ -19005,9 +19222,12 @@
 	}
 #Mean total precipitation rate
 '172228' = {
-	 discipline = 192 ;
-	 parameterCategory = 172 ;
-	 parameterNumber = 228 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 193 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Convective snowfall
 '172239' = {
@@ -21697,23 +21917,15 @@
 	 parameterCategory = 220 ;
 	 parameterNumber = 228 ;
 	}
-#Mean temperature at 2 metres
-'228004' = {
-	 discipline = 192 ;
-	 parameterCategory = 228 ;
-	 parameterNumber = 4 ;
-	}
-#Mean of 10 metre wind speed
-'228005' = {
-	 discipline = 192 ;
-	 parameterCategory = 228 ;
-	 parameterNumber = 5 ;
-	}
 #Mean total cloud cover
 '228006' = {
-	 discipline = 192 ;
-	 parameterCategory = 228 ;
-	 parameterNumber = 6 ;
+	 localTablesVersion = 1 ;
+	 discipline = 0 ;
+	 parameterCategory = 6 ;
+	 parameterNumber = 192 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 8 ;
+	 typeOfStatisticalProcessing = 0 ;
 	}
 #Surface temperature significance
 '234139' = {
